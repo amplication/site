@@ -1,0 +1,30 @@
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+section.auto-height {
+  min-height: 0;
+}
+
+nav {
+  border: 1px solid #e7e7ec;
+}
+
+.home-background {
+  background: url("../assets/images/Hero_background.png");
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.feature img {
+  width: 100%;
+}

@@ -1,9 +1,3 @@
-$icon-font-size-xsmall: 16px;
-$icon-font-size-small: 20px;
-$icon-font-size-medium: 24px;
-$icon-font-size-large: 28px;
-$icon-font-size-xlarge: 32px;
-
 @font-face {
   font-family: "amplicationicon";
   src: url("../assets/fonts/amplicationicon.eot?89k4uc");
@@ -43,22 +37,4 @@ $icon-font-size-xlarge: 32px;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  &.rmwc-icon {
-    &--size-xsmall {
-      font-size: $icon-font-size-xsmall;
-    }
-    &--size-small {
-      font-size: $icon-font-size-small;
-    }
-    &--size-medium {
-      font-size: $icon-font-size-medium;
-    }
-    &--size-large {
-      font-size: $icon-font-size-large;
-    }
-    &--size-xlarge {
-      font-size: $icon-font-size-xlarge;
-    }
-  }
 }
