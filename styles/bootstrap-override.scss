@@ -14,6 +14,11 @@ $white: #ffffff;
 
 $gray-900: $dark;
 
+$btn-border-radius: 99px;
+$btn-border-radius-lg: 99px;
+$btn-border-radius-sm: 99px;
+$btn-padding-x: 2em;
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
 //============Other colors

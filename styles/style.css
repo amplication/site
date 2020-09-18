@@ -1773,10 +1773,10 @@ textarea.form-control {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 2em;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 99px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .btn {
@@ -2189,13 +2189,13 @@ fieldset:disabled a.btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0.3rem; }
+  border-radius: 99px; }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem; }
+  border-radius: 99px; }
 
 .btn-block {
   display: block;
@@ -2470,8 +2470,8 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0; }
 
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem; }
+  padding-right: 1.5em;
+  padding-left: 1.5em; }
   .dropdown-toggle-split::after,
   .dropup .dropdown-toggle-split::after,
   .dropright .dropdown-toggle-split::after {
@@ -3112,7 +3112,7 @@ input[type="button"].btn-block {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0.25rem; }
+  border-radius: 99px; }
   .navbar-toggler:hover, .navbar-toggler:focus {
     text-decoration: none; }
 
@@ -7196,10 +7196,19 @@ section {
   background-color: #f4f4f7; }
   section h2 {
     font-size: 3rem; }
-  section.page-1 {
+  section.page-welcome {
     background-image: url(../assets/images/bg/circle_bg.svg);
     background-position: bottom left;
     background-repeat: no-repeat; }
+    section.page-welcome .btn {
+      height: 3rem;
+      vertical-align: middle;
+      width: 200px; }
+  section.page-get-started {
+    background-image: url(../assets/images/bg/Get_started_banner_background.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .section-hint {
   font-family: "IBM Plex Mono", monospace;

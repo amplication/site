@@ -22,10 +22,23 @@ section {
     font-size: 3rem;
   }
 
-  &.page-1 {
+  &.page-welcome {
     background-image: url(../assets/images/bg/circle_bg.svg);
     background-position: bottom left;
     background-repeat: no-repeat;
+
+    .btn {
+      height: 3rem;
+      vertical-align: middle;
+      width: 200px;
+    }
+  }
+
+  &.page-get-started {
+    background-image: url(../assets/images/bg/Get_started_banner_background.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
