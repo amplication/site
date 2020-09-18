@@ -7207,12 +7207,13 @@ section {
   font-weight: 600; }
 
 .feature-card {
-  margin: 0.5rem;
   background-color: #ffffff;
   border-radius: 3px;
   padding: 1rem;
   text-align: center;
   font-family: "IBM Plex Mono", monospace; }
+  .feature-card .feature-card-text {
+    height: 3rem; }
 
 .main-image {
   position: absolute;
