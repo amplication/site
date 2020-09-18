@@ -62,6 +62,52 @@ section {
     margin-bottom: 1rem;
   }
 }
+.roadmap-box {
+  .roadmap-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    @include font-mono;
+    color: $black80;
+    margin-bottom: 1rem;
+
+    &:before,
+    &:after {
+      content: "";
+      border-top: 1px solid $black30;
+      flex: 1;
+      height: 0px;
+      margin: 15px 2rem;
+    }
+  }
+  .roadmap-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    li {
+      list-style: none;
+      margin: 0 2rem;
+      color: $primary;
+      margin-left: 20px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      // &:after,
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $black80;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
 .main-image {
   position: absolute;
   right: 0;

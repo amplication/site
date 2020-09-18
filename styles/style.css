@@ -7229,6 +7229,43 @@ section {
     color: #a787ff;
     margin-bottom: 1rem; }
 
+.roadmap-box .roadmap-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  font-family: "IBM Plex Mono", monospace;
+  color: #414168;
+  margin-bottom: 1rem; }
+  .roadmap-box .roadmap-title:before, .roadmap-box .roadmap-title:after {
+    content: "";
+    border-top: 1px solid #b8b8c6;
+    flex: 1;
+    height: 0px;
+    margin: 15px 2rem; }
+
+.roadmap-box .roadmap-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  margin-bottom: 1rem; }
+  .roadmap-box .roadmap-list li {
+    list-style: none;
+    margin: 0 2rem;
+    color: #7950ed;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    text-transform: uppercase; }
+    .roadmap-box .roadmap-list li:before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #414168;
+      margin: 0 10px; }
+
 .main-image {
   position: absolute;
   right: 0;
