@@ -36,7 +36,6 @@ section {
 }
 
 .feature-card {
-  // margin: 0.5rem;
   background-color: $white;
   border-radius: $border-radius;
   padding: 1rem;
@@ -44,6 +43,23 @@ section {
   @include font-mono;
   .feature-card-text {
     height: 3rem;
+  }
+}
+
+.about-box {
+  height: 100%;
+  background-color: $black100;
+  border-radius: $border-radius;
+  padding: 3rem 2rem;
+  color: $white;
+  .about-title1 {
+    font-size: 2rem;
+    @include font-mono;
+  }
+  .about-title2 {
+    font-size: 3rem;
+    color: $secondary-purple;
+    margin-bottom: 1rem;
   }
 }
 .main-image {
@@ -59,6 +75,10 @@ section {
 
 section.auto-height {
   min-height: 0;
+}
+
+.bg-black100 {
+  background-color: $black100;
 }
 
 nav {

@@ -7215,6 +7215,20 @@ section {
   .feature-card .feature-card-text {
     height: 3rem; }
 
+.about-box {
+  height: 100%;
+  background-color: #121242;
+  border-radius: 3px;
+  padding: 3rem 2rem;
+  color: #ffffff; }
+  .about-box .about-title1 {
+    font-size: 2rem;
+    font-family: "IBM Plex Mono", monospace; }
+  .about-box .about-title2 {
+    font-size: 3rem;
+    color: #a787ff;
+    margin-bottom: 1rem; }
+
 .main-image {
   position: absolute;
   right: 0;
@@ -7225,6 +7239,9 @@ section {
 
 section.auto-height {
   min-height: 0; }
+
+.bg-black100 {
+  background-color: #121242; }
 
 nav {
   border: 1px solid #e7e7ec; }
