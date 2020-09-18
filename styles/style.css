@@ -7203,7 +7203,8 @@ section {
     section.page-welcome .btn {
       height: 3rem;
       vertical-align: middle;
-      width: 200px; }
+      width: 200px;
+      white-space: nowrap; }
   section.page-get-started {
     background-image: url(../assets/images/bg/Get_started_banner_background.png);
     background-position: bottom left;
