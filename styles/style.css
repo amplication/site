@@ -7313,8 +7313,40 @@ section.auto-height {
 .text-secondary-purple {
   color: #a787ff; }
 
+.text-black40 {
+  color: #a0a0b3; }
+
 nav {
   border: 1px solid #e7e7ec; }
 
 .feature img {
   width: 100%; }
+
+.social-link {
+  background-color: #121242;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  margin-right: 1rem; }
+  .social-link.linkedin {
+    -webkit-mask-image: url(../assets/icons/linkedin.svg);
+    mask-image: url(../assets/icons/linkedin.svg); }
+  .social-link.twitter {
+    -webkit-mask-image: url(../assets/icons/twitter.svg);
+    mask-image: url(../assets/icons/twitter.svg); }
+  .social-link.github {
+    -webkit-mask-image: url(../assets/icons/github.svg);
+    mask-image: url(../assets/icons/github.svg); }
+  .social-link:hover {
+    background-color: #414168; }
+
+.footer-line {
+  border-top: 1px solid #e7e7ec;
+  height: 80px;
+  color: #a0a0b3;
+  font-size: 0.75rem; }
+  .footer-line a {
+    color: #a0a0b3;
+    text-decoration: underline; }
