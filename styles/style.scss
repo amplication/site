@@ -111,32 +111,28 @@ section {
     @include font-mono;
     color: $black80;
     margin-bottom: 1rem;
-
-    &:before,
-    &:after {
-      content: "";
-      border-top: 1px solid $black30;
-      flex: 1;
-      height: 0px;
-      margin: 15px 2rem;
-    }
+    padding: 0.25rem 0.5rem;
+    background-color: $primary;
+    color: $white;
+    display: inline-block;
+    transform: rotate(-90deg) translate(calc(-100% + -45px), 0px);
+    transform-origin: top left;
   }
   .roadmap-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-left: 0;
     li {
       list-style: none;
-      margin: 0 2rem;
-      color: $primary;
-      text-transform: uppercase;
+      color: $white;
       width: 100%;
-      text-align: center;
       margin: 0;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       // &:after,
       // &:before {
       //   content: "";
