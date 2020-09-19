@@ -7220,6 +7220,8 @@ section {
   background-color: #ffffff;
   border-radius: 3px;
   padding: 1rem;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-family: "IBM Plex Mono", monospace; }
   .feature-card .feature-card-text {
@@ -7230,6 +7232,7 @@ section {
   background-color: #121242;
   border-radius: 3px;
   padding: 3rem 2rem;
+  margin-bottom: 2rem;
   color: #ffffff; }
   .about-box .about-title1 {
     font-size: 2rem;
@@ -7264,17 +7267,11 @@ section {
     list-style: none;
     margin: 0 2rem;
     color: #7950ed;
-    margin-left: 20px;
-    margin-bottom: 1rem;
-    text-transform: uppercase; }
-    .roadmap-box .roadmap-list li:before {
-      content: "";
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #414168;
-      margin: 0 10px; }
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5rem; }
 
 .main-image {
   position: absolute;

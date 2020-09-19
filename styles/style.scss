@@ -53,6 +53,8 @@ section {
   background-color: $white;
   border-radius: $border-radius;
   padding: 1rem;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
   text-align: center;
   @include font-mono;
   .feature-card-text {
@@ -65,6 +67,7 @@ section {
   background-color: $black100;
   border-radius: $border-radius;
   padding: 3rem 2rem;
+  margin-bottom: 2rem;
   color: $white;
   .about-title1 {
     font-size: 2rem;
@@ -105,19 +108,21 @@ section {
       list-style: none;
       margin: 0 2rem;
       color: $primary;
-      margin-left: 20px;
-      margin-bottom: 1rem;
       text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 0.5rem;
       // &:after,
-      &:before {
-        content: "";
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: $black80;
-        margin: 0 10px;
-      }
+      // &:before {
+      //   content: "";
+      //   display: inline-block;
+      //   width: 8px;
+      //   height: 8px;
+      //   border-radius: 50%;
+      //   background-color: $black80;
+      //   margin: 0 10px;
+      // }
     }
   }
 }
