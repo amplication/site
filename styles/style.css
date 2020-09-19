@@ -7197,9 +7197,11 @@ section {
   section h2 {
     font-size: 3rem; }
   section.page-welcome {
-    background-image: url(../assets/images/bg/circle_bg.svg);
+    background-image: url(../assets/images/bg/Hero_background.png);
     background-position: bottom left;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 50px); }
     section.page-welcome .btn {
       height: 3rem;
       vertical-align: middle;
@@ -7208,6 +7210,11 @@ section {
   section.page-get-started {
     background-image: url(../assets/images/bg/Get_started_banner_background.png);
     background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  section.page-about {
+    background-image: url(../assets/images/bg/about-bg.svg);
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover; }
 
@@ -7229,18 +7236,30 @@ section {
 
 .about-box {
   height: 100%;
-  background-color: #121242;
+  background-color: #ffffff;
   border-radius: 3px;
-  padding: 3rem 2rem;
+  box-shadow: 0px 7px 10px rgba(56, 28, 138, 0.06);
+  padding: 2rem;
+  padding-bottom: 0;
   margin-bottom: 2rem;
-  color: #ffffff; }
+  color: #414168; }
   .about-box .about-title1 {
-    font-size: 2rem;
-    font-family: "IBM Plex Mono", monospace; }
+    font-size: 1rem;
+    font-family: "IBM Plex Mono", monospace;
+    border-radius: 3px;
+    background-color: #32c9e5;
+    display: inline-block;
+    padding: 0.25rem 1rem; }
   .about-box .about-title2 {
-    font-size: 3rem;
-    color: #a787ff;
-    margin-bottom: 1rem; }
+    color: #121242;
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500; }
+
+.roadmap-wrapper {
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
 
 .roadmap-box .roadmap-title {
   display: flex;
@@ -7276,10 +7295,13 @@ section {
 .main-image {
   position: absolute;
   right: 0;
-  top: 20vh; }
+  top: 20vh;
+  overflow: hidden; }
   .main-image img {
-    max-width: 40vw;
-    max-height: 80vh; }
+    max-width: 50vw;
+    max-height: 80vh;
+    position: relative;
+    right: -10vw; }
 
 section.auto-height {
   min-height: 0; }
@@ -7287,13 +7309,11 @@ section.auto-height {
 .bg-black100 {
   background-color: #121242; }
 
+.text-secondary-purple {
+  color: #a787ff; }
+
 nav {
   border: 1px solid #e7e7ec; }
-
-.home-background {
-  background-image: url("../assets/images/Hero_background.png");
-  background-size: cover;
-  background-position: bottom right; }
 
 .feature img {
   width: 100%; }
