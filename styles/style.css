@@ -7226,6 +7226,7 @@ section {
 .feature-card {
   background-color: #ffffff;
   border-radius: 3px;
+  border: 1px solid #e7e7ec;
   padding: 1rem;
   margin: 0.5rem;
   margin-bottom: 2rem;
