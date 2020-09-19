@@ -13,10 +13,10 @@ body {
 
 section {
   min-height: 100vh;
-  overflow-x: hidden;
   padding-top: 10vh;
   padding-bottom: 10vh;
   background-color: $black5;
+  overflow: hidden;
 
   h2 {
     font-size: 3rem;

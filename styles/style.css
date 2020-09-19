@@ -7190,10 +7190,10 @@ body {
 
 section {
   min-height: 100vh;
-  overflow-x: hidden;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-color: #f4f4f7; }
+  background-color: #f4f4f7;
+  overflow: hidden; }
   section h2 {
     font-size: 3rem; }
   section.page-welcome {
