@@ -7242,7 +7242,8 @@ section {
   padding: 2rem;
   padding-bottom: 0;
   margin-bottom: 2rem;
-  color: #414168; }
+  color: #414168;
+  border: 1px solid #e7e7ec; }
   .about-box .about-title1 {
     font-size: 1rem;
     font-family: "IBM Plex Mono", monospace;

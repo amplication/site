@@ -82,6 +82,7 @@ section {
   padding-bottom: 0;
   margin-bottom: 2rem;
   color: $black80;
+  border: 1px solid $black10;
   .about-title1 {
     font-size: 1rem;
     @include font-mono;
