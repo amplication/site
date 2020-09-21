@@ -14,6 +14,13 @@ body {
     "Helvetica Neue", sans-serif;
 }
 
+@media (min-width: 1500px) {
+  .container {
+    width: 80%;
+    max-width: 1700px;
+  }
+}
+
 section {
   min-height: 100vh;
   padding-top: 10vh;
@@ -26,17 +33,133 @@ section {
   }
 
   &.page-welcome {
-    background-image: url(../assets/images/bg/Hero_background.png);
+    background-image: url(../assets/images/bg/homg-bg-mobile.svg);
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: calc(100vh - 50px);
+    background-size: 100% auto;
+    min-height: calc(150vh - 50px);
 
+    .buttons-wrapper {
+      flex-direction: column;
+    }
+    .container {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .sub-title {
+      font-size: 1rem;
+    }
+
+    .main-title {
+      font-size: 2.2rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .spacer {
+      min-width: 1rem;
+    }
     .btn {
-      height: 3rem;
+      height: 2.5rem;
       vertical-align: middle;
-      width: 200px;
       white-space: nowrap;
+      font-size: 0.9rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      flex: 1;
+      width: 100%;
+
+      img {
+        max-height: 1.4rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .main-image {
+      img {
+        width: 120vw;
+        max-width: 120vw;
+        position: relative;
+        right: 0;
+        top: 10vh;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    &.page-welcome {
+      .main-title {
+        font-size: 2.5rem;
+      }
+      .buttons-wrapper {
+        flex-direction: row;
+
+        .btn {
+          max-width: 180px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &.page-welcome {
+      background-image: url(../assets/images/bg/Hero_background.png);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: calc(100vh - 50px);
+
+      .main-title {
+        font-size: 3rem;
+        white-space: nowrap;
+      }
+
+      .main-image {
+        position: absolute;
+        right: 0;
+        top: 7rem;
+        overflow: hidden;
+        img {
+          width: auto;
+          max-width: 65vw;
+          position: relative;
+          right: -15vw;
+        }
+      }
+
+      .main-title {
+        font-size: 2.5rem;
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &.page-welcome {
+      .main-image {
+        top: 5rem;
+      }
+
+      .main-title {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @media (min-width: 1650px) {
+    &.page-welcome {
+      .main-image {
+        img {
+          max-width: none;
+        }
+      }
+
+      .main-title {
+        font-size: 3.5rem;
+      }
     }
   }
 
@@ -140,19 +263,6 @@ section {
   }
 }
 
-.main-image {
-  position: absolute;
-  right: 0;
-  top: 20vh;
-  overflow: hidden;
-  img {
-    max-width: 50vw;
-    max-height: 80vh;
-    position: relative;
-    right: -10vw;
-  }
-}
-
 section.auto-height {
   min-height: 0;
 }
@@ -166,6 +276,9 @@ section.auto-height {
 .text-black40 {
   color: $black40;
 }
+.text-black80 {
+  color: $black80;
+}
 
 nav {
   border: 1px solid #e7e7ec;
@@ -173,6 +286,43 @@ nav {
 
 .feature img {
   width: 100%;
+}
+
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+
+  &.btn-dark {
+    &:focus {
+      background: $white;
+      color: $black100;
+      border: none;
+    }
+  }
+}
+
+.btn-outline-secondary {
+  border-color: $black20;
+  background-color: $white;
+  .social-link {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.5rem;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border-color: $black100;
+  }
+
+  &:hover {
+    background-color: $black100;
+    color: $white;
+    .social-link {
+      background-color: $white;
+    }
+  }
 }
 
 .social-link {
