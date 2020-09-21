@@ -7228,7 +7228,7 @@ section {
       justify-content: center;
       align-items: center;
       margin: 0;
-      flex: 1;
+      flex: auto;
       width: 100%;
       height: 3rem; }
       section.page-welcome .btn img {
@@ -7247,7 +7247,8 @@ section {
       flex-direction: row; }
       section.page-welcome .buttons-wrapper .btn {
         max-width: 180px;
-        height: 2.5rem; } }
+        height: 2.5rem;
+        flex: 1; } }
   @media (min-width: 992px) {
     section.page-welcome {
       background-image: url(../assets/images/bg/Hero_background.png);
