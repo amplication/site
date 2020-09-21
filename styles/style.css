@@ -7266,7 +7266,8 @@ section {
           width: auto;
           max-width: 65vw;
           position: relative;
-          right: -15vw; }
+          right: -15vw;
+          top: 0; }
       section.page-welcome .main-title {
         font-size: 2.5rem;
         margin-top: 4rem; } }
