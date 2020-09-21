@@ -7215,22 +7215,22 @@ section {
     section.page-welcome .sub-title {
       font-size: 1rem; }
     section.page-welcome .main-title {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 600;
       line-height: 1.3; }
     section.page-welcome .spacer {
       min-width: 1rem; }
     section.page-welcome .btn {
-      height: 2.5rem;
       vertical-align: middle;
       white-space: nowrap;
       font-size: 0.9rem;
-      display: inline-flex;
+      display: flex;
       justify-content: center;
       align-items: center;
       margin: 0;
       flex: 1;
-      width: 100%; }
+      width: 100%;
+      height: 3rem; }
       section.page-welcome .btn img {
         max-height: 1.4rem;
         margin-right: 0.5rem; }
@@ -7246,7 +7246,8 @@ section {
     section.page-welcome .buttons-wrapper {
       flex-direction: row; }
       section.page-welcome .buttons-wrapper .btn {
-        max-width: 180px; } }
+        max-width: 180px;
+        height: 2.5rem; } }
   @media (min-width: 992px) {
     section.page-welcome {
       background-image: url(../assets/images/bg/Hero_background.png);
