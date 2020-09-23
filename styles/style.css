@@ -7442,3 +7442,15 @@ nav {
   .footer-line a {
     color: #a0a0b3;
     text-decoration: underline; }
+
+.bg-image-policy-header {
+  background-image: url(../assets/images/bg/hero_background_policy.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px; }
+
+.policy-content-align {
+  max-width: 800px;
+  text-align: justify;
+  margin: auto; }
