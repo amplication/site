@@ -28,8 +28,8 @@ section {
   background-color: $black5;
   overflow: hidden;
 
-  h2 {
-    font-size: 3rem;
+  h2.h2 {
+    font-weight: 600;
   }
 
   &.page-welcome {
@@ -48,7 +48,7 @@ section {
     }
 
     .sub-title {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     .main-title {
@@ -85,6 +85,7 @@ section {
         position: relative;
         right: 0;
         top: 10vh;
+        max-height: 90vh;
       }
     }
   }
@@ -173,7 +174,7 @@ section {
       }
 
       .main-title {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
       }
     }
   }
@@ -196,6 +197,7 @@ section {
   @include font-mono;
   color: $primary;
   font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .feature-card {
@@ -299,8 +301,38 @@ nav {
   border: 1px solid #e7e7ec;
 }
 
-.feature img {
-  width: 100%;
+.feature {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 90%;
+    margin-top: 4rem;
+  }
+  .feature-description {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+    img {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .feature-description {
+      max-width: 460px;
+      font-size: 1.1rem;
+    }
+  }
 }
 
 .btn {
