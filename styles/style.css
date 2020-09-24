@@ -7310,13 +7310,30 @@ section {
   background-color: #ffffff;
   border-radius: 3px;
   border: 1px solid #e7e7ec;
-  padding: 1rem;
-  margin: 0.5rem;
-  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
   text-align: center;
-  font-family: "IBM Plex Mono", monospace; }
+  font-family: "IBM Plex Mono", monospace;
+  height: 80%; }
   .feature-card .feature-card-text {
-    height: 3rem; }
+    padding-bottom: 1rem; }
+  .feature-card img {
+    width: 60px; }
+  @media (min-width: 768px) {
+    .feature-card {
+      padding: 1rem;
+      margin: 1rem;
+      margin-bottom: 2rem;
+      font-size: 1rem; }
+      .feature-card img {
+        width: 110px; }
+      .feature-card .feature-card-text {
+        padding-bottom: 0rem; } }
+  @media (min-width: 992px) {
+    .feature-card {
+      margin-bottom: 4rem; } }
 
 .about-box {
   height: 100%;
