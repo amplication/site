@@ -5,7 +5,7 @@
   font-family: "IBM Plex Mono", monospace;
 }
 @mixin semi-bold {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 body {
@@ -29,7 +29,7 @@ section {
   overflow: hidden;
 
   h2.h2 {
-    font-weight: 600;
+    @include semi-bold;
   }
 
   &.page-welcome {
@@ -225,6 +225,7 @@ section {
   margin-bottom: 2rem;
   color: $black80;
   border: 1px solid $black10;
+  letter-spacing: 0.5px;
   .about-title1 {
     font-size: 1rem;
     @include font-mono;
@@ -232,12 +233,14 @@ section {
     background-color: $secondary-turquoise;
     display: inline-block;
     padding: 0.25rem 1rem;
+    color: $white;
   }
   .about-title2 {
     color: $black100;
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
     @include semi-bold;
   }
 }
