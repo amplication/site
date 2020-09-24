@@ -7199,8 +7199,8 @@ section {
   padding-bottom: 10vh;
   background-color: #f4f4f7;
   overflow: hidden; }
-  section h2 {
-    font-size: 3rem; }
+  section h2.h2 {
+    font-weight: 600; }
   section.page-welcome {
     background-image: url(../assets/images/bg/homg-bg-mobile.svg);
     background-position: bottom left;
@@ -7213,7 +7213,7 @@ section {
       padding-left: 24px;
       padding-right: 24px; }
     section.page-welcome .sub-title {
-      font-size: 1rem; }
+      font-size: 1.1rem; }
     section.page-welcome .main-title {
       font-size: 2rem;
       font-weight: 600;
@@ -7239,7 +7239,8 @@ section {
       max-width: 120vw;
       position: relative;
       right: 0;
-      top: 10vh; }
+      top: 10vh;
+      max-height: 90vh; }
   @media (min-width: 576px) {
     section.page-welcome .main-title {
       font-size: 2.5rem; }
@@ -7249,6 +7250,11 @@ section {
         max-width: 180px;
         height: 2.5rem;
         flex: 1; } }
+  @media (max-width: 991.98px) {
+    section.page-welcome .main-image img {
+      transition: none;
+      opacity: 1 !important;
+      transform: none; } }
   @media (min-width: 992px) {
     section.page-welcome {
       background-image: url(../assets/images/bg/Hero_background.png);
@@ -7282,7 +7288,7 @@ section {
     section.page-welcome .main-image img {
       max-width: none; }
     section.page-welcome .main-title {
-      font-size: 3.5rem; } }
+      font-size: 3.2rem; } }
   section.page-get-started {
     background-image: url(../assets/images/bg/Get_started_banner_background.png);
     background-position: bottom left;
@@ -7297,7 +7303,8 @@ section {
 .section-hint {
   font-family: "IBM Plex Mono", monospace;
   color: #7950ed;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 0.9rem; }
 
 .feature-card {
   background-color: #ffffff;
@@ -7320,20 +7327,23 @@ section {
   padding-bottom: 0;
   margin-bottom: 2rem;
   color: #414168;
-  border: 1px solid #e7e7ec; }
+  border: 1px solid #e7e7ec;
+  letter-spacing: 0.5px; }
   .about-box .about-title1 {
     font-size: 1rem;
     font-family: "IBM Plex Mono", monospace;
     border-radius: 3px;
     background-color: #32c9e5;
     display: inline-block;
-    padding: 0.25rem 1rem; }
+    padding: 0.25rem 1rem;
+    color: #ffffff; }
   .about-box .about-title2 {
     color: #121242;
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: 500; }
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-weight: 600; }
 
 .roadmap-wrapper {
   margin-top: 8rem;
@@ -7387,8 +7397,28 @@ section.auto-height {
 nav {
   border: 1px solid #e7e7ec; }
 
-.feature img {
-  width: 100%; }
+.feature {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center; }
+  .feature:last-child {
+    margin-bottom: 0; }
+  .feature img {
+    width: 90%;
+    margin-top: 4rem; }
+  .feature .feature-description {
+    font-size: 1rem;
+    padding-top: 1rem; }
+  @media (min-width: 768px) {
+    .feature {
+      text-align: left; }
+      .feature img {
+        width: 100%;
+        margin-top: 0; } }
+  @media (min-width: 992px) {
+    .feature .feature-description {
+      max-width: 460px;
+      font-size: 1.1rem; } }
 
 .btn:focus {
   box-shadow: none; }
