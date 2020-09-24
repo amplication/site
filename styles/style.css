@@ -7249,6 +7249,11 @@ section {
         max-width: 180px;
         height: 2.5rem;
         flex: 1; } }
+  @media (max-width: 991.98px) {
+    section.page-welcome .main-image img {
+      transition: none;
+      opacity: 1 !important;
+      transform: none; } }
   @media (min-width: 992px) {
     section.page-welcome {
       background-image: url(../assets/images/bg/Hero_background.png);

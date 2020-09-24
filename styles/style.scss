@@ -106,6 +106,18 @@ section {
     }
   }
 
+  @include media-breakpoint-down(md) {
+    &.page-welcome {
+      .main-image {
+        img {
+          transition: none;
+          opacity: 1 !important;
+          transform: none;
+        }
+      }
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     &.page-welcome {
       background-image: url(../assets/images/bg/Hero_background.png);
@@ -367,7 +379,7 @@ nav {
   }
 }
 
-.bg-image-policy-header{
+.bg-image-policy-header {
   background-image: url(../assets/images/bg/hero_background_policy.png);
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -375,7 +387,7 @@ nav {
   height: 200px;
 }
 
-.policy-content-align{
+.policy-content-align {
   max-width: 800px;
   text-align: justify;
   margin: auto;
