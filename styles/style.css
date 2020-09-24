@@ -7318,7 +7318,8 @@ section {
   font-family: "IBM Plex Mono", monospace;
   height: 80%; }
   .feature-card .feature-card-text {
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    height: 3rem; }
   .feature-card img {
     width: 60px; }
   @media (min-width: 768px) {
@@ -7326,7 +7327,7 @@ section {
       padding: 1rem;
       margin: 1rem;
       margin-bottom: 2rem;
-      font-size: 1rem; }
+      font-size: 0.9rem; }
       .feature-card img {
         width: 110px; }
       .feature-card .feature-card-text {
