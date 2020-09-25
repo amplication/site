@@ -210,7 +210,7 @@ section {
   margin-bottom: 1rem;
   text-align: center;
   @include font-mono;
-  height: 80%;
+  // height: 80%;
 
   .feature-card-text {
     padding-bottom: 1rem;
@@ -235,7 +235,7 @@ section {
   }
 
   @include media-breakpoint-up(lg) {
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
   }
 }
 
