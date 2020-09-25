@@ -72,6 +72,10 @@ section {
       width: 100%;
       height: 3.5rem;
 
+      .social-link {
+        margin-right: 1rem;
+      }
+
       img {
         max-height: 1.4rem;
         margin-right: 0.5rem;
@@ -436,6 +440,7 @@ footer {
   padding-top: 10vh;
   h2.h2 {
     @include semi-bold;
+    font-size: 2.5rem;
   }
 }
 .footer-line {

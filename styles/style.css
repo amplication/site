@@ -7231,6 +7231,8 @@ section {
       flex: auto;
       width: 100%;
       height: 3.5rem; }
+      section.page-welcome .btn .social-link {
+        margin-right: 1rem; }
       section.page-welcome .btn img {
         max-height: 1.4rem;
         margin-right: 0.5rem; }
@@ -7485,7 +7487,8 @@ nav {
 footer {
   padding-top: 10vh; }
   footer h2.h2 {
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 2.5rem; }
 
 .footer-line {
   border-top: 1px solid #e7e7ec;
