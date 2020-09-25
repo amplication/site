@@ -7467,7 +7467,9 @@ nav {
   height: 2rem;
   -webkit-mask-size: contain;
   mask-size: contain;
-  margin-right: 1rem; }
+  margin-right: 2rem; }
+  .social-link:last-child {
+    margin-right: 0; }
   .social-link.linkedin {
     -webkit-mask-image: url(../assets/icons/linkedin.svg);
     mask-image: url(../assets/icons/linkedin.svg); }
@@ -7479,6 +7481,9 @@ nav {
     mask-image: url(../assets/icons/github.svg); }
   .social-link:hover {
     background-color: #414168; }
+
+footer {
+  padding-top: 10vh; }
 
 .footer-line {
   border-top: 1px solid #e7e7ec;

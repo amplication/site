@@ -409,7 +409,11 @@ nav {
   height: 2rem;
   -webkit-mask-size: contain;
   mask-size: contain;
-  margin-right: 1rem;
+  margin-right: 2rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &.linkedin {
     -webkit-mask-image: url(../assets/icons/linkedin.svg);
@@ -428,7 +432,9 @@ nav {
     background-color: $black80;
   }
 }
-
+footer {
+  padding-top: 10vh;
+}
 .footer-line {
   border-top: 1px solid $black10;
   height: 80px;
