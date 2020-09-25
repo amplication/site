@@ -434,6 +434,9 @@ nav {
 }
 footer {
   padding-top: 10vh;
+  h2.h2 {
+    @include semi-bold;
+  }
 }
 .footer-line {
   border-top: 1px solid $black10;
