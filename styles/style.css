@@ -7333,7 +7333,6 @@ section {
         padding-bottom: 0rem; } }
 
 .about-box {
-  height: 100%;
   background-color: #ffffff;
   border-radius: 3px;
   box-shadow: 0px 7px 10px rgba(56, 28, 138, 0.06);
@@ -7358,6 +7357,9 @@ section {
     margin-bottom: 0.5rem;
     font-weight: 600;
     font-weight: 600; }
+  @media (min-width: 992px) {
+    .about-box {
+      height: 100%; } }
 
 .roadmap-wrapper {
   margin-top: 8rem;
@@ -7465,7 +7467,9 @@ nav {
   height: 2rem;
   -webkit-mask-size: contain;
   mask-size: contain;
-  margin-right: 1rem; }
+  margin-right: 2rem; }
+  .social-link:last-child {
+    margin-right: 0; }
   .social-link.linkedin {
     -webkit-mask-image: url(../assets/icons/linkedin.svg);
     mask-image: url(../assets/icons/linkedin.svg); }
@@ -7477,6 +7481,9 @@ nav {
     mask-image: url(../assets/icons/github.svg); }
   .social-link:hover {
     background-color: #414168; }
+
+footer {
+  padding-top: 10vh; }
 
 .footer-line {
   border-top: 1px solid #e7e7ec;
