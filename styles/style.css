@@ -7484,6 +7484,8 @@ nav {
 
 footer {
   padding-top: 10vh; }
+  footer h2.h2 {
+    font-weight: 600; }
 
 .footer-line {
   border-top: 1px solid #e7e7ec;
