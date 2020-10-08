@@ -4,7 +4,7 @@ var sass = require("gulp-sass");
 
 gulp.task("sass", function (cb) {
   gulp
-    .src("styles/style.scss")
+    .src(["styles/style.scss", "styles/style-community.scss"])
     .pipe(sass())
     .pipe(
       gulp.dest(function (f) {

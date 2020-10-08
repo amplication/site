@@ -1,0 +1,14 @@
+@import "./style.scss";
+
+section {
+  &.page-welcome {
+    .main-title {
+      margin-top: 1rem;
+      font-size: 2.5rem;
+    }
+
+    .sub-title {
+      font-size: 1rem;
+    }
+  }
+}
