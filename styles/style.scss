@@ -258,6 +258,7 @@ section {
   margin-bottom: 2rem;
   @include media-breakpoint-down(lg) {
     height: auto;
+    flex: auto;
   }
 }
 
