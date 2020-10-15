@@ -256,6 +256,10 @@ section {
   padding: 3rem;
   margin: 0 1rem;
   margin-bottom: 2rem;
+  @include media-breakpoint-down(lg) {
+    height: auto;
+    flex: auto;
+  }
 }
 
 .feature-card {
@@ -343,7 +347,6 @@ section {
 
   @include media-breakpoint-down(lg) {
     flex-direction: column;
-    align-items: stretch;
   }
 
   > * {
@@ -670,8 +673,7 @@ nav {
   justify-content: center;
 
   @include media-breakpoint-down(lg) {
-    flex-direction: column;
-    align-items: stretch;
+    display: block;
   }
 
   .type-card {
