@@ -7285,6 +7285,9 @@ section {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (max-width: 1199.98px) {
+      section.page-developers {
+        background-image: none; } }
   section.page-steps {
     padding-top: 15vh; }
   section.page-roadmap {
@@ -7304,6 +7307,10 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 1199.98px) {
+    .solution {
+      flex-direction: column;
+      align-items: stretch; } }
 
 .solution-card {
   flex: 1;
@@ -7316,7 +7323,8 @@ section {
   align-items: center;
   justify-content: center;
   padding: 3rem;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  margin-bottom: 2rem; }
 
 .feature-card {
   font-size: 0.8rem;
@@ -7387,6 +7395,10 @@ section {
   justify-content: center;
   padding: 2rem;
   display: flex; }
+  @media (max-width: 1199.98px) {
+    .about-wrapper-2 {
+      flex-direction: column;
+      align-items: stretch; } }
   .about-wrapper-2 > * {
     flex: 1; }
   .about-wrapper-2 h2.h2 {
@@ -7662,6 +7674,10 @@ nav {
   display: flex;
   align-items: stretch;
   justify-content: center; }
+  @media (max-width: 1199.98px) {
+    .type-cards {
+      flex-direction: column;
+      align-items: stretch; } }
   .type-cards .type-card {
     max-width: 475px;
     margin: 0 1rem;
@@ -7673,7 +7689,8 @@ nav {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 3rem;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 2rem; }
     .type-cards .type-card ul {
       padding: 0;
       margin: 0;

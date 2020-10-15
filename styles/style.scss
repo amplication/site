@@ -206,6 +206,10 @@ section {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include media-breakpoint-down(lg) {
+      background-image: none;
+    }
   }
 
   &.page-steps {
@@ -232,6 +236,11 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .solution-card {
@@ -246,6 +255,7 @@ section {
   justify-content: center;
   padding: 3rem;
   margin: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 .feature-card {
@@ -330,6 +340,11 @@ section {
   justify-content: center;
   padding: 2rem;
   display: flex;
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
   > * {
     flex: 1;
@@ -654,6 +669,11 @@ nav {
   align-items: stretch;
   justify-content: center;
 
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .type-card {
     max-width: 475px;
     margin: 0 1rem;
@@ -666,6 +686,7 @@ nav {
     justify-content: flex-start;
     padding: 3rem;
     flex-direction: column;
+    margin-bottom: 2rem;
 
     ul {
       padding: 0;
