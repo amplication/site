@@ -7679,7 +7679,8 @@ nav {
   justify-content: center; }
   @media (max-width: 1199.98px) {
     .type-cards {
-      flex-direction: column; } }
+      flex-direction: column;
+      flex: auto; } }
   .type-cards .type-card {
     max-width: 475px;
     margin: 0 1rem;

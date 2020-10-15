@@ -674,6 +674,7 @@ nav {
 
   @include media-breakpoint-down(lg) {
     flex-direction: column;
+    flex: auto;
   }
 
   .type-card {
