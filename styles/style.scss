@@ -8,7 +8,7 @@ $page-welcome-height: 100vh;
 @mixin font-mono {
   font-family: "DM Mono", monospace;
   font-size: 0.9rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 @mixin semi-bold {
   font-weight: 500;
@@ -72,9 +72,16 @@ section {
   overflow: hidden;
 
   h2.h2 {
-    @include semi-bold;
+    font-weight: 600;
     margin-bottom: 2rem;
     font-size: 3.5rem;
+  }
+
+  h3.h3 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: $black80;
+    font-weight: normal;
   }
 
   &.page-welcome {
@@ -97,8 +104,7 @@ section {
 
     .sub-title {
       margin-top: 32px;
-      font-size: 1.5rem;
-      color: $black60;
+
       margin-bottom: 64px;
     }
 
@@ -573,7 +579,11 @@ footer {
 }
 
 .mono-box {
+  @include semi-bold();
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
+
   span {
     @include mono-box;
     background-color: $primary;
@@ -613,7 +623,8 @@ footer {
         list-style: none;
         position: relative;
         padding-left: 38px;
-        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        color: $black80;
         &:before {
           content: "";
           width: 24px;

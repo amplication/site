@@ -7200,9 +7200,14 @@ section {
   background-color: #f4f4f7;
   overflow: hidden; }
   section h2.h2 {
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 2rem;
     font-size: 3.5rem; }
+  section h3.h3 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: #414168;
+    font-weight: normal; }
   section.page-welcome {
     height: 100vh;
     min-height: 100vh;
@@ -7218,8 +7223,6 @@ section {
       padding-right: 24px; }
     section.page-welcome .sub-title {
       margin-top: 32px;
-      font-size: 1.5rem;
-      color: #71718e;
       margin-bottom: 64px; }
     section.page-welcome .main-title {
       margin-top: 100px;
@@ -7290,7 +7293,7 @@ section {
 .section-hint {
   font-family: "DM Mono", monospace;
   font-size: 0.9rem;
-  font-weight: normal;
+  font-weight: 500;
   color: #7950ed; }
 
 .solution {
@@ -7352,7 +7355,7 @@ section {
   .about-box .about-title1 {
     font-family: "DM Mono", monospace;
     font-size: 0.9rem;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 1rem;
     border-radius: 3px;
     background-color: #121242;
@@ -7401,7 +7404,7 @@ section {
   justify-content: stretch;
   font-family: "DM Mono", monospace;
   font-size: 0.9rem;
-  font-weight: normal;
+  font-weight: 500;
   color: #414168;
   margin-bottom: 1rem;
   padding: 0.25rem 0.5rem;
@@ -7448,7 +7451,7 @@ nav {
   nav .latest-version {
     font-family: "DM Mono", monospace;
     font-size: 0.9rem;
-    font-weight: normal;
+    font-weight: 500;
     position: absolute;
     bottom: -36px;
     height: 36px;
@@ -7606,11 +7609,14 @@ footer {
   margin: auto; }
 
 .mono-box {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
   font-size: 1.5rem; }
   .mono-box span {
     font-family: "DM Mono", monospace;
     font-size: 0.9rem;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 1rem;
     border-radius: 3px;
     background-color: #121242;
@@ -7648,7 +7654,8 @@ footer {
         list-style: none;
         position: relative;
         padding-left: 38px;
-        margin-top: 1rem; }
+        margin-bottom: 1.5rem;
+        color: #414168; }
         .type-cards .type-card ul li:before {
           content: "";
           width: 24px;
