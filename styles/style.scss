@@ -42,11 +42,12 @@ $page-welcome-height: 100vh;
   }
 
   &:hover {
-    background-color: $black100;
-    color: $white;
-    .social-link {
-      background-color: $white;
-    }
+    background-color: $white;
+    border-color: $primary;
+    color: $primary;
+    // .social-link {
+    //   background-color: $white;
+    // }
   }
 }
 
@@ -425,15 +426,27 @@ nav {
   .nav-item {
     display: flex;
     align-items: center;
+    font-size: 0.9rem;
 
     .nav-link {
       color: $black60;
       white-space: nowrap;
+      padding-right: 1rem !important;
+      padding-left: 1rem !important;
+
+      &.hover:hover {
+        color: $primary;
+      }
+
+      .social-link {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
 
       &.btn {
         @include button-outline-secondary;
         margin: 0 0.5rem;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 2rem !important;
       }
     }
   }

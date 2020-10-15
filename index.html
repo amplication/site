@@ -63,7 +63,7 @@
     <!-- NAVBAR
     ================================================== -->
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <a
           class="latest-version"
           href="https://github.com/amplication/amplication/releases"
@@ -98,7 +98,7 @@
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link hover"
                 href="https://docs.amplication.com/getting-started"
               >
                 Docs
@@ -106,21 +106,21 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link hover"
                 href="https://github.com/amplication/amplication/releases"
               >
                 Releases
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#roadmap"> Roadmap </a>
+              <a class="nav-link hover" href="#roadmap"> Roadmap </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/community"> Community </a>
+              <a class="nav-link hover" href="/community"> Community </a>
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link hover"
                 href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title="
               >
                 Add a feature request
@@ -136,17 +136,20 @@
               </a>
             </li>
             <li class="nav-item d-none d-lg-block">
-              <a
-                class="nav-link"
-                href="https://github.com/amplication/amplication"
-                target="_blank"
-              >
-                <img src="assets/icons/github.svg" alt="GitHub" />
-              </a>
+              <span class="nav-link">
+                <a
+                  class="social-link github"
+                  href="https://github.com/amplication/amplication"
+                  target="_blank"
+                  alt="amplication on github"
+                >
+                </a>
+              </span>
             </li>
-            <li class="nav-item d-none d-lg-block">
+
+            <li class="nav-item d-none d-lg-flex">
               <a
-                class="nav-link btn btn-outline-secondary btn-lg"
+                class="nav-link btn btn-outline-secondary"
                 href="https://app.amplication.com"
               >
                 Get started
