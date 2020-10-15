@@ -1,8 +1,16 @@
 @import "./bootstrap-override.scss";
 @import "./css-variables.css";
 
+$menu-height: 70px;
+$solution-card-height: 220px;
+$page-welcome-height: calc(
+  100vh - #{$solution-card-height/2} - #{$menu-height}
+);
+
 @mixin font-mono {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 @mixin semi-bold {
   font-weight: 600;
@@ -58,11 +66,8 @@ section {
   }
 
   &.page-welcome {
-    background-image: url(../assets/images/bg/homg-bg-mobile.svg);
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    min-height: calc(150vh - 50px);
+    height: $page-welcome-height;
+    min-height: $page-welcome-height;
 
     .buttons-wrapper {
       flex-direction: column;
@@ -73,7 +78,8 @@ section {
     }
 
     .sub-title {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
+      color: $black60;
     }
 
     .main-title {
@@ -105,17 +111,6 @@ section {
         margin-right: 0.5rem;
       }
     }
-
-    .main-image {
-      img {
-        width: 120vw;
-        max-width: 120vw;
-        position: relative;
-        right: 0;
-        top: 10vh;
-        max-height: 90vh;
-      }
-    }
   }
 
   @include media-breakpoint-up(sm) {
@@ -135,58 +130,20 @@ section {
     }
   }
 
-  @include media-breakpoint-down(md) {
-    &.page-welcome {
-      .main-image {
-        img {
-          transition: none;
-          opacity: 1 !important;
-          transform: none;
-        }
-      }
-    }
-  }
-
   @include media-breakpoint-up(lg) {
     &.page-welcome {
-      background-image: url(../assets/images/bg/Hero_background.png);
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: calc(100vh - 50px);
-
       .main-title {
         font-size: 3rem;
-        white-space: nowrap;
-      }
-
-      .main-image {
-        position: absolute;
-        right: 0;
-        top: 7rem;
-        overflow: hidden;
-        img {
-          width: auto;
-          max-width: 65vw;
-          position: relative;
-          right: -15vw;
-          top: 0;
-        }
       }
 
       .main-title {
         font-size: 2.5rem;
-        margin-top: 4rem;
       }
     }
   }
 
   @include media-breakpoint-up(xl) {
     &.page-welcome {
-      .main-image {
-        top: 5rem;
-      }
-
       .main-title {
         font-size: 3rem;
       }
@@ -195,16 +152,25 @@ section {
 
   @media (min-width: 1650px) {
     &.page-welcome {
-      .main-image {
-        img {
-          max-width: none;
-        }
-      }
-
       .main-title {
-        font-size: 3.2rem;
+        font-size: 4rem;
       }
     }
+  }
+
+  &.page-welcome-solution {
+    padding-top: 0;
+    position: relative;
+    background-color: $white;
+    &:before {
+      content: "";
+      position: absolute;
+      top: $solution-card-height/2;
+      bottom: 0;
+      width: 100%;
+      background-color: $black5;
+    }
+    min-height: 0;
   }
 
   &.page-get-started {
@@ -224,8 +190,28 @@ section {
 .section-hint {
   @include font-mono;
   color: $primary;
-  font-weight: 600;
-  font-size: 0.9rem;
+}
+
+.solution {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.solution-card {
+  flex: 1;
+  text-align: center;
+  background-color: $black100;
+  color: $white;
+  border-radius: $border-radius;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  margin: 0 1rem;
 }
 
 .feature-card {
@@ -358,6 +344,22 @@ section.auto-height {
 nav {
   border: 1px solid #e7e7ec;
   box-shadow: 0px 2px 10px rgba(109, 95, 149, 0.06);
+
+  .latest-version {
+    @include font-mono;
+    position: absolute;
+    bottom: -36px;
+    height: 36px;
+    background-color: $primary;
+    color: $white;
+    width: fit-content;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .navbar-toggler-icon {
     height: 17px;

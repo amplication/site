@@ -7202,18 +7202,16 @@ section {
   section h2.h2 {
     font-weight: 600; }
   section.page-welcome {
-    background-image: url(../assets/images/bg/homg-bg-mobile.svg);
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    min-height: calc(150vh - 50px); }
+    height: calc( 100vh - 110px - 70px);
+    min-height: calc( 100vh - 110px - 70px); }
     section.page-welcome .buttons-wrapper {
       flex-direction: column; }
     section.page-welcome .container {
       padding-left: 24px;
       padding-right: 24px; }
     section.page-welcome .sub-title {
-      font-size: 1.1rem; }
+      font-size: 1.5rem;
+      color: #71718e; }
     section.page-welcome .main-title {
       font-size: 2rem;
       font-weight: 600;
@@ -7235,13 +7233,6 @@ section {
       section.page-welcome .btn img {
         max-height: 1.4rem;
         margin-right: 0.5rem; }
-    section.page-welcome .main-image img {
-      width: 120vw;
-      max-width: 120vw;
-      position: relative;
-      right: 0;
-      top: 10vh;
-      max-height: 90vh; }
   @media (min-width: 576px) {
     section.page-welcome .main-title {
       font-size: 2.5rem; }
@@ -7251,45 +7242,29 @@ section {
         max-width: 180px;
         height: 2.5rem;
         flex: 1; } }
-  @media (max-width: 991.98px) {
-    section.page-welcome .main-image img {
-      transition: none;
-      opacity: 1 !important;
-      transform: none; } }
   @media (min-width: 992px) {
-    section.page-welcome {
-      background-image: url(../assets/images/bg/Hero_background.png);
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: calc(100vh - 50px); }
-      section.page-welcome .main-title {
-        font-size: 3rem;
-        white-space: nowrap; }
-      section.page-welcome .main-image {
-        position: absolute;
-        right: 0;
-        top: 7rem;
-        overflow: hidden; }
-        section.page-welcome .main-image img {
-          width: auto;
-          max-width: 65vw;
-          position: relative;
-          right: -15vw;
-          top: 0; }
-      section.page-welcome .main-title {
-        font-size: 2.5rem;
-        margin-top: 4rem; } }
+    section.page-welcome .main-title {
+      font-size: 3rem; }
+    section.page-welcome .main-title {
+      font-size: 2.5rem; } }
   @media (min-width: 1200px) {
-    section.page-welcome .main-image {
-      top: 5rem; }
     section.page-welcome .main-title {
       font-size: 3rem; } }
   @media (min-width: 1650px) {
-    section.page-welcome .main-image img {
-      max-width: none; }
     section.page-welcome .main-title {
-      font-size: 3.2rem; } }
+      font-size: 4rem; } }
+  section.page-welcome-solution {
+    padding-top: 0;
+    position: relative;
+    background-color: #ffffff;
+    min-height: 0; }
+    section.page-welcome-solution:before {
+      content: "";
+      position: absolute;
+      top: 110px;
+      bottom: 0;
+      width: 100%;
+      background-color: #f4f4f7; }
   section.page-get-started {
     background-image: url(../assets/images/bg/Get_started_banner_background.png);
     background-position: bottom left;
@@ -7302,10 +7277,30 @@ section {
     background-size: cover; }
 
 .section-hint {
-  font-family: "IBM Plex Mono", monospace;
-  color: #7950ed;
-  font-weight: 600;
-  font-size: 0.9rem; }
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #7950ed; }
+
+.solution {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.solution-card {
+  flex: 1;
+  text-align: center;
+  background-color: #121242;
+  color: #ffffff;
+  border-radius: 3px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  margin: 0 1rem; }
 
 .feature-card {
   background-color: #ffffff;
@@ -7316,7 +7311,9 @@ section {
   margin: 0;
   margin-bottom: 1rem;
   text-align: center;
-  font-family: "IBM Plex Mono", monospace; }
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: normal; }
   .feature-card .feature-card-text {
     padding-bottom: 1rem;
     height: 3rem; }
@@ -7345,7 +7342,9 @@ section {
   letter-spacing: 0.5px; }
   .about-box .about-title1 {
     font-size: 1rem;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "DM Mono", monospace;
+    font-size: 0.9rem;
+    font-weight: normal;
     border-radius: 3px;
     background-color: #32c9e5;
     display: inline-block;
@@ -7370,7 +7369,9 @@ section {
   display: flex;
   align-items: flex-start;
   justify-content: stretch;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: normal;
   color: #414168;
   margin-bottom: 1rem;
   padding: 0.25rem 0.5rem;
@@ -7414,6 +7415,22 @@ section.auto-height {
 nav {
   border: 1px solid #e7e7ec;
   box-shadow: 0px 2px 10px rgba(109, 95, 149, 0.06); }
+  nav .latest-version {
+    font-family: "DM Mono", monospace;
+    font-size: 0.9rem;
+    font-weight: normal;
+    position: absolute;
+    bottom: -36px;
+    height: 36px;
+    background-color: #7950ed;
+    color: #ffffff;
+    width: fit-content;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   nav .navbar-toggler-icon {
     height: 17px;
     width: 22px;
