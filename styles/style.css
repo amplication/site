@@ -7209,7 +7209,6 @@ section {
     color: #414168;
     font-weight: normal; }
   section.page-welcome {
-    height: 100vh;
     min-height: 100vh;
     background-image: url(../assets/images/bg/home-bg.svg);
     background-position: top left;
@@ -7308,7 +7307,7 @@ section {
   text-align: center;
   background-color: #121242;
   color: #ffffff;
-  border-radius: 3px;
+  border-radius: 4px;
   height: 220px;
   display: flex;
   align-items: center;
@@ -7323,10 +7322,12 @@ section {
   margin-bottom: 1rem;
   text-align: center; }
   .feature-card .feature-card-text {
+    margin-top: 1rem;
+    font-weight: 500;
     padding-bottom: 1rem;
     height: 3rem; }
   .feature-card img {
-    width: 60px; }
+    width: 100px; }
   @media (min-width: 768px) {
     .feature-card {
       padding: 1rem;
@@ -7334,15 +7335,15 @@ section {
       margin-bottom: 2rem;
       font-size: 0.9rem; }
       .feature-card img {
-        width: 110px; }
+        width: 120px; }
       .feature-card .feature-card-text {
         padding-bottom: 0rem; } }
 
 .about-box {
   background-color: #7950ed;
-  border-radius: 3px;
+  border-radius: 4px;
   box-shadow: 0px 7px 10px rgba(56, 28, 138, 0.06);
-  padding: 5rem;
+  padding: 4rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   color: #ffffff;
@@ -7357,14 +7358,13 @@ section {
     font-size: 0.9rem;
     font-weight: 500;
     font-size: 1rem;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #121242;
     display: inline-block;
     padding: 0.25rem 1rem;
     color: #ffffff;
-    margin-right: 0.5rem; }
+    margin-right: 1rem; }
   .about-box .about-title2 {
-    margin-left: 1rem;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 600;
@@ -7378,14 +7378,16 @@ section {
   text-align: center;
   background-color: #121242;
   color: #ffffff;
-  border-radius: 3px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  padding: 2rem;
   display: flex; }
   .about-wrapper-2 > * {
     flex: 1; }
+  .about-wrapper-2 h2.h2 {
+    margin-bottom: 0; }
   .about-wrapper-2 .about-box {
     background-color: transparent;
     box-shadow: none;
@@ -7458,8 +7460,8 @@ nav {
     background-color: #7950ed;
     color: #ffffff;
     width: fit-content;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -7618,12 +7620,12 @@ footer {
     font-size: 0.9rem;
     font-weight: 500;
     font-size: 1rem;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #121242;
     display: inline-block;
     padding: 0.25rem 1rem;
     color: #ffffff;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     background-color: #7950ed; }
   .mono-box.black span {
     background-color: #121242; }
@@ -7637,7 +7639,7 @@ footer {
     margin: 0 1rem;
     flex: 1;
     background-color: #ffffff;
-    border-radius: 3px;
+    border-radius: 4px;
     border: 1px solid #e7e7ec;
     display: flex;
     align-items: flex-start;

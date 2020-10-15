@@ -22,7 +22,7 @@ $page-welcome-height: 100vh;
   display: inline-block;
   padding: 0.25rem 1rem;
   color: $white;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 @mixin button-outline-secondary {
@@ -85,7 +85,7 @@ section {
   }
 
   &.page-welcome {
-    height: $page-welcome-height;
+    // height: $page-welcome-height;
     min-height: $page-welcome-height;
 
     background-image: url(../assets/images/bg/home-bg.svg);
@@ -255,11 +255,13 @@ section {
   // height: 80%;
 
   .feature-card-text {
+    margin-top: 1rem;
+    @include semi-bold();
     padding-bottom: 1rem;
     height: 3rem;
   }
   img {
-    width: 60px;
+    width: 100px;
   }
 
   @include media-breakpoint-up(md) {
@@ -269,7 +271,7 @@ section {
     font-size: 0.9rem;
 
     img {
-      width: 110px;
+      width: 120px;
     }
     .feature-card-text {
       padding-bottom: 0rem;
@@ -285,7 +287,7 @@ section {
   background-color: $primary;
   border-radius: $border-radius;
   box-shadow: $default-box-shadow;
-  padding: 5rem;
+  padding: 4rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   color: $white;
@@ -301,7 +303,6 @@ section {
     @include mono-box;
   }
   .about-title2 {
-    margin-left: 1rem;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 600;
@@ -322,11 +323,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
 
   > * {
     flex: 1;
+  }
+  h2.h2 {
+    margin-bottom: 0;
   }
 
   .about-box {
