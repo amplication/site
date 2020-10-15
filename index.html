@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
 
@@ -62,8 +62,16 @@
   <body>
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container-fluid">
+        <a
+          class="latest-version"
+          href="https://github.com/amplication/amplication/releases"
+          target="versions"
+        >
+          <span id="version-number"></span>
+        </a>
+
         <!-- Brand -->
         <a class="navbar-brand" href="./">
           <img
@@ -73,48 +81,104 @@
           />
         </a>
 
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <!-- Button -->
-          <a
-            class="ml-auto pr-4"
-            href="https://docs.amplication.com/getting-started"
-          >
-            Docs
-          </a>
-          <a class="pr-4" href="https://app.amplication.com"> Sign In </a>
-          <a href="https://github.com/amplication/amplication" target="_blank">
-            <img src="assets/icons/github.svg" alt="GitHub" />
-          </a>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link hover"
+                href="https://docs.amplication.com/getting-started"
+              >
+                Docs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover"
+                href="https://github.com/amplication/amplication/releases"
+              >
+                Releases
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover" href="#roadmap"> Roadmap </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover" href="/community"> Community </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover"
+                href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title="
+              >
+                Add a feature request
+              </a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a
+                class="nav-link"
+                href="https://github.com/amplication/amplication"
+                target="_blank"
+              >
+                GitHub repo
+              </a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <span class="nav-link">
+                <a
+                  class="social-link github"
+                  href="https://github.com/amplication/amplication"
+                  target="_blank"
+                  alt="amplication on github"
+                >
+                </a>
+              </span>
+            </li>
+
+            <li class="nav-item d-none d-lg-flex">
+              <a
+                class="nav-link btn btn-outline-secondary"
+                href="https://app.amplication.com"
+              >
+                Get started
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
     <!-- WELCOME
     ================================================== -->
-    <section class="page-welcome pt-4 pt-md-11 home-background bg-white">
+    <section class="page-welcome bg-white">
       <div class="container">
-        <a
-          href="https://github.com/amplication/amplication/releases"
-          target="versions"
-        >
-          <span id="version-number"></span>
-        </a>
-        <div class="row align-items-center pt-5">
-          <div class="col-12 col-md-10 col-lg-6 col-xl-5">
-            <h1 class="main-title text-left">
+        <div class="row align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="main-title">
               Developer Oriented
               <div class="text-primary">Open Source</div>
-              Low-Code Platform
+              Low&#8209;Code Platform
             </h1>
 
-            <p class="sub-title text-left text-muted mb-5 mt-3">
-              Design and deploy your own data services application. Easily
-              create APIs and connect from any server, mobile, or web
-              client&nbsp;instantly.
-            </p>
+            <h3 class="h3 sub-title">
+              Save valuable time and easily develop quality Node.js applications
+            </h3>
 
-            <div class="buttons-wrapper text-center d-flex text-md-left mb-4">
+            <div
+              class="buttons-wrapper d-flex mb-4 align-items-center justify-content-center"
+            >
               <a
                 href="https://app.amplication.com"
                 class="btn btn-primary btn-lg col-sm-12 col-md-6 mb-4"
@@ -139,77 +203,159 @@
               </a>
             </div>
           </div>
-          <div class="main-image pt-md-4 pt-lg-0">
-            <!-- Image -->
-            <img
-              data-aos="slide-left"
-              data-aos-delay="100"
-              src="assets/images/home-page.svg"
-              class="mw-md-150 mw-lg-130 mb-6 mb-md-0"
-              alt="..."
-            />
+        </div>
+      </div>
+    </section>
+    <section class="page-welcome-solution">
+      <div class="container">
+        <div class="solution">
+          <div class="solution-card">
+            Easily create data models, and easily configure role-based
+            access&nbsp;control
+          </div>
+          <div class="solution-card">
+            Instantly get a Docker container with your database and a Node.JS
+            application, or download the source&nbsp;code
+          </div>
+          <div class="solution-card">
+            Continuously deploy your application to the cloud or your
+            local&nbsp;environment
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STEPS
+    <!-- DEVELOPERS
     ================================================== -->
-    <section>
+    <section class="page-developers">
       <div class="container">
-        <div class="row align-items-center justify-content-center mb-4">
-          <span class="section-hint">Design -> Deploy -> Connect</span>
+        <div class="row align-items-center justify-content-center mb-5">
+          <h2 class="h2 text-center">What type of developer are you?</h2>
         </div>
-        <div class="row align-items-center justify-content-center mb-4">
-          <h2 class="h2 text-center">
-            Quickly create business applications,<br />
-            engineering free.
-          </h2>
+
+        <div class="type-cards">
+          <div class="type-card">
+            <div class="mono-box black mb-2">
+              <span>Front-end</span>
+              developer
+            </div>
+
+            <ul class="type-list">
+              <li>Design data models and create APIs without any&nbsp;code.</li>
+              <li>Server-side development skills are not&nbsp;required.</li>
+              <li>We handle the backend development for&nbsp;you.</li>
+              <li>You just focus on developing your next great&nbsp;app.</li>
+            </ul>
+            <div class="spacer"></div>
+            <a
+              href="https://app.amplication.com"
+              class="btn btn-primary btn-lg"
+            >
+              Get Started
+            </a>
+          </div>
+
+          <div class="type-card">
+            <div class="mono-box black mb-2">
+              <span>Back-end</span>
+              developer
+            </div>
+            <ul class="type-list">
+              <li>
+                Instantly develop your next TypeScript node.js&nbsp;application
+              </li>
+              <li>
+                Get a application built with Nest.js, Prisma, REST API,
+                authentication, authorization, logging, and much&nbsp;more.
+              </li>
+              <li>
+                Freedom to download the source code and keep
+                development&nbsp;going
+              </li>
+              <li>
+                Choose to download a Docker container ready for deployment or
+                deploy to Amplication&nbsp;cloud
+              </li>
+            </ul>
+            <div class="spacer"></div>
+            <a
+              href="https://app.amplication.com"
+              class="btn btn-primary btn-lg"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="bg-white page-about bg-white">
+      <div class="container">
+        <div class="mb-4 text-center">
+          <h2 class="h2 text-center">Who we are?</h2>
+          <div class="row">
+            <h3 class="h3 col-12 col-lg-8 offset-lg-2 pr-4 pl-4">
+              We are a group of creators who love open source and
+              low&#8209;code. We believe that low&#8209;code application
+              development will evolve into a modern&#8209;day
+              programming&nbsp;language.
+            </h3>
+          </div>
         </div>
 
         <div
-          class="row feature d-flex justify-content-between align-items-center"
+          class="row d-flex justify-content-between align-items-md-stretch align-items-start roadmap-wrapper"
         >
-          <div class="col-sm-12 col-md-6 pr-3">
-            <div class="section-hint mb-2">Design models & roles</div>
-            <div class="feature-description">
-              Visually define your data entities, and access control.
-              Amplication magically creates your database, API & Admin UI.
+          <div class="col-md-12 col-lg-6 mb-4">
+            <div class="about-box">
+              <div class="about-title">
+                <span class="about-title1">What</span>
+                <span class="about-title2">we do</span>
+              </div>
+              <div>
+                Our vision is to create one platform which will empower
+                professional developers in creating business applications and
+                extend platform capabilities, with the open&#8209;source
+                community's power of collaboration & transparency.
+              </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
-            <img src="assets/images/steps/Design_your_database_image.svg" />
-          </div>
-        </div>
-        <div
-          class="row feature d-flex justify-content-between align-items-center"
-        >
-          <div class="col-sm-12 col-md-6 pr-3 order-md-2 pr-md-3 pl-5">
-            <div class="section-hint mb-2">Deploy your app in one click</div>
-            <div class="feature-description">
-              Continuously deploy your app to the Amplication cloud, or get a
-              Docker container to deploy anywhere.
+          <div class="col-md-12 col-lg-6 mb-4">
+            <div class="about-box">
+              <div class="about-title">
+                <div class="about-title1">Why</div>
+                <div class="about-title2">we do it</div>
+              </div>
+
+              <div>
+                As our platform is open source, we are looking to create an
+                ecosystem around the project, where you - the professional
+                developers, will always have the freedom to fork and maintain
+                the platform yourselves, with no vendor lock&#8209;in.
+              </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6" data-aos="fade-up-right">
-            <img src="assets/images/steps/Deploy_your_app_image.png" />
-          </div>
-        </div>
-        <div
-          class="row feature d-flex justify-content-between align-items-center"
-        >
-          <div class="col-sm-12 col-md-6 pr-3">
-            <div class="section-hint mb-2">
-              Connect from your code using REST
+          <div class="col-md-12 mb-4">
+            <div class="about-wrapper-2">
+              <h2 class="h2">Low&#8209;Code 💜 Open&#8209;Source</h2>
+              <div class="">
+                <div class="about-box">
+                  <div class="about-title">
+                    <div class="about-title1">Why</div>
+                    <div class="about-title2">open&#8209;source</div>
+                  </div>
+
+                  <div>
+                    We believe low&#8209;code and open&#8209;source should go
+                    hand&#8209;in&#8209;hand. Amplication builds the next
+                    generation of development tools with the help of the
+                    community, for the community.
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="feature-description">
-              Start working with your API from any client using REST HTTP
-              communication. Works great with React, Angular, Vue, Flutter, iOS,
-              Android, Go, Node.js, Python... you name it.
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
-            <img src="assets/images/steps/Connect_code_REST_image.png" />
           </div>
         </div>
       </div>
@@ -217,38 +363,16 @@
 
     <!-- FEATURES
     ================================================== -->
-    <section>
+    <section class="bg-white">
       <div class="container">
         <div class="row align-items-center justify-content-center mb-4">
-          <h2 class="h2 text-center">Features</h2>
+          <h2 class="h2 text-center">What do you get?</h2>
         </div>
 
         <div
-          class="p-4 row d-flex justify-content-between align-items-start"
+          class="col-12 col-xl-10 offset-xl-1 p-4 row d-flex justify-content-between align-items-start"
           id="features"
         >
-          <div
-            class="col-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-anchor="#features"
-          >
-            <div class="feature-card">
-              <img src="assets/images/features/Roles_icon.svg" />
-              <div class="feature-card-text">Role Based Access Control</div>
-            </div>
-          </div>
-          <div
-            class="col-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-anchor="#features"
-          >
-            <div class="feature-card">
-              <img src="assets/images/features/Version_control_icon.svg" />
-              <div class="feature-card-text">Version Control</div>
-            </div>
-          </div>
           <div
             class="col-6 col-lg-3"
             data-aos="fade-up"
@@ -257,9 +381,90 @@
           >
             <div class="feature-card">
               <img src="assets/images/features/open_source_icon.svg" />
-              <div class="feature-card-text">Open Source</div>
+              <div class="feature-card-text">Open&#8209;source</div>
             </div>
           </div>
+
+          <div
+            class="col-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            data-aos-anchor="#features"
+          >
+            <div class="feature-card">
+              <img src="assets/images/features/Code_Generator_icon.svg" />
+              <div class="feature-card-text">
+                TypeScript & Node.js source&nbsp;code
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-anchor="#features"
+          >
+            <div class="feature-card">
+              <img src="assets/images/features/Version_control_icon.svg" />
+              <div class="feature-card-text">Version control</div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-anchor="#features"
+          >
+            <div class="feature-card">
+              <img src="assets/images/features/vendor_lock_icon.svg" />
+              <div class="feature-card-text">
+                Freedom to continue on your&nbsp;own
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-anchor="#features"
+          >
+            <div class="feature-card">
+              <img src="assets/images/features/Roles_icon.svg" />
+              <div class="feature-card-text">
+                Role&#8209;based access&nbsp;control
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-anchor="#features"
+          >
+            <div class="feature-card">
+              <img src="assets/images/features/Cloud_agnostic_icon.svg" />
+              <div class="feature-card-text">Cloud agnostic</div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-anchor="#features"
+          >
+            <div class="feature-card">
+              <img src="assets/images/features/Docker_containers_icon.svg" />
+              <div class="feature-card-text">
+                Docker ready to be&nbsp;deployed
+              </div>
+            </div>
+          </div>
+
           <div
             class="col-6 col-lg-3"
             data-aos="fade-up"
@@ -270,103 +475,70 @@
               <img
                 src="assets/images/features/Security_and_performance_icon.svg"
               />
-              <div class="feature-card-text">Security & Performance</div>
-            </div>
-          </div>
-          <div
-            class="col-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-anchor="#features"
-          >
-            <div class="feature-card">
-              <img src="assets/images/features/Docker_containers_icon.svg" />
-              <div class="feature-card-text">Build Docker Container</div>
-            </div>
-          </div>
-          <div
-            class="col-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="250"
-            data-aos-anchor="#features"
-          >
-            <div class="feature-card">
-              <img src="assets/images/features/Code_Generator_icon.svg" />
-              <div class="feature-card-text">Code Generator</div>
-            </div>
-          </div>
-          <div
-            class="col-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-anchor="#features"
-          >
-            <div class="feature-card">
-              <img src="assets/images/features/Cloud_agnostic_icon.svg" />
-              <div class="feature-card-text">Cloud Agnostic</div>
-            </div>
-          </div>
-          <div
-            class="col-6 col-lg-3"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-anchor="#features"
-          >
-            <div class="feature-card">
-              <img src="assets/images/features/vendor_lock_icon.svg" />
-              <div class="feature-card-text">No Vendor Lock-In</div>
+              <div class="feature-card-text">Security & performance</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT
+    <!-- STEPS
     ================================================== -->
-    <section class="bg-white page-about">
+    <section class="page-steps">
       <div class="container">
         <div class="row align-items-center justify-content-center mb-4">
-          <h2 class="h2 text-center">About us</h2>
+          <h2 class="h2 text-center">How does it work?</h2>
         </div>
 
         <div
-          class="row d-flex justify-content-between align-items-md-stretch align-items-start roadmap-wrapper"
+          class="row feature d-flex justify-content-between align-items-center"
         >
-          <div class="col-md-12 col-lg-4 mb-4">
-            <div class="about-box">
-              <div class="about-title1">Who</div>
-              <div class="about-title2">We are</div>
-              <div>
-                We are a group of creators who love open source and low-code. We
-                believe that low-code application development will evolve into a
-                modern-day programming language.
-              </div>
+          <div class="col-sm-12 col-md-6 pr-3">
+            <div class="mono-box mb-2">
+              <span>Design</span>
+              models & roles
+            </div>
+            <div class="feature-description">
+              Define data entities and role&#8209;based access through
+              Amplication's UI, and Amplication will auto&#8209;generate your
+              database, an Admin UI, and API.
             </div>
           </div>
-          <div class="col-md-12 col-lg-4 mb-4">
-            <div class="about-box">
-              <div class="about-title1">What</div>
-              <div class="about-title2">We do</div>
-              <div>
-                Our vision is to create one platform which will empower
-                professional developers in creating business applications and
-                extend platform capabilities, with the open-source community's
-                power of collaboration & transparency.
-              </div>
+          <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
+            <img src="assets/images/steps/Design_your_database_image.svg" />
+          </div>
+        </div>
+        <div
+          class="row feature d-flex justify-content-between align-items-center"
+        >
+          <div class="col-sm-12 col-md-6 pr-3 order-md-2 pr-md-3 pl-5">
+            <div class="mono-box mb-2">
+              <span>Deploy</span> your app in one click
+            </div>
+            <div class="feature-description">
+              Deploy your app to the Amplication cloud, or get a Docker
+              container to deploy elsewhere.
             </div>
           </div>
-          <div class="col-md-12 col-lg-4 mb-4">
-            <div class="about-box">
-              <div class="about-title1">Why</div>
-              <div class="about-title2">We do it</div>
-
-              <div>
-                As our platform is open source, we are looking to create an
-                ecosystem around the project, where you - the professional
-                developers, will always have the freedom to fork and maintain
-                the platform yourselves, with no vendor lock-in.
-              </div>
+          <div class="col-sm-12 col-md-6" data-aos="fade-up-right">
+            <img src="assets/images/steps/Deploy_your_app_image.png" />
+          </div>
+        </div>
+        <div
+          class="row feature d-flex justify-content-between align-items-center"
+        >
+          <div class="col-sm-12 col-md-6 pr-3">
+            <div class="mono-box mb-2">
+              <span>Connect</span> from your code using REST
             </div>
+            <div class="feature-description">
+              Start working with your API from any client supporting REST HTTP
+              communication (React, Angular, Vue, Flutter, iOS, Android, Go,
+              Node.js, Python and more).
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
+            <img src="assets/images/steps/Connect_code_REST_image.png" />
           </div>
         </div>
       </div>
@@ -374,17 +546,14 @@
 
     <!-- ROADMAP
     ================================================== -->
-    <section class="bg-dark page-roadmap">
+    <section class="bg-dark page-roadmap" id="roadmap">
       <div class="container">
-        <div
-          class="row align-items-center justify-content-center justify-content-md-start mb-4"
-        >
-          <span class="section-hint text-secondary-purple">Stick with us</span>
-        </div>
         <div
           class="row align-items-center justify-content-center justify-content-md-start mb-4 text-white"
         >
-          <h2 class="h2 text-center">Great things are coming.</h2>
+          <h2 class="h2 text-left">
+            What's next? <br />Great things are coming.
+          </h2>
         </div>
         <div
           class="row d-flex justify-content-between align-items-stretch p-4 p-md-0"
@@ -418,7 +587,7 @@
                 <li>Connectors library</li>
                 <li>Custom connectors</li>
                 <li>SMS</li>
-                <li>E-mail</li>
+                <li>E&#8209;mail</li>
                 <li>Push notifications</li>
                 <li>GraphQL API</li>
               </ul>
@@ -463,28 +632,23 @@
 
     <!-- GET STARTED
     ================================================== -->
-    <section class="auto-height bg-primary page-get-started">
+    <section class="auto-height page-get-started bg-white">
       <div class="container">
-        <div class="p-4 row d-flex justify-content-center align-items-center">
-          <div
-            class="col-sm-12 col-md-6 d-flex justify-content-center text-white"
-          >
-            <h2 class="h2 text-center mb-sm-4 mb-md-0 p-4">
-              <span>Free to Use.</span> <span> Open&nbsp;source.</span>
-            </h2>
-          </div>
-          <div class="col-sm-12 col-md-6 d-flex justify-content-center p-4">
-            <a href="https://app.amplication.com" class="btn btn-dark mr-1">
-              Get Started
-            </a>
-          </div>
+        <div class="footer-banner">
+          <h2 class="h2 text-white text-center">
+            <span>Free to Use.</span> <span> Open&#8209;source.</span>
+          </h2>
+
+          <a href="https://app.amplication.com" class="btn btn-dark mr-1">
+            Try amplication in 5 minutes
+          </a>
         </div>
       </div>
     </section>
 
     <footer class="py-8 py-md-11 bg-gray-200">
       <div class="container">
-        <div class="row d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-start">
           <div
             class="col-sm-12 col-md-6 d-flex justify-content-center flex-column"
           >
@@ -559,12 +723,22 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       $.get(
         "https://api.github.com/repos/amplication/amplication/releases/latest",
         function (data, status) {
-          $("#version-number").text(data.name);
+          $("#version-number").text(data.name.replace("v", "Version "));
         }
       );
     </script>
