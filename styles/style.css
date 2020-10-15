@@ -7202,8 +7202,13 @@ section {
   section h2.h2 {
     font-weight: 600; }
   section.page-welcome {
-    height: calc( 100vh - 110px - 70px);
-    min-height: calc( 100vh - 110px - 70px); }
+    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
+    background-image: url(../assets/images/bg/home-bg.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 110px; }
     section.page-welcome .buttons-wrapper {
       flex-direction: column; }
     section.page-welcome .container {
@@ -7256,7 +7261,8 @@ section {
   section.page-welcome-solution {
     padding-top: 0;
     position: relative;
-    background-color: #ffffff;
+    background-color: transparent;
+    margin-top: -110px;
     min-height: 0; }
     section.page-welcome-solution:before {
       content: "";
@@ -7265,14 +7271,14 @@ section {
       bottom: 0;
       width: 100%;
       background-color: #f4f4f7; }
+  section.page-developers {
+    background-image: url(../assets/images/bg/bg-2.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover; }
   section.page-get-started {
     background-image: url(../assets/images/bg/Get_started_banner_background.png);
     background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  section.page-about {
-    background-image: url(../assets/images/bg/about-bg.svg);
-    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover; }
 
