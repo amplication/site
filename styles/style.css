@@ -7679,8 +7679,7 @@ nav {
   justify-content: center; }
   @media (max-width: 1199.98px) {
     .type-cards {
-      flex-direction: column;
-      align-items: flex-start; } }
+      display: block; } }
   .type-cards .type-card {
     max-width: 475px;
     margin: 0 1rem;
