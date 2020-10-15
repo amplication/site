@@ -67,7 +67,7 @@ body {
 section {
   min-height: 100vh;
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 15vh;
   background-color: $black5;
   overflow: hidden;
 
@@ -208,6 +208,15 @@ section {
     background-size: cover;
   }
 
+  &.page-steps {
+    padding-top: 15vh;
+  }
+  &.page-roadmap {
+    padding-top: 15vh;
+  }
+  &.page-about {
+    padding-bottom: 5vh;
+  }
   &.page-get-started {
     background-image: url(../assets/images/bg/Get_started_banner_background.png);
     background-position: bottom left;
@@ -363,6 +372,7 @@ section {
     display: inline-block;
     transform: rotate(-90deg) translate(calc(-100% + -45px), 0px);
     transform-origin: top left;
+    border-radius: $border-radius;
   }
   .roadmap-list {
     display: flex;
