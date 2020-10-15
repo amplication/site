@@ -562,4 +562,60 @@ footer {
     @include mono-box;
     background-color: $primary;
   }
+  &.black {
+    span {
+      background-color: $black100;
+    }
+  }
+}
+
+.type-cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  .type-card {
+    max-width: 475px;
+    margin: 0 1rem;
+    flex: 1;
+    background-color: $white;
+    border-radius: $border-radius;
+    border: 1px solid $black10;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3rem;
+    flex-direction: column;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      margin-top: 2rem;
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        padding-left: 38px;
+        margin-top: 1rem;
+        &:before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-image: url("../assets/images/list-item-check-circle.svg");
+          background-repeat: no-repeat;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    .spacer {
+      flex: 1;
+    }
+    .btn {
+      align-self: flex-end;
+      margin-top: 4rem;
+      width: 100%;
+    }
+  }
 }

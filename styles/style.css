@@ -7610,3 +7610,47 @@ footer {
     color: #ffffff;
     margin-right: 0.5rem;
     background-color: #7950ed; }
+  .mono-box.black span {
+    background-color: #121242; }
+
+.type-cards {
+  display: flex;
+  align-items: stretch;
+  justify-content: center; }
+  .type-cards .type-card {
+    max-width: 475px;
+    margin: 0 1rem;
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #e7e7ec;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3rem;
+    flex-direction: column; }
+    .type-cards .type-card ul {
+      padding: 0;
+      margin: 0;
+      margin-top: 2rem; }
+      .type-cards .type-card ul li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        padding-left: 38px;
+        margin-top: 1rem; }
+        .type-cards .type-card ul li:before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-image: url("../assets/images/list-item-check-circle.svg");
+          background-repeat: no-repeat;
+          position: absolute;
+          left: 0; }
+    .type-cards .type-card .spacer {
+      flex: 1; }
+    .type-cards .type-card .btn {
+      align-self: flex-end;
+      margin-top: 4rem;
+      width: 100%; }
