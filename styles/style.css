@@ -7193,21 +7193,23 @@ body {
     width: 80%;
     max-width: 1700px; } }
 
+h2.h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 3.5rem; }
+
+h3.h3 {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: #414168;
+  font-weight: normal; }
+
 section {
   min-height: 100vh;
   padding-top: 10vh;
   padding-bottom: 15vh;
   background-color: #f4f4f7;
   overflow: hidden; }
-  section h2.h2 {
-    font-weight: 600;
-    margin-bottom: 2rem;
-    font-size: 3.5rem; }
-  section h3.h3 {
-    font-size: 1.5rem;
-    line-height: 2.3rem;
-    color: #414168;
-    font-weight: normal; }
   section.page-welcome {
     min-height: 100vh;
     background-image: url(../assets/images/bg/home-bg.svg);
@@ -7452,6 +7454,45 @@ section.auto-height {
 nav {
   border-bottom: 1px solid #e7e7ec;
   box-shadow: 0px 2px 10px rgba(109, 95, 149, 0.06); }
+  nav .navbar-collapse.collapse.show, nav .navbar-collapse.collapsing {
+    transition: none;
+    background-color: #7950ed;
+    color: #ffffff;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    animation: menu 0.3s ease-in;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100vw; }
+    nav .navbar-collapse.collapse.show .navbar-toggler, nav .navbar-collapse.collapsing .navbar-toggler {
+      position: absolute;
+      right: 20px;
+      top: 20px; }
+    nav .navbar-collapse.collapse.show .navbar-brand, nav .navbar-collapse.collapsing .navbar-brand {
+      margin-bottom: 2rem; }
+      nav .navbar-collapse.collapse.show .navbar-brand img, nav .navbar-collapse.collapsing .navbar-brand img {
+        height: 35px;
+        padding-left: 1rem; }
+    nav .navbar-collapse.collapse.show .contact-title, nav .navbar-collapse.collapsing .contact-title {
+      border-top: 1px solid #ffffff;
+      margin: 1rem;
+      padding-top: 2rem;
+      margin-top: 2rem; }
+    nav .navbar-collapse.collapse.show .contact-details, nav .navbar-collapse.collapsing .contact-details {
+      margin-bottom: 3rem; }
+    nav .navbar-collapse.collapse.show .social-link, nav .navbar-collapse.collapsing .social-link {
+      background-color: #ffffff; }
+    nav .navbar-collapse.collapse.show .nav-item .nav-link, nav .navbar-collapse.collapsing .nav-item .nav-link {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-top: 0.5rem; }
+
+@keyframes menu {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0%); } }
   nav .latest-version {
     font-family: "DM Mono", monospace;
     font-size: 0.9rem;
@@ -7585,21 +7626,6 @@ nav {
   .social-link:hover {
     background-color: #414168; }
 
-footer {
-  padding-top: 10vh; }
-  footer h2.h2 {
-    font-weight: 500;
-    font-size: 2.5rem; }
-
-.footer-line {
-  border-top: 1px solid #e7e7ec;
-  height: 80px;
-  color: #a0a0b3;
-  font-size: 0.75rem; }
-  .footer-line a {
-    color: #a0a0b3;
-    text-decoration: underline; }
-
 .bg-image-policy-header {
   background-image: url(../assets/images/bg/hero_background_policy.png);
   background-position: bottom left;
@@ -7686,3 +7712,27 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column; }
+
+footer {
+  padding-top: 10vh; }
+  footer .contact-title {
+    font-weight: 500;
+    color: #121242;
+    margin-bottom: 1rem; }
+  footer .contact-details {
+    color: #71718e;
+    margin-bottom: 4rem; }
+  footer .social-link {
+    background-color: #71718e;
+    width: 1.5rem;
+    height: 1.5rem; }
+
+.footer-line {
+  border-top: 1px solid #e7e7ec;
+  height: 80px;
+  color: #a0a0b3;
+  font-size: 0.75rem;
+  margin-top: 4rem; }
+  .footer-line a {
+    color: #a0a0b3;
+    text-decoration: underline; }
