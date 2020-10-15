@@ -218,10 +218,6 @@ section {
     padding-bottom: 5vh;
   }
   &.page-get-started {
-    background-image: url(../assets/images/bg/Get_started_banner_background.png);
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
@@ -659,4 +655,17 @@ footer {
       width: 100%;
     }
   }
+}
+
+.footer-banner {
+  background-image: url(../assets/images/bg/footer-bg.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: $border-radius;
+  background-color: #a787ff;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
