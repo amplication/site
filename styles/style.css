@@ -7217,9 +7217,12 @@ section {
       padding-left: 24px;
       padding-right: 24px; }
     section.page-welcome .sub-title {
+      margin-top: 32px;
       font-size: 1.5rem;
-      color: #71718e; }
+      color: #71718e;
+      margin-bottom: 64px; }
     section.page-welcome .main-title {
+      margin-top: 100px;
       font-size: 2rem;
       font-weight: 600;
       line-height: 1.3; }
