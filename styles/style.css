@@ -7325,6 +7325,9 @@ section {
   padding: 3rem;
   margin: 0 1rem;
   margin-bottom: 2rem; }
+  @media (max-width: 1199.98px) {
+    .solution-card {
+      height: auto; } }
 
 .feature-card {
   font-size: 0.8rem;

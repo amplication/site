@@ -256,6 +256,9 @@ section {
   padding: 3rem;
   margin: 0 1rem;
   margin-bottom: 2rem;
+  @include media-breakpoint-down(lg) {
+    height: auto;
+  }
 }
 
 .feature-card {
