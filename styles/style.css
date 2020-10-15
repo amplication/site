@@ -7397,8 +7397,7 @@ section {
   display: flex; }
   @media (max-width: 1199.98px) {
     .about-wrapper-2 {
-      flex-direction: column;
-      align-items: stretch; } }
+      flex-direction: column; } }
   .about-wrapper-2 > * {
     flex: 1; }
   .about-wrapper-2 h2.h2 {
@@ -7676,8 +7675,7 @@ nav {
   justify-content: center; }
   @media (max-width: 1199.98px) {
     .type-cards {
-      flex-direction: column;
-      align-items: stretch; } }
+      flex-direction: column; } }
   .type-cards .type-card {
     max-width: 475px;
     margin: 0 1rem;

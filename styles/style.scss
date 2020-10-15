@@ -343,7 +343,6 @@ section {
 
   @include media-breakpoint-down(lg) {
     flex-direction: column;
-    align-items: stretch;
   }
 
   > * {
@@ -671,7 +670,6 @@ nav {
 
   @include media-breakpoint-down(lg) {
     flex-direction: column;
-    align-items: stretch;
   }
 
   .type-card {
