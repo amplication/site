@@ -93,6 +93,11 @@ section {
   background-color: $black5;
   overflow: hidden;
 
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   &.page-welcome {
     // height: $page-welcome-height;
     min-height: $page-welcome-height;
@@ -105,10 +110,6 @@ section {
 
     .buttons-wrapper {
       flex-direction: column;
-    }
-    .container {
-      padding-left: 24px;
-      padding-right: 24px;
     }
 
     .sub-title {
@@ -782,6 +783,8 @@ nav {
 
   @include media-breakpoint-down(lg) {
     background-image: url(../assets/images/bg/footer-bg-mobile.svg);
+    padding-left:1rem;
+;    padding-right:1rem
   }
 }
 
