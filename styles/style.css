@@ -7419,7 +7419,9 @@ section {
   @media (max-width: 1199.98px) {
     .about-wrapper-2 {
       padding: 2rem 1rem;
-      flex-direction: column; } }
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start; } }
   .about-wrapper-2 > * {
     flex: 1; }
   .about-wrapper-2 h2.h2 {
@@ -7726,8 +7728,8 @@ nav {
     @media (max-width: 1199.98px) {
       .type-cards .type-card {
         padding: 1rem;
-        margin-left: 0;
-        margin-right: 0; } }
+        margin-left: auto;
+        margin-right: auto; } }
     .type-cards .type-card ul {
       padding: 0;
       margin: 0;
