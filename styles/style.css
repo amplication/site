@@ -7727,7 +7727,7 @@ nav {
     margin-bottom: 2rem; }
     @media (max-width: 1199.98px) {
       .type-cards .type-card {
-        padding: 1rem;
+        padding: 2rem 1rem;
         margin-left: auto;
         margin-right: auto; } }
     .type-cards .type-card ul {

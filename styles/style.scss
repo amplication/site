@@ -729,7 +729,7 @@ nav {
     margin-bottom: 2rem;
 
     @include media-breakpoint-down(lg) {
-      padding: 1rem;
+      padding: 2rem 1rem;
       margin-left: auto;
       margin-right: auto;
     }
