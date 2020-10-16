@@ -3,6 +3,7 @@
 
 $menu-height: 70px;
 $solution-card-height: 220px;
+$solution-card-height-mobile: 150px;
 $page-welcome-height: 100vh;
 
 @mixin font-mono {
@@ -68,6 +69,10 @@ h2.h2 {
   font-weight: 600;
   margin-bottom: 2rem;
   font-size: 3.5rem;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 2rem;
+  }
 }
 
 h3.h3 {
@@ -75,6 +80,10 @@ h3.h3 {
   line-height: 2.3rem;
   color: $black80;
   font-weight: normal;
+  @include media-breakpoint-down(lg) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 section {
@@ -191,6 +200,10 @@ section {
     background-color: transparent;
     margin-top: -$solution-card-height/2;
 
+    @include media-breakpoint-down(lg) {
+      margin-top: -$solution-card-height-mobile/2;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -198,6 +211,10 @@ section {
       bottom: 0;
       width: 100%;
       background-color: $black5;
+
+      @include media-breakpoint-down(lg) {
+        top: $solution-card-height-mobile/2;
+      }
     }
     min-height: 0;
   }
@@ -221,8 +238,6 @@ section {
   &.page-about {
     padding-bottom: 5vh;
   }
-  &.page-get-started {
-  }
 }
 
 .section-hint {
@@ -238,8 +253,7 @@ section {
   align-items: center;
 
   @include media-breakpoint-down(lg) {
-    flex-direction: column;
-    align-items: stretch;
+    display: block;
   }
 }
 
@@ -256,9 +270,12 @@ section {
   padding: 3rem;
   margin: 0 1rem;
   margin-bottom: 2rem;
+
   @include media-breakpoint-down(lg) {
-    height: auto;
-    flex: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem 1rem;
+    height: $solution-card-height-mobile;
   }
 }
 
@@ -313,6 +330,10 @@ section {
   border: 1px solid $black10;
   letter-spacing: 0.5px;
 
+  @include media-breakpoint-down(lg) {
+    padding: 2rem 1rem;
+  }
+
   .about-title {
     display: flex;
     align-items: center;
@@ -346,6 +367,7 @@ section {
   display: flex;
 
   @include media-breakpoint-down(lg) {
+    padding: 2rem 1rem;
     flex-direction: column;
   }
 
@@ -354,6 +376,9 @@ section {
   }
   h2.h2 {
     margin-bottom: 0;
+    @include media-breakpoint-down(lg) {
+      text-align: left;
+    }
   }
 
   .about-box {
@@ -362,6 +387,10 @@ section {
     border: none;
     text-align: left;
 
+    @include media-breakpoint-down(lg) {
+      padding: 0;
+      padding-top: 3rem;
+    }
     .about-title1 {
       background-color: $primary;
     }
@@ -561,18 +590,21 @@ nav {
   }
 
   img {
-    width: 90%;
+    width: 100%;
     margin-top: 4rem;
   }
   .feature-description {
     font-size: 1rem;
     padding-top: 1rem;
+
+    @include media-breakpoint-down(lg) {
+      text-align: left;
+    }
   }
 
   @include media-breakpoint-up(md) {
     text-align: left;
     img {
-      width: 100%;
       margin-top: 0;
     }
   }
@@ -656,6 +688,10 @@ nav {
   align-items: center;
   font-size: 1.5rem;
 
+  @include media-breakpoint-down(lg) {
+    font-size: 1.1rem;
+  }
+
   span {
     @include mono-box;
     background-color: $primary;
@@ -689,6 +725,12 @@ nav {
     padding: 3rem;
     flex-direction: column;
     margin-bottom: 2rem;
+
+    @include media-breakpoint-down(lg) {
+      padding: 1rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
 
     ul {
       padding: 0;
@@ -735,6 +777,10 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @include media-breakpoint-down(lg) {
+    background-image: url(../assets/images/bg/footer-bg-mobile.svg);
+  }
 }
 
 footer {
