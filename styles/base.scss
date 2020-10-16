@@ -1,0 +1,60 @@
+$menu-height: 70px;
+$solution-card-height: 220px;
+$solution-card-height-mobile: 150px;
+$page-welcome-height: 100vh;
+
+@mixin font-mono {
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+@mixin semi-bold {
+  font-weight: 500;
+}
+
+@mixin mono-box {
+  @include font-mono;
+  font-size: 1rem;
+  border-radius: $border-radius;
+  background-color: $black100;
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  color: $white;
+  margin-right: 1rem;
+}
+
+@mixin button-outline-secondary {
+  border-color: $black20;
+  background-color: $white;
+  color: $primary;
+  white-space: nowrap;
+  .social-link {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.5rem;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border-color: $black100;
+  }
+
+  &:hover {
+    background-color: $white;
+    border-color: $primary;
+    color: $primary;
+  }
+}
+
+@mixin selected-tab {
+  &:before {
+    height: 4px;
+    content: "";
+    position: absolute;
+    background: $primary;
+    width: 100%;
+    bottom: -11px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+}
