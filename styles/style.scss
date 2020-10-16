@@ -369,6 +369,8 @@ section {
   @include media-breakpoint-down(lg) {
     padding: 2rem 1rem;
     flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
   }
 
   > * {
@@ -728,8 +730,8 @@ nav {
 
     @include media-breakpoint-down(lg) {
       padding: 1rem;
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     ul {
