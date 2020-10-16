@@ -236,7 +236,7 @@
           <h2 class="h2 text-center">Contribute to amplication</h2>
         </div>
 
-        <ul class="nav nav-fill tabs" id="myTab" role="tablist">
+        <!-- <ul class="nav nav-fill tabs" id="myTab" role="tablist">
           <li class="nav-item">
             <a
               class="nav-link active"
@@ -285,10 +285,10 @@
               >Send a pull request</a
             >
           </li>
-        </ul>
+        </ul> -->
         <div class="tab-content" id="myTabContent">
           <div
-            class="tab-pane fade show active"
+            class="contribute-pane"
             id="feature-request"
             role="tabpanel"
             aria-labelledby="feature-request-tab"
@@ -323,7 +323,7 @@
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            class="contribute-pane"
             id="bug-report"
             role="tabpanel"
             aria-labelledby="bug-report-tab"
@@ -355,7 +355,7 @@
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            class="contribute-pane"
             id="update-docs"
             role="tabpanel"
             aria-labelledby="update-docs-tab"
@@ -384,7 +384,7 @@
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            class="contribute-pane"
             id="pull-request"
             role="tabpanel"
             aria-labelledby="pull-request-tab"
@@ -428,15 +428,63 @@
     ================================================== -->
     <section>
       <div class="container">
-        <div
-          class="row text-center align-items-center justify-content-center mb-5"
-        >
+        <div class="text-center align-items-center justify-content-center mb-5">
           <h2 class="h2">Spread the word</h2>
           <div class="row">
             <h3 class="h3 col-12 col-lg-8 offset-lg-2 pr-4 pl-4">
               Help us build the community by sharing amplication with your
               colleagues, and fellow developers.
             </h3>
+          </div>
+          <div class="action-panel-list build-community">
+            <div class="panel">
+              <img src="assets/images/github-stars.svg" alt="github" />
+              <div class="mono-box">
+                <span>Add</span>
+                a stat on GitHub
+              </div>
+              <div class="description">
+                Checkout our repo on GitHub and don't forget to add a star.
+              </div>
+              <div class="actions">
+                <a
+                  href="https://github.com/amplication/amplication"
+                  class="btn btn-outline-secondary"
+                >
+                  Open the repo
+                </a>
+              </div>
+            </div>
+            <div class="panel">
+              <img
+                src="assets/images/features/Version_control_icon.svg"
+                alt="github"
+              />
+              <div class="mono-box">
+                <span>Follow</span>
+                us on social media
+              </div>
+              <div class="description">
+                Get the latest updates and news on Twitter and facebook.
+                Retweets, shares, and likes will help us spread the word.
+              </div>
+              <div class="actions">
+                <a
+                  class="social-link linkedin"
+                  href="https://www.linkedin.com/company/amplication"
+                  target="_blank"
+                  alt="amplication on LinkedIn"
+                >
+                </a>
+                <a
+                  class="social-link twitter"
+                  href="https://twitter.com/amplication"
+                  target="_blank"
+                  alt="amplication on twitter"
+                >
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -446,15 +494,81 @@
     ================================================== -->
     <section>
       <div class="container">
-        <div
-          class="row text-center align-items-center justify-content-center mb-5"
-        >
+        <div class="text-center align-items-center justify-content-center mb-5">
           <h2 class="h2">Get support</h2>
           <div class="row">
             <h3 class="h3 col-12 col-lg-8 offset-lg-2 pr-4 pl-4">
               Share your questions with the community, no question should be
               left unanswered.
             </h3>
+          </div>
+          <div class="action-panel-list support">
+            <div class="panel">
+              <img
+                src="assets/images/features/Security_and_performance_icon.svg"
+                alt="github"
+              />
+              <div class="mono-box">
+                <span>Talk</span>
+                with us in chat
+              </div>
+              <div class="description">
+                Get help over chat. Join our discord channel and find other
+                users, contributors, and maintainers that will love to help.
+              </div>
+              <div class="actions">
+                <a
+                  href="https://github.com/amplication/amplication"
+                  class="btn btn-primary"
+                >
+                  Chat now
+                </a>
+              </div>
+            </div>
+            <div class="panel">
+              <img
+                src="assets/images/features/open_source_icon.svg"
+                alt="github"
+              />
+              <div class="mono-box">
+                <span>Report</span>
+                an issue
+              </div>
+              <div class="description">
+                If you encounter an issue, please report it. Others may have the
+                same issue.
+              </div>
+              <div class="actions">
+                <a
+                  href="https://github.com/amplication/amplication/issues"
+                  class="btn btn-primary"
+                >
+                  View all issues
+                </a>
+              </div>
+            </div>
+            <div class="panel">
+              <img
+                src="assets/images/features/Code_Generator_icon.svg"
+                alt="github"
+              />
+              <div class="mono-box">
+                <span>Read</span>
+                the docs
+              </div>
+              <div class="description">
+                Our docs are a work in progress, and you can always find new
+                articles.
+              </div>
+              <div class="actions">
+                <a
+                  href="https://docs.amplication.com/getting-started"
+                  class="btn btn-primary"
+                >
+                  Read the docs
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -464,14 +578,10 @@
     ================================================== -->
     <section class="auto-height page-get-started bg-white">
       <div class="container">
-        <div class="footer-banner">
+        <div class="footer-banner footer-banner--dark">
           <h2 class="h2 text-white text-center">
-            <span>Free to Use.</span> <span> Open&#8209;source.</span>
+            Low&#8209;Code 💜 Open&#8209;Source
           </h2>
-
-          <a href="https://app.amplication.com" class="btn btn-primary">
-            Try amplication in 5 minutes
-          </a>
         </div>
       </div>
     </section>
