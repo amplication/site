@@ -7217,6 +7217,9 @@ section {
   padding-bottom: 15vh;
   background-color: #f4f4f7;
   overflow: hidden; }
+  section .container {
+    padding-left: 24px;
+    padding-right: 24px; }
   section.page-welcome {
     min-height: 100vh;
     background-image: url(../assets/images/bg/home-bg.svg);
@@ -7226,9 +7229,6 @@ section {
     padding-bottom: 110px; }
     section.page-welcome .buttons-wrapper {
       flex-direction: column; }
-    section.page-welcome .container {
-      padding-left: 24px;
-      padding-right: 24px; }
     section.page-welcome .sub-title {
       margin-top: 32px;
       margin-bottom: 64px; }
@@ -7770,7 +7770,9 @@ nav {
   flex-direction: column; }
   @media (max-width: 1199.98px) {
     .footer-banner {
-      background-image: url(../assets/images/bg/footer-bg-mobile.svg); } }
+      background-image: url(../assets/images/bg/footer-bg-mobile.svg);
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 footer {
   padding-top: 10vh; }
