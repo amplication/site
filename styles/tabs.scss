@@ -28,37 +28,3 @@
     }
   }
 }
-.tab-pane {
-  .side-by-side {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    > * {
-      flex: 1;
-    }
-
-    .image-container {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 50%;
-        min-width: 150px;
-      }
-    }
-
-    .mono-box {
-      span {
-        background-color: $black100;
-      }
-      margin-bottom: 3rem;
-    }
-
-    .btn {
-      margin-top: 3rem;
-    }
-  }
-}

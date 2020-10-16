@@ -731,6 +731,12 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  &--dark {
+    background-color: $black100;
+    color: $white;
+    background-image: url(../assets/images/bg/footer-bg-dark.svg);
+  }
 }
 
 footer {
