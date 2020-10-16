@@ -1,0 +1,64 @@
+@import "./base.scss";
+
+.tabs {
+  position: relative;
+  @include selected-tab;
+  &:before {
+    bottom: 0;
+    left: 0;
+    background-color: $black5;
+    border-bottom: 1px solid $black10;
+  }
+
+  .nav-link {
+    color: $black100;
+    @include semi-bold;
+    position: relative;
+    padding-bottom: 2rem;
+
+    &.active {
+      @include selected-tab;
+      &:before {
+        bottom: 0;
+        left: 0;
+      }
+      .nav-link {
+        color: $primary;
+      }
+    }
+  }
+}
+.tab-pane {
+  .side-by-side {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > * {
+      flex: 1;
+    }
+
+    .image-container {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 50%;
+        min-width: 150px;
+      }
+    }
+
+    .mono-box {
+      span {
+        background-color: $black100;
+      }
+      margin-bottom: 3rem;
+    }
+
+    .btn {
+      margin-top: 3rem;
+    }
+  }
+}
