@@ -7948,7 +7948,7 @@ footer {
     border: 1px solid #e7e7ec;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
-    margin: 1rem; }
+    margin: 2rem 1rem; }
     .action-panel-list.support .panel:last-child {
       border-right: none; }
     .action-panel-list.support .panel .mono-box span {
@@ -7958,5 +7958,7 @@ footer {
       display: block; }
       .action-panel-list .panel {
         border-right: none !important; }
-      .action-panel-list .btn {
-        width: 100%; } }
+      .action-panel-list .actions {
+        width: 100%; }
+        .action-panel-list .actions .btn {
+          width: 100%; } }

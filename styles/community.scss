@@ -147,7 +147,7 @@
       border: 1px solid $black10;
       box-shadow: $box-shadow;
       background-color: $white;
-      margin: 1rem;
+      margin: 2rem 1rem;
 
       &:last-child {
         border-right: none;
@@ -164,8 +164,11 @@
     .panel {
       border-right: none !important;
     }
-    .btn {
+    .actions {
       width: 100%;
+      .btn {
+        width: 100%;
+      }
     }
   }
 }
