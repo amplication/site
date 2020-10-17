@@ -96,7 +96,7 @@
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item d-lg-none">
+            <li class="nav-item d-lg-none mobile-menu-header">
               <a class="navbar-brand" href="./">
                 <img
                   src="./assets/amplication-logo-white.svg"
@@ -113,12 +113,13 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span class="amp-icon">close</span>
               </button>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link hover"
+                target="docs"
                 href="https://docs.amplication.com/getting-started"
               >
                 Docs
@@ -127,6 +128,7 @@
             <li class="nav-item">
               <a
                 class="nav-link hover"
+                target="github"
                 href="https://github.com/amplication/amplication/releases"
               >
                 Releases
@@ -141,6 +143,7 @@
             <li class="nav-item">
               <a
                 class="nav-link hover"
+                target="github"
                 href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title="
               >
                 Add a feature request
@@ -169,7 +172,7 @@
             </li>
           </ul>
 
-          <div class="row text-center d-lg-none">
+          <div class="row text-center d-lg-none menu-contact">
             <div class="col-12">
               <div>
                 <div class="contact-title">Contact us</div>
@@ -787,5 +790,12 @@
       );
     </script>
     <script src="captureUtm.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#navbarCollapse a[href^='./#']").click(function () {
+          $("#navbarCollapse").removeClass("show");
+        });
+      });
+    </script>
   </body>
 </html>
