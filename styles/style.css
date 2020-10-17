@@ -7910,8 +7910,11 @@ footer {
       margin-top: 3rem; }
     @media (max-width: 991.98px) {
       .contribute-pane .side-by-side {
-        flex-direction: column !important;
-        text-align: center; }
+        display: block; }
+        .contribute-pane .side-by-side .image-container {
+          height: auto; }
+          .contribute-pane .side-by-side .image-container img {
+            margin: auto; }
         .contribute-pane .side-by-side .mono-box {
           justify-content: center;
           margin-top: 2rem; }
@@ -7952,7 +7955,7 @@ footer {
       background-color: #121242; }
   @media (max-width: 991.98px) {
     .action-panel-list {
-      flex-direction: column; }
+      display: block; }
       .action-panel-list .panel {
         border-right: none !important; }
       .action-panel-list .btn {

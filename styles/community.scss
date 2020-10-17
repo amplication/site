@@ -85,8 +85,14 @@
     }
 
     @include media-breakpoint-down(md) {
-      flex-direction: column !important;
-      text-align: center;
+      display: block;
+
+      .image-container {
+        height: auto;
+        img {
+          margin: auto;
+        }
+      }
 
       .mono-box {
         justify-content: center;
@@ -154,7 +160,7 @@
     }
   }
   @include media-breakpoint-down(md) {
-    flex-direction: column;
+    display: block;
     .panel {
       border-right: none !important;
     }
