@@ -14,21 +14,24 @@
     height: 70vh;
     max-height: 70vh;
     margin-top: 10vh;
-    // position: absolute;
-    // right: 0;
-    // top: 0;
     background-image: url(../assets/images/bg/community.png);
-    background-position: center right;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   @include media-breakpoint-down(sm) {
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
 
+    .community-header {
+      margin-top: 10vh;
+    }
+
     .community-bg {
-      display: none;
+      max-height: 50vh;
+      margin-top: 2rem;
+      background-position: center top;
     }
   }
 }
@@ -80,6 +83,19 @@
     .btn {
       margin-top: 3rem;
     }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column !important;
+      text-align: center;
+
+      .mono-box {
+        justify-content: center;
+        margin-top: 2rem;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -88,6 +104,7 @@
   justify-content: stretch;
   align-items: stretch;
   margin-top: 4rem;
+
   .panel {
     flex: 1;
     padding: 3rem;
@@ -134,6 +151,15 @@
           background-color: $black100;
         }
       }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    .panel {
+      border-right: none !important;
+    }
+    .btn {
+      width: 100%;
     }
   }
 }
