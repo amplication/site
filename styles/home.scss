@@ -464,6 +464,14 @@ section.auto-height {
   mask-repeat: no-repeat;
   margin-right: 2rem;
 
+  @include media-breakpoint-down(lg) {
+    margin-right: 1rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-right: 0.5rem;
+  }
+
   &:last-child {
     margin-right: 0;
   }

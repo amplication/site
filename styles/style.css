@@ -7726,6 +7726,12 @@ section.auto-height {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   margin-right: 2rem; }
+  @media (max-width: 1199.98px) {
+    .social-link {
+      margin-right: 1rem; } }
+  @media (max-width: 991.98px) {
+    .social-link {
+      margin-right: 0.5rem; } }
   .social-link:last-child {
     margin-right: 0; }
   .social-link.linkedin {
