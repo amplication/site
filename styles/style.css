@@ -7432,7 +7432,7 @@ section {
       width: 100%;
       height: 3.5rem; }
       section.page-welcome .btn .social-link {
-        margin-right: 1rem; }
+        margin-right: 0.5rem; }
       section.page-welcome .btn img {
         max-height: 1.4rem;
         margin-right: 0.5rem; }
@@ -7723,6 +7723,8 @@ section.auto-height {
   height: 2rem;
   -webkit-mask-size: contain;
   mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   margin-right: 2rem; }
   .social-link:last-child {
     margin-right: 0; }
@@ -7848,6 +7850,9 @@ section.auto-height {
 
 footer {
   padding-top: 10vh; }
+  footer .container {
+    padding-left: 24px;
+    padding-right: 24px; }
   footer .contact-title {
     font-weight: 500;
     color: #121242;

@@ -107,7 +107,7 @@ section {
       height: 3.5rem;
 
       .social-link {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
       }
 
       img {
@@ -460,6 +460,8 @@ section.auto-height {
   height: 2rem;
   -webkit-mask-size: contain;
   mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   margin-right: 2rem;
 
   &:last-child {
@@ -609,6 +611,11 @@ section.auto-height {
 
 footer {
   padding-top: 10vh;
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
   .contact-title {
     @include semi-bold();
