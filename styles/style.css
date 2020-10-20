@@ -7216,10 +7216,19 @@ a.text-dark:hover, a.text-dark:focus {
       border-top-left-radius: 4px;
       border-top-right-radius: 4px; }
     .tabs .nav-link.active:before {
-      bottom: 0;
-      left: 0; }
+      bottom: 1px;
+      left: 0;
+      animation: selected-tab 0.3s ease-in-out; }
     .tabs .nav-link.active .nav-link {
       color: #7950ed; }
+
+@keyframes selected-tab {
+  from {
+    width: 0;
+    left: 50%; }
+  to {
+    width: 100%;
+    left: 0; } }
 
 nav {
   border-bottom: 1px solid #e7e7ec;
@@ -7651,7 +7660,7 @@ section.auto-height {
   min-height: 0; }
 
 .bg-page-hero {
-  background-color: #5426d1; }
+  background-color: #451abd; }
 
 .bg-black100 {
   background-color: #121242; }
@@ -7731,12 +7740,15 @@ section.auto-height {
       margin-right: 1rem; } }
   @media (max-width: 991.98px) {
     .social-link {
-      margin-right: 0.5rem; } }
+      margin-right: 2rem; } }
   .social-link:last-child {
     margin-right: 0; }
   .social-link.linkedin {
     -webkit-mask-image: url(../assets/icons/linkedin.svg);
     mask-image: url(../assets/icons/linkedin.svg); }
+  .social-link.facebook {
+    -webkit-mask-image: url(../assets/icons/facebook.svg);
+    mask-image: url(../assets/icons/facebook.svg); }
   .social-link.twitter {
     -webkit-mask-image: url(../assets/icons/twitter.svg);
     mask-image: url(../assets/icons/twitter.svg); }
@@ -7884,14 +7896,19 @@ footer {
 .page-community {
   display: flex;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  min-height: 0;
+  margin-top: 60px;
+  padding-bottom: 0;
+  padding-top: 0; }
   .page-community h1,
   .page-community h3 {
     color: #ffffff; }
   .page-community .community-bg {
     height: 70vh;
-    max-height: 70vh;
+    max-height: calc(70vh - 60px);
     margin-top: 10vh;
+    margin-bottom: 10vh;
     background-image: url(../assets/images/bg/community.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -7908,16 +7925,8 @@ footer {
         background-position: center top; } }
 
 .contribute-pane {
-  border: 1px solid #e7e7ec;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #ffffff;
-  border-radius: 4px;
-  padding: 2rem;
-  margin: 3rem 1rem; }
-  .contribute-pane:nth-child(odd) .side-by-side {
-    flex-direction: row-reverse; }
-    .contribute-pane:nth-child(odd) .side-by-side .image-container {
-      flex-direction: row-reverse; }
+  margin: 1rem;
+  padding: 3rem; }
   .contribute-pane .side-by-side {
     display: flex;
     align-items: center;
@@ -7927,15 +7936,13 @@ footer {
     .contribute-pane .side-by-side .image-container {
       display: flex;
       height: 100%;
-      align-items: center;
-      justify-content: flex-start; }
+      align-items: flex-start;
+      justify-content: center; }
       .contribute-pane .side-by-side .image-container img {
         width: 50%;
         min-width: 150px; }
     .contribute-pane .side-by-side .mono-box {
       margin-bottom: 3rem; }
-      .contribute-pane .side-by-side .mono-box span {
-        background-color: #121242; }
     .contribute-pane .side-by-side .btn {
       margin-top: 3rem; }
   @media (max-width: 991.98px) {
@@ -7977,21 +7984,16 @@ footer {
     .action-panel-list.build-community .panel:last-child {
       border-right: none; }
   .action-panel-list.support .panel {
-    border: 1px solid #e7e7ec;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
-    margin: 1rem; }
+    margin: 1rem;
+    align-items: flex-start; }
     .action-panel-list.support .panel:last-child {
       border-right: none; }
-    .action-panel-list.support .panel .mono-box span {
-      background-color: #121242; }
+    .action-panel-list.support .panel .description {
+      text-align: left; }
   @media (max-width: 991.98px) {
     .action-panel-list {
       display: block; }
       .action-panel-list .panel {
         border-right: none !important;
-        margin: 2rem 0 !important; }
-      .action-panel-list .actions {
-        width: 100%; }
-        .action-panel-list .actions .btn {
-          width: 100%; } }
+        margin: 2rem 0 !important; } }

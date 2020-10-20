@@ -380,7 +380,7 @@ section.auto-height {
 }
 
 .bg-page-hero {
-  background-color: #5426d1;
+  background-color: #451abd;
 }
 
 .bg-black100 {
@@ -469,7 +469,7 @@ section.auto-height {
   }
 
   @include media-breakpoint-down(md) {
-    margin-right: 0.5rem;
+    margin-right: 2rem;
   }
 
   &:last-child {
@@ -480,6 +480,11 @@ section.auto-height {
     -webkit-mask-image: url(../assets/icons/linkedin.svg);
     mask-image: url(../assets/icons/linkedin.svg);
   }
+  &.facebook {
+    -webkit-mask-image: url(../assets/icons/facebook.svg);
+    mask-image: url(../assets/icons/facebook.svg);
+  }
+
   &.twitter {
     -webkit-mask-image: url(../assets/icons/twitter.svg);
     mask-image: url(../assets/icons/twitter.svg);

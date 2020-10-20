@@ -19,12 +19,26 @@
     &.active {
       @include selected-tab;
       &:before {
-        bottom: 0;
+        bottom: 1px;
         left: 0;
+        animation: selected-tab 0.3s ease-in-out;
       }
+
       .nav-link {
         color: $primary;
       }
     }
+  }
+}
+
+@keyframes selected-tab {
+  from {
+    width: 0;
+    left: 50%;
+  }
+
+  to {
+    width: 100%;
+    left: 0;
   }
 }
