@@ -37,12 +37,20 @@ $page-welcome-height: 100vh;
   &:focus {
     box-shadow: none;
     border-color: $black100;
+
+    .social-link {
+      background-color: $primary;
+    }
   }
 
   &:hover {
     background-color: $white;
     border-color: $primary;
     color: $primary;
+
+    .social-link {
+      background-color: $primary;
+    }
   }
 }
 

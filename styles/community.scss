@@ -140,11 +140,24 @@
   }
 
   &.build-community {
+    padding: 1rem 3rem;
     .panel {
-      border-right: 1px solid $black20;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 4rem;
+        bottom: 4rem;
+        right: 0;
+        border-right: 1px solid $black20;
+      }
 
       &:last-child {
         border-right: none;
+        &:before {
+          display: none;
+        }
       }
     }
   }
@@ -152,8 +165,11 @@
   &.support {
     .panel {
       background-color: $white;
+      border: 1px solid $black10;
+      border-radius: $border-radius;
       margin: 1rem;
       align-items: flex-start;
+      padding: 2rem;
 
       &:last-child {
         border-right: none;
@@ -161,6 +177,12 @@
 
       .description {
         text-align: left;
+      }
+
+      .mono-box {
+        span {
+          background-color: $black100;
+        }
       }
     }
   }
