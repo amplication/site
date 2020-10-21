@@ -9,12 +9,27 @@
   padding-bottom: 0;
   padding-top: 0;
 
+  background-image: url(../assets/images/bg/community-bg.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(90vh - #{$menu-height});
+
+  // .container {
+  //   height: calc(90vh - #{$menu-height});
+  // }
+
+  .community-header {
+    max-width: 750px;
+  }
   h1,
   h3 {
     color: $white;
   }
 
   .community-bg {
+    position: absolute;
+    right: 50px;
     height: 70vh;
     max-height: calc(70vh - #{$menu-height});
     margin-top: 10vh;
@@ -23,6 +38,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      right: auto;
+    }
   }
 
   @include media-breakpoint-down(sm) {
@@ -63,13 +83,6 @@
         width: 50%;
         min-width: 150px;
       }
-    }
-
-    .mono-box {
-      // span {
-      //   background-color: $black100;
-      // }
-      margin-bottom: 3rem;
     }
 
     .btn {
@@ -119,7 +132,6 @@
     }
     .mono-box {
       margin-top: 2rem;
-      margin-bottom: 2rem;
     }
 
     .actions {

@@ -7381,8 +7381,8 @@ h2.h2 {
       font-size: 2.5rem; } }
 
 h3.h3 {
-  font-size: 1.5rem;
-  line-height: 2.3rem;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
   color: #414168;
   font-weight: normal; }
   @media (max-width: 1199.98px) {
@@ -7400,20 +7400,13 @@ section {
     margin-top: 32px;
     margin-bottom: 64px; }
   section .main-title {
-    margin-top: 100px;
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 600;
     line-height: 1.3; }
-    @media (min-width: 576px) {
-      section .main-title {
-        font-size: 2.5rem; } }
     @media (min-width: 992px) {
       section .main-title {
-        font-size: 2.5rem; } }
+        font-size: 3.5rem; } }
     @media (min-width: 1200px) {
-      section .main-title {
-        font-size: 3rem; } }
-    @media (min-width: 1650px) {
       section .main-title {
         font-size: 4rem; } }
   section .container {
@@ -7428,6 +7421,8 @@ section {
     padding-bottom: 110px; }
     section.page-welcome .buttons-wrapper {
       flex-direction: column; }
+    section.page-welcome .main-title {
+      margin-top: 100px; }
     section.page-welcome .spacer {
       min-width: 1rem; }
     section.page-welcome .btn {
@@ -7559,26 +7554,8 @@ section {
   @media (max-width: 1199.98px) {
     .about-box {
       padding: 2rem 1rem; } }
-  .about-box .about-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem; }
-  .about-box .about-title1 {
-    font-family: "DM Mono", monospace;
-    font-size: 0.9rem;
-    font-weight: 500;
-    font-size: 1rem;
-    border-radius: 4px;
-    background-color: #121242;
-    display: inline-block;
-    padding: 0.25rem 1rem;
-    color: #ffffff;
-    margin-right: 1rem; }
-  .about-box .about-title2 {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-weight: 500; }
+  .about-box .mono-box span {
+    background-color: #121242; }
   @media (min-width: 992px) {
     .about-box {
       height: 100%; } }
@@ -7616,7 +7593,7 @@ section {
       .about-wrapper-2 .about-box {
         padding: 0;
         padding-top: 3rem; } }
-    .about-wrapper-2 .about-box .about-title1 {
+    .about-wrapper-2 .about-box .mono-box span {
       background-color: #7950ed; }
 
 .roadmap-wrapper {
@@ -7684,8 +7661,7 @@ section.auto-height {
     width: 100%;
     margin-top: 4rem; }
   .feature .feature-description {
-    font-size: 1rem;
-    padding-top: 1rem; }
+    font-size: 1rem; }
     @media (max-width: 1199.98px) {
       .feature .feature-description {
         text-align: left; } }
@@ -7774,7 +7750,8 @@ section.auto-height {
   font-weight: 500;
   display: flex;
   align-items: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
   @media (max-width: 1199.98px) {
     .mono-box {
       font-size: 1.1rem; } }
@@ -7820,8 +7797,7 @@ section.auto-height {
         margin-right: auto; } }
     .type-cards .type-card ul {
       padding: 0;
-      margin: 0;
-      margin-top: 2rem; }
+      margin: 0; }
       .type-cards .type-card ul li {
         margin: 0;
         padding: 0;
@@ -7903,11 +7879,20 @@ footer {
   min-height: 0;
   margin-top: 60px;
   padding-bottom: 0;
-  padding-top: 0; }
+  padding-top: 0;
+  background-image: url(../assets/images/bg/community-bg.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(90vh - 60px); }
+  .page-community .community-header {
+    max-width: 750px; }
   .page-community h1,
   .page-community h3 {
     color: #ffffff; }
   .page-community .community-bg {
+    position: absolute;
+    right: 50px;
     height: 70vh;
     max-height: calc(70vh - 60px);
     margin-top: 10vh;
@@ -7916,6 +7901,10 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
+    @media (max-width: 767.98px) {
+      .page-community .community-bg {
+        position: relative;
+        right: auto; } }
   @media (max-width: 767.98px) {
     .page-community {
       justify-content: flex-end;
@@ -7944,8 +7933,6 @@ footer {
       .contribute-pane .side-by-side .image-container img {
         width: 50%;
         min-width: 150px; }
-    .contribute-pane .side-by-side .mono-box {
-      margin-bottom: 3rem; }
     .contribute-pane .side-by-side .btn {
       margin-top: 3rem; }
   @media (max-width: 991.98px) {
@@ -7978,8 +7965,7 @@ footer {
     .action-panel-list .panel .description {
       flex: 1; }
     .action-panel-list .panel .mono-box {
-      margin-top: 2rem;
-      margin-bottom: 2rem; }
+      margin-top: 2rem; }
     .action-panel-list .panel .actions {
       margin-top: 2rem; }
   .action-panel-list.build-community .panel {
