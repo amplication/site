@@ -22,7 +22,7 @@ h2.h2 {
   font-size: 3.5rem;
 
   @include media-breakpoint-down(lg) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -623,7 +623,7 @@ section.auto-height {
 }
 
 footer {
-  padding-top: 10vh;
+  padding-top: 0;
 
   .container {
     padding-left: 24px;
@@ -633,11 +633,14 @@ footer {
   .contact-title {
     @include semi-bold();
     color: $black100;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
   }
   .contact-details {
     color: $black60;
-    margin-bottom: 4rem;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 4rem;
+    }
   }
 
   .social-link {

@@ -7378,7 +7378,7 @@ h2.h2 {
   font-size: 3.5rem; }
   @media (max-width: 1199.98px) {
     h2.h2 {
-      font-size: 2rem; } }
+      font-size: 2.5rem; } }
 
 h3.h3 {
   font-size: 1.5rem;
@@ -7867,17 +7867,20 @@ section.auto-height {
     background-image: url(../assets/images/bg/footer-bg-dark.svg); }
 
 footer {
-  padding-top: 10vh; }
+  padding-top: 0; }
   footer .container {
     padding-left: 24px;
     padding-right: 24px; }
   footer .contact-title {
     font-weight: 500;
     color: #121242;
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem; }
   footer .contact-details {
-    color: #71718e;
-    margin-bottom: 4rem; }
+    color: #71718e; }
+    @media (max-width: 991.98px) {
+      footer .contact-details {
+        margin-bottom: 4rem; } }
   footer .social-link {
     background-color: #71718e;
     width: 1.5rem;
