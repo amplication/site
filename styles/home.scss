@@ -150,17 +150,7 @@ section {
     }
     min-height: 0;
   }
-  &.page-developers {
-    background-image: url(../assets/images/bg/bg-2.svg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @include media-breakpoint-down(lg) {
-      background-image: none;
-    }
-  }
-
+  
   &.page-steps {
     padding-top: 15vh;
   }
@@ -195,7 +185,7 @@ section {
   background-color: $black100;
   color: $white;
   border-radius: $border-radius;
-  height: 220px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
