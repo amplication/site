@@ -15,6 +15,9 @@
   background-size: cover;
   height: calc(90vh - #{$menu-height});
 
+  @include media-breakpoint-down(md) {
+    height: auto;
+  }
   // .container {
   //   height: calc(90vh - #{$menu-height});
   // }
@@ -91,6 +94,7 @@
   }
 
   @include media-breakpoint-down(md) {
+    padding: 0;
     margin: 2rem 0;
     .side-by-side {
       display: block;
@@ -145,6 +149,7 @@
     @include media-breakpoint-down(md) {
       padding: 0;
       .panel {
+        padding: 0;
         &:before {
           display: none;
         }

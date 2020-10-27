@@ -7903,6 +7903,9 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(90vh - 60px); }
+  @media (max-width: 991.98px) {
+    .page-community {
+      height: auto; } }
   .page-community .community-header {
     max-width: 750px; }
   .page-community h1,
@@ -7955,6 +7958,7 @@ footer {
       margin-top: 3rem; }
   @media (max-width: 991.98px) {
     .contribute-pane {
+      padding: 0;
       margin: 2rem 0; }
       .contribute-pane .side-by-side {
         display: block; }
@@ -7991,8 +7995,10 @@ footer {
     @media (max-width: 991.98px) {
       .action-panel-list.build-community {
         padding: 0; }
-        .action-panel-list.build-community .panel:before {
-          display: none; } }
+        .action-panel-list.build-community .panel {
+          padding: 0; }
+          .action-panel-list.build-community .panel:before {
+            display: none; } }
     .action-panel-list.build-community .panel {
       position: relative; }
       .action-panel-list.build-community .panel:before {
