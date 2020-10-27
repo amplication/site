@@ -87,6 +87,10 @@ section {
       max-width: 1024px;
       margin: auto;
       margin-top: 100px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 2.5rem;
+      }
     }
 
     .sub-title {
@@ -162,7 +166,7 @@ section {
     }
     min-height: 0;
   }
-  
+
   &.page-steps {
     padding-top: 15vh;
   }

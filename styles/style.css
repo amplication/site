@@ -7436,6 +7436,9 @@ section {
       max-width: 1024px;
       margin: auto;
       margin-top: 100px; }
+      @media (max-width: 767.98px) {
+        section.page-welcome .main-title {
+          font-size: 2.5rem; } }
     section.page-welcome .sub-title {
       max-width: 700px;
       margin-left: auto;
@@ -7486,14 +7489,6 @@ section {
       @media (max-width: 1199.98px) {
         section.page-welcome-solution:before {
           top: 75px; } }
-  section.page-developers {
-    background-image: url(../assets/images/bg/bg-2.svg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    @media (max-width: 1199.98px) {
-      section.page-developers {
-        background-image: none; } }
   section.page-steps {
     padding-top: 15vh; }
   section.page-roadmap {
