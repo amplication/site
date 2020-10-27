@@ -7429,11 +7429,20 @@ section {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 110px; }
+    padding-bottom: 90px; }
     section.page-welcome .buttons-wrapper {
       flex-direction: column; }
     section.page-welcome .main-title {
+      max-width: 1024px;
+      margin: auto;
       margin-top: 100px; }
+    section.page-welcome .sub-title {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto; }
+      section.page-welcome .sub-title .highlight {
+        font-weight: 500;
+        color: #7950ed; }
     section.page-welcome .spacer {
       min-width: 1rem; }
     section.page-welcome .btn {
@@ -7462,7 +7471,7 @@ section {
     padding-top: 0;
     position: relative;
     background-color: transparent;
-    margin-top: -110px;
+    margin-top: -90px;
     min-height: 0; }
     @media (max-width: 1199.98px) {
       section.page-welcome-solution {
@@ -7470,7 +7479,7 @@ section {
     section.page-welcome-solution:before {
       content: "";
       position: absolute;
-      top: 110px;
+      top: 90px;
       bottom: 0;
       width: 100%;
       background-color: #f4f4f7; }
@@ -7514,7 +7523,7 @@ section {
   background-color: #121242;
   color: #ffffff;
   border-radius: 4px;
-  height: 220px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
