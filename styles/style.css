@@ -7988,6 +7988,11 @@ footer {
       margin-top: 2rem; }
   .action-panel-list.build-community {
     padding: 1rem 3rem; }
+    @media (max-width: 991.98px) {
+      .action-panel-list.build-community {
+        padding: 0; }
+        .action-panel-list.build-community .panel:before {
+          display: none; } }
     .action-panel-list.build-community .panel {
       position: relative; }
       .action-panel-list.build-community .panel:before {

@@ -141,6 +141,16 @@
 
   &.build-community {
     padding: 1rem 3rem;
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+      .panel {
+        &:before {
+          display: none;
+        }
+      }
+    }
+
     .panel {
       position: relative;
 
