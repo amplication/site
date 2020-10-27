@@ -59,8 +59,16 @@
   <body>
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container-fluid">
+        <a
+          class="latest-version"
+          href="https://github.com/amplication/amplication/releases"
+          target="_blank"
+        >
+          <span id="version-number"></span>
+        </a>
+
         <!-- Brand -->
         <a class="navbar-brand" href="./">
           <img
@@ -70,15 +78,141 @@
           />
         </a>
 
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <!-- Button -->
-          <a class="ml-auto pr-4" href="https://app.amplication.com">
-            Sign In
-          </a>
-          <a href="https://github.com/amplication/amplication" target="_blank">
-            <img src="assets/icons/github.svg" alt="GitHub" />
-          </a>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item d-lg-none mobile-menu-header">
+              <a class="navbar-brand" href="./">
+                <img
+                  src="./assets/amplication-logo-white.svg"
+                  class="navbar-brand-img"
+                  alt="..."
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="amp-icon">close</span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover"
+                target="_blank"
+                href="https://docs.amplication.com/getting-started"
+              >
+                Docs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover"
+                target="_blank"
+                href="https://github.com/amplication/amplication/releases"
+              >
+                Releases
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover" href="./#roadmap">Roadmap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover" href="/community.html"> Community </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link hover"
+                target="_blank"
+                href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title="
+              >
+                Add a feature request
+              </a>
+            </li>
+
+            <li class="nav-item d-none d-lg-block">
+              <span class="nav-link">
+                <a
+                  class="social-link github"
+                  href="https://github.com/amplication/amplication"
+                  target="_blank"
+                  alt="amplication on github"
+                >
+                </a>
+              </span>
+            </li>
+
+            <li class="nav-item d-none d-lg-flex">
+              <a
+                class="nav-link btn btn-outline-secondary"
+                href="https://app.amplication.com"
+              >
+                Login
+              </a>
+            </li>
+          </ul>
+
+          <div class="row text-center d-lg-none menu-contact">
+            <div class="col-12">
+              <div>
+                <div class="contact-title">Contact us</div>
+
+                <div class="contact-details">
+                  &#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#97;&#109;&#112;&#108;&#105;&#99;&#97;&#116;&#105;&#111;&#110;&#46;&#99;&#111;&#109;
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="contact-details">
+                <a
+                  class="social-link github"
+                  href="https://github.com/amplication/amplication"
+                  target="_blank"
+                  alt="amplication on GitHub"
+                >
+                </a>
+                <a
+                  class="social-link twitter"
+                  href="https://twitter.com/amplication"
+                  target="_blank"
+                  alt="amplication on Twitter"
+                >
+                </a>
+                <a
+                  class="social-link linkedin"
+                  href="https://www.linkedin.com/company/amplication"
+                  target="_blank"
+                  alt="amplication on LinkedIn"
+                >
+                </a>
+                <a
+                  class="social-link facebook"
+                  href="https://www.facebook.com/amplicationcom/"
+                  target="_blank"
+                  alt="amplication on Facebook"
+                >
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
