@@ -13,7 +13,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>amplication - Open&#8209;source low&#8209;code platform</title>
+    <title>Amplication - Open source low code platform</title>
+    <meta name="keywords" content="open source low code, low code, low code platform, low code application">
+    <meta name="robots" content="index,follow">
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -135,6 +137,7 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://docs.amplication.com/docs/getting-started"
+                onclick="handleOutboundLinkClicks('Docs')"
               >
                 Docs
               </a>
@@ -144,12 +147,19 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://github.com/amplication/amplication/releases"
+                onclick="handleOutboundLinkClicks('Releases')"
               >
                 Releases
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover" href="./#roadmap">Roadmap</a>
+              <a 
+                class="nav-link hover" 
+                href="./#roadmap"
+                onclick="handleOutboundLinkClicks('Roadmap')"
+                >
+                  Roadmap
+                </a>
             </li>
             <li class="nav-item">
               <a class="nav-link hover" href="/community.html"> Community </a>
@@ -159,6 +169,7 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title="
+                onclick="handleOutboundLinkClicks('Add a feature request')"
               >
                 Add a feature request
               </a>
@@ -171,6 +182,7 @@
                   href="https://github.com/amplication/amplication"
                   target="_blank"
                   alt="amplication on github"
+                  onclick="handleOutboundLinkClicks('GitHub repo')"
                 >
                 </a>
               </span>
@@ -180,6 +192,7 @@
               <a
                 class="nav-link btn btn-outline-secondary"
                 href="https://app.amplication.com"
+                onclick="handleOutboundLinkClicks('Login')"
               >
                 Login
               </a>
@@ -199,34 +212,6 @@
 
             <div class="col-12">
               <div class="contact-details">
-                <a
-                  class="social-link github"
-                  href="https://github.com/amplication/amplication"
-                  target="_blank"
-                  alt="amplication on GitHub"
-                >
-                </a>
-                <a
-                  class="social-link twitter"
-                  href="https://twitter.com/amplication"
-                  target="_blank"
-                  alt="amplication on Twitter"
-                >
-                </a>
-                <a
-                  class="social-link linkedin"
-                  href="https://www.linkedin.com/company/amplication"
-                  target="_blank"
-                  alt="amplication on LinkedIn"
-                >
-                </a>
-                <a
-                  class="social-link facebook"
-                  href="https://www.facebook.com/amplicationcom/"
-                  target="_blank"
-                  alt="amplication on Facebook"
-                >
-                </a>
               </div>
             </div>
           </div>
@@ -273,6 +258,7 @@
               <a
                 href="https://docs.amplication.com/docs/getting-started"
                 class="d-lg-none btn btn-outline-secondary btn-lg col-sm-12 col-md-6 mb-4 text-black80"
+                onclick="handleOutboundLinkClicks('Docs')"
               >
                 Documentation
               </a>
@@ -330,6 +316,7 @@
             <a
               href="https://app.amplication.com"
               class="btn btn-primary btn-lg"
+              onclick="handleOutboundLinkClicks('Login')"
             >
               Get Started
             </a>
@@ -363,6 +350,7 @@
             <a
               href="https://app.amplication.com"
               class="btn btn-primary btn-lg"
+              onclick="handleOutboundLinkClicks('Login')"
             >
               Get Started
             </a>
@@ -460,7 +448,7 @@
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/open_source_icon.svg" />
+              <img src="assets/images/features/open_source_icon.svg" alt="open source" />
               <div class="feature-card-text">Open&#8209;source project</div>
             </div>
           </div>
@@ -472,7 +460,7 @@
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Code_Generator_icon.svg" />
+              <img src="assets/images/features/Code_Generator_icon.svg" alt="code generator" />
               <div class="feature-card-text">
                 TypeScript & Node.js source&nbsp;code
               </div>
@@ -486,7 +474,7 @@
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Version_control_icon.svg" />
+              <img src="assets/images/features/Version_control_icon.svg" alt="version control" />
               <div class="feature-card-text">Version control</div>
             </div>
           </div>
@@ -498,7 +486,7 @@
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/vendor_lock_icon.svg" />
+              <img src="assets/images/features/vendor_lock_icon.svg" alt="vendor lock" />
               <div class="feature-card-text">
                 Freedom to continue on your&nbsp;own
               </div>
@@ -512,7 +500,7 @@
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Roles_icon.svg" />
+              <img src="assets/images/features/Roles_icon.svg" alt="role based access control"/>
               <div class="feature-card-text">
                 Role&#8209;based access&nbsp;control
               </div>
@@ -526,7 +514,7 @@
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Cloud_agnostic_icon.svg" />
+              <img src="assets/images/features/Cloud_agnostic_icon.svg" alt="cloud agnostic" />
               <div class="feature-card-text">Cloud agnostic</div>
             </div>
           </div>
@@ -538,7 +526,7 @@
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Docker_containers_icon.svg" />
+              <img src="assets/images/features/Docker_containers_icon.svg" alt="docker container" />
               <div class="feature-card-text">
                 Docker ready to be&nbsp;deployed
               </div>
@@ -552,9 +540,7 @@
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img
-                src="assets/images/features/Security_and_performance_icon.svg"
-              />
+              <img src="assets/images/features/Security_and_performance_icon.svg" alt="security and performance" />
               <div class="feature-card-text">Security & performance</div>
             </div>
           </div>
@@ -585,7 +571,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
-            <img src="assets/images/steps/Design_your_database_image.svg" />
+            <img src="assets/images/steps/Design_your_database_image.svg" alt="design your database" />
           </div>
         </div>
         <div
@@ -601,7 +587,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-right">
-            <img src="assets/images/steps/Deploy_your_app_image.png" />
+            <img src="assets/images/steps/Deploy_your_app_image.png" alt="deploy your app" />
           </div>
         </div>
         <div
@@ -618,7 +604,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
-            <img src="assets/images/steps/Connect_code_REST_image.png" />
+            <img src="assets/images/steps/Connect_code_REST_image.png" alt="rest api" />
           </div>
         </div>
       </div>
@@ -717,7 +703,7 @@
             <span>Free to Use.</span> <span> Open&#8209;source.</span>
           </h2>
 
-          <a href="https://app.amplication.com" class="btn btn-dark mr-1">
+          <a href="https://app.amplication.com" class="btn btn-dark mr-1" onclick="handleOutboundLinkClicks('Login')">
             Try Amplication in 5 minutes
           </a>
         </div>
@@ -754,6 +740,7 @@
                   href="https://github.com/amplication/amplication"
                   target="_blank"
                   alt="amplication on github"
+                  onclick="handleOutboundLinkClicks('GitHub repo')"
                 >
                 </a>
                 <a
@@ -761,6 +748,7 @@
                   href="https://twitter.com/amplication"
                   target="_blank"
                   alt="amplication on twitter"
+                  onclick="handleOutboundLinkClicks('Twitter')"
                 >
                 </a>
                 <a
@@ -768,6 +756,7 @@
                   href="https://www.linkedin.com/company/amplication"
                   target="_blank"
                   alt="amplication on LinkedIn"
+                  onclick="handleOutboundLinkClicks('LinkedIn')"
                 >
                 </a>
 
@@ -776,6 +765,7 @@
                   href="https://www.facebook.com/amplicationcom/"
                   target="_blank"
                   alt="amplication on Facebook"
+                  onclick="handleOutboundLinkClicks('Facebook')"
                 >
                 </a>
               </div>
@@ -833,6 +823,17 @@
           $("#navbarCollapse").removeClass("show");
         });
       });
+
+      function handleOutboundLinkClicks(label) {
+        ga('send', 'event', {
+          eventCategory: 'Outbound Link',
+          eventAction: 'click',
+          eventLabel: label,
+          transport: 'beacon'
+        });
+      }
+
+      
     </script>
   </body>
 </html>
