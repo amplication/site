@@ -591,21 +591,41 @@ section.auto-height {
 }
 
 .footer-banner {
-  background-image: url(../assets/images/bg/footer-bg.svg);
-  background-position: top center;
+  background-image: url(../assets/images/bg/banner-free-to-use.png);
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: $border-radius;
   background-color: #a787ff;
-  padding: 4rem;
+  padding: 2rem 4rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
 
+  &__content {
+    text-align: left;
+  }
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
   @include media-breakpoint-down(lg) {
-    background-image: url(../assets/images/bg/footer-bg-mobile.svg);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem 4rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    background-image: url(../assets/images/bg/banner-small-free-to-use.svg);
+
+    background-position: bottom right;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 70vw;
+    padding-top: 3rem;
+
+    h2 {
+      text-align: center;
+    }
   }
 
   &--dark {

@@ -7841,21 +7841,34 @@ section.auto-height {
       width: 100%; }
 
 .footer-banner {
-  background-image: url(../assets/images/bg/footer-bg.svg);
-  background-position: top center;
+  background-image: url(../assets/images/bg/banner-free-to-use.png);
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 4px;
   background-color: #a787ff;
-  padding: 4rem;
+  padding: 2rem 4rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column; }
+  .footer-banner__content {
+    text-align: left; }
+  .footer-banner h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem; }
   @media (max-width: 1199.98px) {
     .footer-banner {
-      background-image: url(../assets/images/bg/footer-bg-mobile.svg);
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+      padding: 1rem 4rem; } }
+  @media (max-width: 991.98px) {
+    .footer-banner {
+      background-image: url(../assets/images/bg/banner-small-free-to-use.svg);
+      background-position: bottom right;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 70vw;
+      padding-top: 3rem; }
+      .footer-banner h2 {
+        text-align: center; } }
   .footer-banner--dark {
     background-color: #121242;
     color: #ffffff;
