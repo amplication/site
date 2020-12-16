@@ -4,17 +4,16 @@
     <link rel="icon" href="assets/images/favicon.ico" />
     <meta
       name="description"
-      content="Design and deploy your own data services application. Easily
-    create APIs and connect from any server, mobile, or web client
-    instantly."
+      content="Join us in building the next generation of development tools. Any contribution counts."
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>amplication - Open source low code platform</title>
-
+    <title>Join our community & contribute to Amplication</title>
+    <meta name="keywords" content="open source community, github community, join open source, contribute open source, contribute code">
+    <meta name="robots" content="index,follow">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -71,7 +70,7 @@
       fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=694076677979309&ev=PageView&noscript=1"/></noscript>
-    <!-- End Facebook Pixel Code -->    
+    <!-- End Facebook Pixel Code -->   
   </head>
   <body>
     <!-- NAVBAR
@@ -91,7 +90,7 @@
           <img
             src="./assets/amplication-logo.svg"
             class="navbar-brand-img"
-            alt="..."
+            alt="amplication"
           />
         </a>
 
@@ -135,6 +134,7 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://docs.amplication.com/docs/getting-started"
+                onclick="handleOutboundLinkClicks('Docs')"
               >
                 Docs
               </a>
@@ -144,12 +144,19 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://github.com/amplication/amplication/releases"
+                onclick="handleOutboundLinkClicks('Releases')"
               >
                 Releases
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover" href="./#roadmap">Roadmap</a>
+              <a 
+                class="nav-link hover" 
+                href="./#roadmap"
+                onclick="handleOutboundLinkClicks('Roadmap')"
+                >
+                  Roadmap
+                </a>
             </li>
             <li class="nav-item active">
               <a class="nav-link hover" href="/community.html"> Community </a>
@@ -159,6 +166,7 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title="
+                onclick="handleOutboundLinkClicks('Add a feature request')"
               >
                 Add a feature request
               </a>
@@ -171,6 +179,7 @@
                   href="https://github.com/amplication/amplication"
                   target="_blank"
                   alt="amplication on github"
+                  onclick="handleOutboundLinkClicks('GitHub repo')"
                 >
                 </a>
               </span>
@@ -180,6 +189,7 @@
               <a
                 class="nav-link btn btn-outline-secondary"
                 href="https://app.amplication.com"
+                onclick="handleOutboundLinkClicks('Login')"
               >
                 Login
               </a>
@@ -199,27 +209,6 @@
 
             <div class="col-12">
               <div class="contact-details">
-                <a
-                  class="social-link github"
-                  href="https://github.com/amplication/amplication"
-                  target="_blank"
-                  alt="amplication on github"
-                >
-                </a>
-                <a
-                  class="social-link linkedin"
-                  href="https://www.linkedin.com/company/amplication"
-                  target="_blank"
-                  alt="amplication on LinkedIn"
-                >
-                </a>
-                <a
-                  class="social-link twitter"
-                  href="https://twitter.com/amplication"
-                  target="_blank"
-                  alt="amplication on twitter"
-                >
-                </a>
               </div>
             </div>
           </div>
@@ -238,7 +227,7 @@
             <h3 class="h3">
               Join us in building the next generation of development tools. Any
               contribution counts.
-            </h3>
+            </h3>           
           </div>
           <div class="community-bg col-12 offset-md-1 col-md-4"></div>
         </div>
@@ -636,6 +625,7 @@
                   href="https://github.com/amplication/amplication"
                   target="_blank"
                   alt="amplication on github"
+                  onclick="handleOutboundLinkClicks('GitHub repo')"
                 >
                 </a>
                 <a
@@ -643,6 +633,7 @@
                   href="https://twitter.com/amplication"
                   target="_blank"
                   alt="amplication on twitter"
+                  onclick="handleOutboundLinkClicks('Twitter')"
                 >
                 </a>
                 <a
@@ -650,6 +641,7 @@
                   href="https://www.linkedin.com/company/amplication"
                   target="_blank"
                   alt="amplication on LinkedIn"
+                  onclick="handleOutboundLinkClicks('LinkedIn')"
                 >
                 </a>
 
@@ -658,6 +650,7 @@
                   href="https://www.facebook.com/amplicationcom/"
                   target="_blank"
                   alt="amplication on Facebook"
+                  onclick="handleOutboundLinkClicks('Facebook')"
                 >
                 </a>
               </div>
@@ -667,7 +660,7 @@
         <div
           class="footer-line col-12 footer-line d-flex justify-content-between align-items-center"
         >
-          <span>&copy;2020 amplication</span>
+          <span>&copy;2020 Amplication</span>
           <a href="./terms.html" class="ml-auto pr-4">terms and conditions</a>
           <a href="./privacy.html">privacy</a>
         </div>
@@ -709,5 +702,15 @@
       );
     </script>
     <script src="captureUtm.js"></script>
+    <script>
+      function handleOutboundLinkClicks(label) {
+        ga('send', 'event', {
+          eventCategory: 'Outbound Link',
+          eventAction: 'click',
+          eventLabel: label,
+          transport: 'beacon'
+        });
+      }     
+    </script>
   </body>
 </html>
