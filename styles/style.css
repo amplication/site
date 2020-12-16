@@ -7523,10 +7523,13 @@ section {
     font-size: 1rem;
     line-height: 1;
     padding: 0.5rem 1rem;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.75rem;
+    margin-right: 0.75rem; }
   .feature-images-tabs .nav-link.active {
     background-color: #e7e7ec;
     font-weight: 500; }
+  .feature-images-tabs .nav-link:hover {
+    background-color: #e7e7ec; }
 
 .solution-card {
   flex: 1;
