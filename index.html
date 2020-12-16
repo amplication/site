@@ -58,6 +58,42 @@
       ga("send", "pageview");
     </script>
     <!-- End Google Analytics -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "694076677979309");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=694076677979309&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <!-- NAVBAR
@@ -302,7 +338,7 @@
             <ul class="type-list">
               <li>Design data models and create APIs without&nbsp;coding.</li>
               <li>
-                No need for server-side development skills since amplication
+                No need for server-side development skills since Amplication
                 auto-generates back-end&nbsp;code.
               </li>
               <li>
@@ -326,7 +362,7 @@
             </div>
             <ul class="type-list">
               <li>
-                amplication auto-generates an app based on
+                Amplication auto-generates an app based on
                 TypeScript&nbsp;and&nbsp;Node.js.
               </li>
               <li>
@@ -336,7 +372,7 @@
               <li>
                 Decide whether to download the app within a Docker container
                 that’s ready for deployment or to deploy to the
-                amplication&nbsp;cloud.
+                Amplication&nbsp;cloud.
               </li>
               <li>
                 At any point you’re free to download the source code and
@@ -771,7 +807,7 @@
         <div
           class="footer-line col-12 footer-line d-flex justify-content-between align-items-center"
         >
-          <span>&copy;2020 amplication</span>
+          <span>&copy;2020 Amplication</span>
           <a href="./terms.html" class="ml-auto pr-4">terms and conditions</a>
           <a href="./privacy.html">privacy</a>
         </div>
