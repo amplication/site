@@ -7866,9 +7866,9 @@ section.auto-height {
       padding-right: 4rem; } }
   @media (max-width: 991.98px) {
     .footer-banner {
-      background-image: url(../assets/images/bg/banner-small-free-to-use.svg);
-      background-position: bottom right;
-      background-size: cover;
+      background-image: url(../assets/images/bg/banner-small-free-to-use.png), url(../assets/images/bg/banner-small-free-to-use-bg.svg);
+      background-position: bottom right, top left;
+      background-size: 80%, cover;
       align-items: center;
       text-align: center;
       padding-bottom: 300px;
