@@ -7512,6 +7512,22 @@ section {
     .solution {
       display: block; } }
 
+.feature-images-tabs {
+  border-bottom: none; }
+  .feature-images-tabs .nav-link,
+  .feature-images-tabs .nav-link.active {
+    border-radius: 1rem;
+    border: none;
+    background: none;
+    color: #414168;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem; }
+  .feature-images-tabs .nav-link.active {
+    background-color: #e7e7ec;
+    font-weight: 500; }
+
 .solution-card {
   flex: 1;
   text-align: center;
