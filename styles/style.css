@@ -7848,6 +7848,7 @@ section.auto-height {
   border-radius: 4px;
   background-color: #a787ff;
   padding: 2rem 4rem;
+  padding-right: 8rem;
   display: flex;
   align-items: flex-end;
   flex-direction: column; }
@@ -7858,15 +7859,18 @@ section.auto-height {
     margin-bottom: 2rem; }
   @media (max-width: 1199.98px) {
     .footer-banner {
-      padding: 1rem 4rem; } }
+      padding: 1rem 4rem;
+      padding-right: 4rem; } }
   @media (max-width: 991.98px) {
     .footer-banner {
       background-image: url(../assets/images/bg/banner-small-free-to-use.svg);
       background-position: bottom right;
+      background-size: cover;
       align-items: center;
       text-align: center;
-      padding-bottom: 70vw;
-      padding-top: 3rem; }
+      padding-bottom: 300px;
+      padding-top: 3rem;
+      padding-right: 4rem; }
       .footer-banner h2 {
         text-align: center; } }
   .footer-banner--dark {

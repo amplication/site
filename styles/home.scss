@@ -598,6 +598,7 @@ section.auto-height {
   border-radius: $border-radius;
   background-color: #a787ff;
   padding: 2rem 4rem;
+  padding-right: 8rem;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -612,16 +613,19 @@ section.auto-height {
 
   @include media-breakpoint-down(lg) {
     padding: 1rem 4rem;
+    padding-right: 4rem;
   }
 
   @include media-breakpoint-down(md) {
     background-image: url(../assets/images/bg/banner-small-free-to-use.svg);
 
     background-position: bottom right;
+    background-size: cover;
     align-items: center;
     text-align: center;
-    padding-bottom: 70vw;
+    padding-bottom: 300px;
     padding-top: 3rem;
+    padding-right: 4rem;
 
     h2 {
       text-align: center;
