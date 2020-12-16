@@ -7647,6 +7647,9 @@ section {
     width: 100%;
     margin: 0;
     margin-bottom: 1rem; }
+  .roadmap-box .roadmap-list .done {
+    opacity: 0.5;
+    text-decoration: line-through; }
 
 section.auto-height {
   min-height: 0; }
