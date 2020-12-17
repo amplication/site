@@ -7897,9 +7897,15 @@ section.auto-height {
       .footer-banner h2 {
         text-align: center; } }
   .footer-banner--dark {
+    background-position: top center;
     background-color: #121242;
     color: #ffffff;
-    background-image: url(../assets/images/bg/footer-bg-dark.svg); }
+    background-image: url(../assets/images/bg/footer-bg-dark.svg);
+    padding: 4rem;
+    align-items: center; }
+    .footer-banner--dark h2 {
+      font-size: 3.5rem;
+      margin-bottom: 0; }
 
 footer {
   padding-top: 0; }

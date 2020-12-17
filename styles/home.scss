@@ -662,9 +662,17 @@ section.auto-height {
   }
 
   &--dark {
+    background-position: top center;
     background-color: $black100;
     color: $white;
     background-image: url(../assets/images/bg/footer-bg-dark.svg);
+    padding: 4rem;
+    align-items: center;
+
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 0;
+    }
   }
 }
 
