@@ -14,8 +14,11 @@
     />
 
     <title>Amplication - Open source low code platform</title>
-    <meta name="keywords" content="open source low code, low code, low code platform, low code application">
-    <meta name="robots" content="index,follow">
+    <meta
+      name="keywords"
+      content="open source low code, low code, low code platform, low code application"
+    />
+    <meta name="robots" content="index,follow" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -62,18 +65,40 @@
     <!-- End Google Analytics -->
     <!-- Facebook Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '694076677979309');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "694076677979309");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=694076677979309&ev=PageView&noscript=1"/></noscript>
-    <!-- End Facebook Pixel Code -->    
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=694076677979309&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <!-- NAVBAR
@@ -153,13 +178,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a 
-                class="nav-link hover" 
+              <a
+                class="nav-link hover"
                 href="./#roadmap"
                 onclick="handleOutboundLinkClicks('Roadmap')"
-                >
-                  Roadmap
-                </a>
+              >
+                Roadmap
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link hover" href="/community.html"> Community </a>
@@ -212,6 +237,34 @@
 
             <div class="col-12">
               <div class="contact-details">
+                <a
+                  class="social-link github"
+                  href="https://github.com/amplication/amplication"
+                  target="_blank"
+                  alt="amplication on GitHub"
+                >
+                </a>
+                <a
+                  class="social-link twitter"
+                  href="https://twitter.com/amplication"
+                  target="_blank"
+                  alt="amplication on Twitter"
+                >
+                </a>
+                <a
+                  class="social-link linkedin"
+                  href="https://www.linkedin.com/company/amplication"
+                  target="_blank"
+                  alt="amplication on LinkedIn"
+                >
+                </a>
+                <a
+                  class="social-link facebook"
+                  href="https://www.facebook.com/amplicationcom/"
+                  target="_blank"
+                  alt="amplication on Facebook"
+                >
+                </a>
               </div>
             </div>
           </div>
@@ -226,14 +279,12 @@
         <div class="row align-items-center">
           <div class="col-12 text-center">
             <h1 class="main-title">
-              Create server&#8209;side applications, without&nbsp;coding
+              Create business applications, without&nbsp;coding
             </h1>
 
             <h3 class="h3 sub-title">
-              Amplication is an
-              <span class="highlight">open source</span> development tool. It
-              helps you develop quality Node.js applications without spending
-              time on repetitive coding&nbsp;tasks.
+              Build a fully functional Node.js server-side app with all your
+              data models and a React client, in less than 5 minutes.
             </h3>
 
             <div
@@ -250,8 +301,6 @@
                 href="/community.html"
                 class="btn btn-outline-secondary btn-lg col-sm-12 col-md-6 mb-4 text-black80"
               >
-                <!-- <img src="assets/icons/github.svg" /> -->
-                <span class="social-link github"></span>
                 Get Involved
               </a>
               <div class="spacer"></div>
@@ -275,8 +324,8 @@
             access&nbsp;control
           </div>
           <div class="solution-card">
-            Instantly get a Docker container with your database and node.js
-            application, or download the source&nbsp;code
+            Instantly get a Docker container with your database, a Node.js
+            application and a React client, or download the source&nbsp;code
           </div>
           <div class="solution-card">
             Continuously deploy your application to the cloud or your
@@ -304,7 +353,7 @@
             <ul class="type-list">
               <li>Design data models and create APIs without&nbsp;coding.</li>
               <li>
-                No need for server-side development skills since Amplication
+                No need for server-side development skills since amplication
                 auto-generates back-end&nbsp;code.
               </li>
               <li>
@@ -324,7 +373,7 @@
 
           <div class="type-card">
             <div class="mono-box black">
-              <span>Back-end</span>
+              <span>Full-stack</span>
               developer
             </div>
             <ul class="type-list">
@@ -333,8 +382,8 @@
                 TypeScript&nbsp;and&nbsp;Node.js.
               </li>
               <li>
-                Generated apps include NestJS, Prisma, REST API, authentication,
-                authorization, logging&nbsp;and&nbsp;more.
+                Generated apps include NestJS, Prisma, REST API, a React admin
+                UI, logging, authentication and&nbsp;authorization.
               </li>
               <li>
                 Decide whether to download the app within a Docker container
@@ -442,25 +491,31 @@
           id="features"
         >
           <div
-            class="col-6 col-lg-3"
+            class="col-6 col-lg-4"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/open_source_icon.svg" alt="open source" />
+              <img
+                src="assets/images/features/open_source_icon.svg"
+                alt="open source"
+              />
               <div class="feature-card-text">Open&#8209;source project</div>
             </div>
           </div>
 
           <div
-            class="col-6 col-lg-3"
+            class="col-6 col-lg-4"
             data-aos="fade-up"
             data-aos-delay="250"
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Code_Generator_icon.svg" alt="code generator" />
+              <img
+                src="assets/images/features/Code_Generator_icon.svg"
+                alt="code generator"
+              />
               <div class="feature-card-text">
                 TypeScript & Node.js source&nbsp;code
               </div>
@@ -468,25 +523,46 @@
           </div>
 
           <div
-            class="col-6 col-lg-3"
+            class="col-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            data-aos-anchor="#features"
+          >
+            <div class="feature-card">
+              <img
+                src="assets/images/features/admin_ui_icon.svg"
+                alt="code generator"
+              />
+              <div class="feature-card-text">React Admin UI</div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-lg-4"
             data-aos="fade-up"
             data-aos-delay="50"
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Version_control_icon.svg" alt="version control" />
+              <img
+                src="assets/images/features/Version_control_icon.svg"
+                alt="version control"
+              />
               <div class="feature-card-text">Version control</div>
             </div>
           </div>
 
           <div
-            class="col-6 col-lg-3"
+            class="col-6 col-lg-4"
             data-aos="fade-up"
             data-aos-delay="350"
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/vendor_lock_icon.svg" alt="vendor lock" />
+              <img
+                src="assets/images/features/vendor_lock_icon.svg"
+                alt="vendor lock"
+              />
               <div class="feature-card-text">
                 Freedom to continue on your&nbsp;own
               </div>
@@ -494,13 +570,16 @@
           </div>
 
           <div
-            class="col-6 col-lg-3"
+            class="col-6 col-lg-4"
             data-aos="fade-up"
             data-aos-delay="0"
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Roles_icon.svg" alt="role based access control"/>
+              <img
+                src="assets/images/features/Roles_icon.svg"
+                alt="role based access control"
+              />
               <div class="feature-card-text">
                 Role&#8209;based access&nbsp;control
               </div>
@@ -508,25 +587,31 @@
           </div>
 
           <div
-            class="col-6 col-lg-3"
+            class="col-6 col-lg-4"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Cloud_agnostic_icon.svg" alt="cloud agnostic" />
+              <img
+                src="assets/images/features/Cloud_agnostic_icon.svg"
+                alt="cloud agnostic"
+              />
               <div class="feature-card-text">Cloud agnostic</div>
             </div>
           </div>
 
           <div
-            class="col-6 col-lg-3"
+            class="col-6 col-lg-4"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Docker_containers_icon.svg" alt="docker container" />
+              <img
+                src="assets/images/features/Docker_containers_icon.svg"
+                alt="docker container"
+              />
               <div class="feature-card-text">
                 Docker ready to be&nbsp;deployed
               </div>
@@ -534,13 +619,16 @@
           </div>
 
           <div
-            class="col-6 col-lg-3"
+            class="col-6 col-lg-4"
             data-aos="fade-up"
             data-aos-delay="150"
             data-aos-anchor="#features"
           >
             <div class="feature-card">
-              <img src="assets/images/features/Security_and_performance_icon.svg" alt="security and performance" />
+              <img
+                src="assets/images/features/Security_and_performance_icon.svg"
+                alt="security and performance"
+              />
               <div class="feature-card-text">Security & performance</div>
             </div>
           </div>
@@ -570,8 +658,58 @@
               database, an Admin UI, and API.
             </div>
           </div>
-          <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
-            <img src="assets/images/steps/Design_your_database_image.svg" alt="design your database" />
+          <div
+            class="col-sm-12 col-md-6"
+            data-aos="fade-up-left"
+            style="height: 620px"
+          >
+            <ul class="nav nav-tabs feature-images-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="data-models-tab"
+                  data-toggle="tab"
+                  href="#data-models"
+                  role="tab"
+                  aria-controls="data-models"
+                  aria-selected="true"
+                  >Data models</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="roles-tab"
+                  data-toggle="tab"
+                  href="#roles"
+                  role="tab"
+                  aria-controls="roles"
+                  aria-selected="false"
+                  >Roles</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div
+                class="tab-pane active fade show"
+                id="data-models"
+                role="tabpanel"
+                aria-labelledby="data-models-tab"
+              >
+                <img
+                  src="assets/images/steps/data-models.svg"
+                  alt="design your database"
+                />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="roles"
+                role="tabpanel"
+                aria-labelledby="roles-tab"
+              >
+                <img src="assets/images/steps/roles.svg" alt="Roles" />
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -587,13 +725,27 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-right">
-            <img src="assets/images/steps/Deploy_your_app_image.png" alt="deploy your app" />
+            <img src="assets/images/steps/deploy.svg" alt="deploy your app" />
           </div>
         </div>
         <div
           class="row feature d-flex justify-content-between align-items-center"
         >
           <div class="col-sm-12 col-md-6 pr-3">
+            <div class="mono-box"><span>Access</span> your app</div>
+            <div class="feature-description">
+              Auto-generated admin UI based on data model schema; enables you to
+              access your data via user interface.
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
+            <img src="assets/images/steps/admin-ui.svg" alt="admin UI" />
+          </div>
+        </div>
+        <div
+          class="row feature d-flex justify-content-between align-items-center"
+        >
+          <div class="col-sm-12 col-md-6 pr-3 order-md-2 pr-md-3 pl-lg-5">
             <div class="mono-box">
               <span>Connect</span> from your code using REST
             </div>
@@ -604,7 +756,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
-            <img src="assets/images/steps/Connect_code_REST_image.png" alt="rest api" />
+            <img src="assets/images/steps/connect.svg" alt="rest api" />
           </div>
         </div>
       </div>
@@ -624,15 +776,18 @@
         <div class="row d-flex justify-content-between align-items-stretch">
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="roadmap-box">
-              <div class="roadmap-title">Business Logic</div>
+              <div class="roadmap-title">Integration</div>
               <ul class="roadmap-list">
-                <li>Visual flow editors for custom logic</li>
-                <li>Decision tables</li>
-                <li>Expressions</li>
-                <li>Condition builders</li>
+                <li>GraphQL API</li>
+                <li>Connectors library</li>
+                <li>Custom connectors</li>
+                <li>SMS</li>
+                <li>E&#8209;mail</li>
+                <li>Push notifications</li>
               </ul>
             </div>
           </div>
+
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="roadmap-box">
               <div class="roadmap-title">Database</div>
@@ -646,14 +801,12 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="roadmap-box">
-              <div class="roadmap-title">Integration</div>
+              <div class="roadmap-title">Business Logic</div>
               <ul class="roadmap-list">
-                <li>Connectors library</li>
-                <li>Custom connectors</li>
-                <li>SMS</li>
-                <li>E&#8209;mail</li>
-                <li>Push notifications</li>
-                <li>GraphQL API</li>
+                <li>Visual flow editors for custom logic</li>
+                <li>Decision tables</li>
+                <li>Expressions</li>
+                <li>Condition builders</li>
               </ul>
             </div>
           </div>
@@ -673,7 +826,7 @@
             <div class="roadmap-box">
               <div class="roadmap-title">Front-end</div>
               <ul class="roadmap-list">
-                <li>Auto-generated Admin UI</li>
+                <li class="done">Auto-generated Admin UI</li>
                 <li>Canvas pages</li>
                 <li>Built&#8209;in component library</li>
                 <li>Fully custom clients</li>
@@ -699,13 +852,15 @@
     <section class="auto-height page-get-started bg-white">
       <div class="container">
         <div class="footer-banner">
-          <h2 class="h2 text-white text-center">
-            <span>Free to Use.</span> <span> Open&#8209;source.</span>
-          </h2>
+          <div class="footer-banner__content">
+            <h2 class="h3 text-white">
+              <span>Free to Use.</span> <br /><span> Open&#8209;source.</span>
+            </h2>
 
-          <a href="https://app.amplication.com" class="btn btn-dark mr-1" onclick="handleOutboundLinkClicks('Login')">
-            Try Amplication in 5 minutes
-          </a>
+            <a href="https://app.amplication.com" class="btn btn-dark mr-1">
+              Build your app in 5 minutes
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -825,15 +980,13 @@
       });
 
       function handleOutboundLinkClicks(label) {
-        ga('send', 'event', {
-          eventCategory: 'Outbound Link',
-          eventAction: 'click',
+        ga("send", "event", {
+          eventCategory: "Outbound Link",
+          eventAction: "click",
           eventLabel: label,
-          transport: 'beacon'
+          transport: "beacon",
         });
       }
-
-      
     </script>
   </body>
 </html>
