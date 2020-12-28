@@ -7512,6 +7512,25 @@ section {
     .solution {
       display: block; } }
 
+.feature-images-tabs {
+  border-bottom: none; }
+  .feature-images-tabs .nav-link,
+  .feature-images-tabs .nav-link.active {
+    border-radius: 1rem;
+    border: none;
+    background: none;
+    color: #414168;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.75rem;
+    margin-right: 0.75rem; }
+  .feature-images-tabs .nav-link.active {
+    background-color: #e7e7ec;
+    font-weight: 500; }
+  .feature-images-tabs .nav-link:hover {
+    background-color: #e7e7ec; }
+
 .solution-card {
   flex: 1;
   text-align: center;
@@ -7647,6 +7666,9 @@ section {
     width: 100%;
     margin: 0;
     margin-bottom: 1rem; }
+  .roadmap-box .roadmap-list .done {
+    opacity: 0.5;
+    text-decoration: line-through; }
 
 section.auto-height {
   min-height: 0; }
@@ -7841,25 +7863,49 @@ section.auto-height {
       width: 100%; }
 
 .footer-banner {
-  background-image: url(../assets/images/bg/footer-bg.svg);
-  background-position: top center;
+  background-image: url(../assets/images/bg/banner-free-to-use.png);
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 4px;
   background-color: #a787ff;
-  padding: 4rem;
+  padding: 2rem 4rem;
+  padding-right: 8rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column; }
+  .footer-banner__content {
+    text-align: left; }
+  .footer-banner h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem; }
   @media (max-width: 1199.98px) {
     .footer-banner {
-      background-image: url(../assets/images/bg/footer-bg-mobile.svg);
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+      padding: 1rem 4rem;
+      padding-right: 4rem; } }
+  @media (max-width: 991.98px) {
+    .footer-banner {
+      background-image: url(../assets/images/bg/banner-small-free-to-use.png), url(../assets/images/bg/banner-small-free-to-use-bg.svg);
+      box-shadow: inset 4px -4px 20px 2px rgba(82, 58, 155, 0.22);
+      background-position: bottom right, top left;
+      background-size: 80%, cover;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 300px;
+      padding-top: 3rem;
+      padding-right: 4rem; }
+      .footer-banner h2 {
+        text-align: center; } }
   .footer-banner--dark {
+    background-position: top center;
     background-color: #121242;
     color: #ffffff;
-    background-image: url(../assets/images/bg/footer-bg-dark.svg); }
+    background-image: url(../assets/images/bg/footer-bg-dark.svg);
+    padding: 4rem;
+    align-items: center; }
+    .footer-banner--dark h2 {
+      font-size: 3.5rem;
+      margin-bottom: 0; }
 
 footer {
   padding-top: 0; }
