@@ -105,6 +105,10 @@ nav.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
 
   .navbar-toggler {

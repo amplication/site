@@ -1,7 +1,11 @@
 $menu-height: 60px;
 $solution-card-height: 180px;
 $solution-card-height-mobile: 150px;
-$page-welcome-height: 100vh;
+$page-welcome-height: 50vh;
+
+@mixin font-mono-plain {
+  font-family: "DM Mono", monospace;
+}
 
 @mixin font-mono {
   font-family: "DM Mono", monospace;

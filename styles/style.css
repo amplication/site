@@ -7306,7 +7306,11 @@ nav.navbar {
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    white-space: nowrap; }
+    @media (max-width: 767.98px) {
+      nav.navbar .latest-version {
+        display: none; } }
   nav.navbar .navbar-toggler {
     padding-right: 0; }
   nav.navbar .navbar-toggler-icon {
@@ -7371,6 +7375,53 @@ nav.navbar {
           nav.navbar .nav-item .nav-link.btn:hover .social-link {
             background-color: #7950ed; }
 
+.animated-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 50px;
+  line-height: 1.3; }
+  .animated-header .main-title {
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+    font-size: 4rem; }
+    @media (max-width: 991.98px) {
+      .animated-header .main-title {
+        font-size: 3rem !important; } }
+    @media (max-width: 767.98px) {
+      .animated-header .main-title {
+        font-size: 2rem !important;
+        line-height: 1.5; } }
+  .animated-header .animated-header__animated-text {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    color: #7950ed;
+    display: inline-block;
+    line-height: 1; }
+  .animated-header .animated-header__fixed-text {
+    display: block; }
+  .animated-header .explainer {
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.2rem;
+    position: relative;
+    max-width: 800px;
+    color: #414168;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7; }
+    .animated-header .explainer .highlight {
+      color: #7950ed; }
+    .animated-header .explainer:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 4px;
+      background-color: #121242; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -7380,7 +7431,7 @@ body {
 
 @media (min-width: 1500px) {
   .container {
-    width: 80%;
+    width: 70%;
     max-width: 1700px; } }
 
 h2.h2 {
@@ -7424,7 +7475,7 @@ section {
     padding-left: 24px;
     padding-right: 24px; }
   section.page-welcome {
-    min-height: 100vh;
+    min-height: 50vh;
     background-image: url(../assets/images/bg/home-bg.svg);
     background-position: top left;
     background-repeat: no-repeat;
@@ -7433,9 +7484,7 @@ section {
     section.page-welcome .buttons-wrapper {
       flex-direction: column; }
     section.page-welcome .main-title {
-      max-width: 1024px;
-      margin: auto;
-      margin-top: 100px; }
+      max-width: 1024px; }
       @media (max-width: 767.98px) {
         section.page-welcome .main-title {
           font-size: 2.5rem; } }
@@ -7474,15 +7523,12 @@ section {
     padding-top: 0;
     position: relative;
     background-color: transparent;
-    margin-top: -90px;
+    padding-top: 90px;
     min-height: 0; }
-    @media (max-width: 1199.98px) {
-      section.page-welcome-solution {
-        margin-top: -75px; } }
     section.page-welcome-solution:before {
       content: "";
       position: absolute;
-      top: 90px;
+      top: 0;
       bottom: 0;
       width: 100%;
       background-color: #f4f4f7; }

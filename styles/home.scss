@@ -12,7 +12,7 @@ body {
 
 @media (min-width: 1500px) {
   .container {
-    width: 80%;
+    width: 70%;
     max-width: 1700px;
   }
 }
@@ -85,8 +85,6 @@ section {
     }
     .main-title {
       max-width: 1024px;
-      margin: auto;
-      margin-top: 100px;
 
       @include media-breakpoint-down(sm) {
         font-size: 2.5rem;
@@ -146,16 +144,18 @@ section {
     padding-top: 0;
     position: relative;
     background-color: transparent;
-    margin-top: -$solution-card-height/2;
+    // margin-top: -$solution-card-height/2;
 
-    @include media-breakpoint-down(lg) {
-      margin-top: -$solution-card-height-mobile/2;
-    }
+    // @include media-breakpoint-down(lg) {
+    //   margin-top: -$solution-card-height-mobile/2;
+    // }
+
+    padding-top: $solution-card-height/2;
 
     &:before {
       content: "";
       position: absolute;
-      top: $solution-card-height/2;
+      top: 0; // $solution-card-height/2;
       bottom: 0;
       width: 100%;
       background-color: $black5;
