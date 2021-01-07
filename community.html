@@ -12,8 +12,11 @@
     />
 
     <title>Join our community & contribute to Amplication</title>
-    <meta name="keywords" content="open source community, github community, join open source, contribute open source, contribute code">
-    <meta name="robots" content="index,follow">
+    <meta
+      name="keywords"
+      content="open source community, github community, join open source, contribute open source, contribute code"
+    />
+    <meta name="robots" content="index,follow" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -59,31 +62,74 @@
     <!-- End Google Analytics -->
     <!-- Facebook Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '694076677979309');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "694076677979309");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=694076677979309&ev=PageView&noscript=1"/></noscript>
-    <!-- End Facebook Pixel Code -->   
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=694076677979309&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
     <!-- Global site tag (gtag.js) - Google Ads: 455018710 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-455018710"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-455018710"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-455018710');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-455018710");
     </script>
   </head>
   <body>
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top flex-column">
+      <div class="notice-stripe">
+        <a
+          href="https://github.com/amplication/amplication"
+          target="_blank"
+          alt="amplication on github"
+          onclick="handleOutboundLinkClicks('GitHub star')"
+        >
+          <img
+            class="git-hub-star"
+            src="assets/images/star.svg"
+            alt="github star"
+          />
+          If you like Amplication, give it a star on
+          <span class="social-link github"> </span>
+        </a>
+      </div>
       <div class="container-fluid">
         <a
           class="latest-version"
@@ -158,13 +204,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a 
-                class="nav-link hover" 
+              <a
+                class="nav-link hover"
                 href="./#roadmap"
                 onclick="handleOutboundLinkClicks('Roadmap')"
-                >
-                  Roadmap
-                </a>
+              >
+                Roadmap
+              </a>
             </li>
             <li class="nav-item active">
               <a class="nav-link hover" href="/community.html"> Community </a>
@@ -180,22 +226,9 @@
               </a>
             </li>
 
-            <li class="nav-item d-none d-lg-block">
-              <span class="nav-link">
-                <a
-                  class="social-link github"
-                  href="https://github.com/amplication/amplication"
-                  target="_blank"
-                  alt="amplication on github"
-                  onclick="handleOutboundLinkClicks('GitHub repo')"
-                >
-                </a>
-              </span>
-            </li>
-
             <li class="nav-item d-none d-lg-flex">
               <a
-                class="nav-link btn btn-outline-secondary"
+                class="nav-link btn btn-primary"
                 href="https://app.amplication.com"
                 onclick="handleOutboundLinkClicks('Login')"
               >
@@ -217,6 +250,34 @@
 
             <div class="col-12">
               <div class="contact-details">
+                <a
+                  class="social-link github"
+                  href="https://github.com/amplication/amplication"
+                  target="_blank"
+                  alt="amplication on GitHub"
+                >
+                </a>
+                <a
+                  class="social-link twitter"
+                  href="https://twitter.com/amplication"
+                  target="_blank"
+                  alt="amplication on Twitter"
+                >
+                </a>
+                <a
+                  class="social-link linkedin"
+                  href="https://www.linkedin.com/company/amplication"
+                  target="_blank"
+                  alt="amplication on LinkedIn"
+                >
+                </a>
+                <a
+                  class="social-link facebook"
+                  href="https://www.facebook.com/amplicationcom/"
+                  target="_blank"
+                  alt="amplication on Facebook"
+                >
+                </a>
               </div>
             </div>
           </div>
@@ -235,7 +296,7 @@
             <h3 class="h3">
               Join us in building the next generation of development tools. Any
               contribution counts.
-            </h3>           
+            </h3>
           </div>
           <div class="community-bg col-12 offset-md-1 col-md-4"></div>
         </div>
@@ -712,13 +773,13 @@
     <script src="captureUtm.js"></script>
     <script>
       function handleOutboundLinkClicks(label) {
-        ga('send', 'event', {
-          eventCategory: 'Outbound Link',
-          eventAction: 'click',
+        ga("send", "event", {
+          eventCategory: "Outbound Link",
+          eventAction: "click",
           eventLabel: label,
-          transport: 'beacon'
+          transport: "beacon",
         });
-      }     
+      }
     </script>
   </body>
 </html>

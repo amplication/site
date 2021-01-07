@@ -1,0 +1,51 @@
+@import "./base.scss";
+
+.notice-stripe {
+  @include font-mono-plain;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  background: $black2;
+  width: 100vw;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  animation: enter-from-top 0.5s ease-in-out 3s;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $black80;
+  }
+
+  .git-hub-star {
+    width: 16px;
+    margin-right: 0.5rem;
+  }
+
+  .social-link {
+    margin-left: 0.5rem;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      background-color: $black100;
+    }
+  }
+}
+
+@keyframes enter-from-top {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 40px;
+  }
+}

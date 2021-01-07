@@ -116,7 +116,23 @@
   <body>
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top flex-column">
+      <div class="notice-stripe">
+        <a
+          href="https://github.com/amplication/amplication"
+          target="_blank"
+          alt="amplication on github"
+          onclick="handleOutboundLinkClicks('GitHub star')"
+        >
+          <img
+            class="git-hub-star"
+            src="assets/images/star.svg"
+            alt="github star"
+          />
+          If you like Amplication, give it a star on
+          <span class="social-link github"> </span>
+        </a>
+      </div>
       <div class="container-fluid">
         <a
           class="latest-version"
@@ -213,22 +229,9 @@
               </a>
             </li>
 
-            <li class="nav-item d-none d-lg-block">
-              <span class="nav-link">
-                <a
-                  class="social-link github"
-                  href="https://github.com/amplication/amplication"
-                  target="_blank"
-                  alt="amplication on github"
-                  onclick="handleOutboundLinkClicks('GitHub repo')"
-                >
-                </a>
-              </span>
-            </li>
-
             <li class="nav-item d-none d-lg-flex">
               <a
-                class="nav-link btn btn-outline-secondary"
+                class="nav-link btn btn-primary"
                 href="https://app.amplication.com"
                 onclick="handleOutboundLinkClicks('Login')"
               >

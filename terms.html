@@ -57,23 +57,45 @@
     <!-- End Google Analytics -->
     <!-- Facebook Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '694076677979309');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "694076677979309");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=694076677979309&ev=PageView&noscript=1"/></noscript>
-    <!-- End Facebook Pixel Code -->    
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=694076677979309&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top flex-column">
       <div class="container-fluid">
         <a
           class="latest-version"
@@ -132,6 +154,7 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://docs.amplication.com/docs/getting-started"
+                onclick="handleOutboundLinkClicks('Docs')"
               >
                 Docs
               </a>
@@ -141,12 +164,19 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://github.com/amplication/amplication/releases"
+                onclick="handleOutboundLinkClicks('Releases')"
               >
                 Releases
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hover" href="./#roadmap">Roadmap</a>
+              <a
+                class="nav-link hover"
+                href="./#roadmap"
+                onclick="handleOutboundLinkClicks('Roadmap')"
+              >
+                Roadmap
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link hover" href="/community.html"> Community </a>
@@ -156,27 +186,17 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title="
+                onclick="handleOutboundLinkClicks('Add a feature request')"
               >
                 Add a feature request
               </a>
             </li>
 
-            <li class="nav-item d-none d-lg-block">
-              <span class="nav-link">
-                <a
-                  class="social-link github"
-                  href="https://github.com/amplication/amplication"
-                  target="_blank"
-                  alt="amplication on github"
-                >
-                </a>
-              </span>
-            </li>
-
             <li class="nav-item d-none d-lg-flex">
               <a
-                class="nav-link btn btn-outline-secondary"
+                class="nav-link btn btn-primary"
                 href="https://app.amplication.com"
+                onclick="handleOutboundLinkClicks('Login')"
               >
                 Login
               </a>
