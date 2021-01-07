@@ -7665,6 +7665,7 @@ section {
     height: 80px;
     border-radius: 16px;
     margin-bottom: 1rem;
+    background: #121242;
     background: radial-gradient(50% 50% at 50% 50%, #1e1e5f 0%, #121242 100%);
     box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16); }
     .solution-card .solution-icon img {
