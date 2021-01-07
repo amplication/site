@@ -7625,6 +7625,9 @@ section {
 
 .feature-images-tabs {
   border-bottom: none; }
+  @media (max-width: 991.98px) {
+    .feature-images-tabs {
+      margin-top: 2rem; } }
   .feature-images-tabs .nav-link,
   .feature-images-tabs .nav-link.active {
     border-radius: 1rem;

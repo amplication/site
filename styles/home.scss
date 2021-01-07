@@ -196,6 +196,10 @@ section {
 
 .feature-images-tabs {
   border-bottom: none;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 2rem;
+  }
   .nav-link,
   .nav-link.active {
     border-radius: 1rem;
