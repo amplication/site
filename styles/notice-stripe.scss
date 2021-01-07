@@ -17,6 +17,10 @@
   align-items: center;
   justify-content: center;
 
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
   a {
     display: flex;
     align-items: center;
