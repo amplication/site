@@ -1,7 +1,11 @@
 $menu-height: 60px;
 $solution-card-height: 180px;
 $solution-card-height-mobile: 150px;
-$page-welcome-height: 100vh;
+$page-welcome-height: 50vh;
+
+@mixin font-mono-plain {
+  font-family: "DM Mono", monospace;
+}
 
 @mixin font-mono {
   font-family: "DM Mono", monospace;
@@ -24,7 +28,7 @@ $page-welcome-height: 100vh;
 }
 
 @mixin button-outline-secondary {
-  border-color: $black20;
+  border-color: $black10;
   background-color: $white;
   color: $primary;
   white-space: nowrap;
@@ -44,13 +48,10 @@ $page-welcome-height: 100vh;
   }
 
   &:hover {
+    border-color: $black10;
     background-color: $white;
-    border-color: $primary;
     color: $primary;
-
-    .social-link {
-      background-color: $primary;
-    }
+    box-shadow: none;
   }
 }
 
@@ -65,4 +66,16 @@ $page-welcome-height: 100vh;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
+}
+
+.btn-primary {
+  box-shadow: 0px 8px 20px rgba(121, 80, 237, 0.24);
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.btn-outline-secondary {
+  box-shadow: 0px 8px 20px rgba(167, 143, 235, 0.24);
 }

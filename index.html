@@ -25,7 +25,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
@@ -100,18 +100,39 @@
     /></noscript>
     <!-- End Facebook Pixel Code -->
     <!-- Global site tag (gtag.js) - Google Ads: 455018710 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-455018710"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-455018710"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-455018710');
-    </script>    
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-455018710");
+    </script>
   </head>
   <body>
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top flex-column">
+      <div class="notice-stripe">
+        <a
+          href="https://github.com/amplication/amplication"
+          target="_blank"
+          alt="amplication on github"
+          onclick="handleOutboundLinkClicks('GitHub star')"
+        >
+          <img
+            class="git-hub-star"
+            src="assets/images/star.svg"
+            alt="github star"
+          />
+          If you like Amplication, give it a star on
+          <span class="social-link github"> </span>
+        </a>
+      </div>
       <div class="container-fluid">
         <a
           class="latest-version"
@@ -208,22 +229,9 @@
               </a>
             </li>
 
-            <li class="nav-item d-none d-lg-block">
-              <span class="nav-link">
-                <a
-                  class="social-link github"
-                  href="https://github.com/amplication/amplication"
-                  target="_blank"
-                  alt="amplication on github"
-                  onclick="handleOutboundLinkClicks('GitHub repo')"
-                >
-                </a>
-              </span>
-            </li>
-
             <li class="nav-item d-none d-lg-flex">
               <a
-                class="nav-link btn btn-outline-secondary"
+                class="nav-link btn btn-primary"
                 href="https://app.amplication.com"
                 onclick="handleOutboundLinkClicks('Login')"
               >
@@ -286,18 +294,37 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <h1 class="main-title">
-              Create business applications, without&nbsp;coding
-            </h1>
+            <div class="animated-header">
+              <h1 class="main-title">
+                <span class="animated-header__fixed-text"
+                  >Instantly generate</span
+                >
+                <span
+                  id="animated-header-typed"
+                  class="animated-header__animated-text"
+                ></span>
 
-            <h3 class="h3 sub-title">
-              An <span class="highlight">open-source</span> dev tool for
-              building fully functional server-side Node.js apps with React
-              clients...blazing&nbsp;fast!
-            </h3>
-
+                <span class="animated-header__fixed-text"
+                  >Just code what matters.</span
+                >
+              </h1>
+              <div id="animated-header-content" style="display: none">
+                <span>GraphQL API</span>
+                <span>REST API</span>
+                <span>Authentication</span>
+                <span>Authorization</span>
+                <span>Admin UI</span>
+                <span>Logging</span>
+              </div>
+              <div class="explainer">
+                Amplication is an
+                <span class="highlight">open&#8209;source</span> development
+                tool. It helps you develop quality Node.js applications without
+                spending time on repetitive coding&nbsp;tasks.
+              </div>
+            </div>
             <div
-              class="buttons-wrapper d-flex mb-4 align-items-center justify-content-center"
+              class="buttons-wrapper d-flex mb-4 align-items-center justify-content-start mt-4"
             >
               <a
                 href="https://app.amplication.com"
@@ -329,14 +356,24 @@
       <div class="container">
         <div class="solution">
           <div class="solution-card">
-            Easily create data models, and easily configure role-based
-            access&nbsp;control
+            <span class="solution-icon">
+              <img src="assets/images/database.svg" alt="github star" />
+            </span>
+            Easily create data models, and&nbsp;easily configure
+            role&#8209;based access&nbsp;control
           </div>
           <div class="solution-card">
+            <span class="solution-icon">
+              <img src="assets/images/docker.svg" alt="github star" />
+            </span>
             Instantly get a Docker container with your database, a Node.js
-            application and a React client, or download the source&nbsp;code
+            application and a React client, or download
+            the&nbsp;source&nbsp;code
           </div>
           <div class="solution-card">
+            <span class="solution-icon rotate">
+              <img src="assets/images/publish.svg" alt="github star" />
+            </span>
             Continuously deploy your application to the cloud or your
             local&nbsp;environment
           </div>
@@ -360,7 +397,10 @@
             </div>
 
             <ul class="type-list">
-              <li>Design data models and create REST & GraphQL APIs without&nbsp;coding.</li>
+              <li>
+                Design data models and create REST & GraphQL APIs
+                without&nbsp;coding.
+              </li>
               <li>
                 No need for server-side development skills since amplication
                 auto-generates back-end&nbsp;code.
@@ -391,8 +431,8 @@
                 TypeScript&nbsp;and&nbsp;Node.js.
               </li>
               <li>
-                Generated apps include NestJS, Prisma, REST & GraphQL API, a React admin
-                UI, logging, authentication and&nbsp;authorization.
+                Generated apps include NestJS, Prisma, REST & GraphQL API, a
+                React admin UI, logging, authentication and&nbsp;authorization.
               </li>
               <li>
                 Decide whether to download the app within a Docker container
@@ -760,8 +800,8 @@
             </div>
             <div class="feature-description">
               Start working with your API from any HTTP or GraphQL client
-              (React, Angular, Vue, Flutter, iOS, Android, Go,
-              Node.js, Python and more).
+              (React, Angular, Vue, Flutter, iOS, Android, Go, Node.js, Python
+              and more).
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
@@ -981,6 +1021,20 @@
       );
     </script>
     <script src="captureUtm.js"></script>
+    <script src="./scripts/typed.min.js"></script>
+
+    <script>
+      var typed = new Typed("#animated-header-typed", {
+        stringsElement: "#animated-header-content",
+        typeSpeed: 60,
+        backSpeed: 20,
+        backDelay: 1700,
+        startDelay: 0,
+        smartBackspace: false,
+        loop: true,
+      });
+    </script>
+
     <script>
       $(document).ready(function () {
         $("#navbarCollapse a[href^='./#']").click(function () {

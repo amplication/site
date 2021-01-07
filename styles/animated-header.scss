@@ -1,0 +1,69 @@
+@import "./base.scss";
+
+.animated-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 70px;
+  line-height: 1.3;
+
+  .main-title {
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+    font-size: 4rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 3rem !important;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 2rem !important;
+      line-height: 1.5;
+    }
+  }
+
+  .animated-header {
+    &__animated-text {
+      @include font-mono-plain;
+      font-weight: 400;
+      color: $primary;
+      display: inline-block;
+      line-height: 1;
+      //white-space: nowrap;
+    }
+    &__fixed-text {
+      display: block;
+    }
+  }
+
+  .explainer {
+    // @include font-mono-plain;
+    font-weight: 400;
+    // max-width: 400px;
+    text-align: left;
+    font-size: 1.2rem;
+    position: relative;
+    max-width: 800px;
+    // padding: 0 1rem;
+    color: $black80;
+    // margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+
+    .highlight {
+      color: $primary;
+    }
+
+    &:before {
+      // content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 4px;
+      background-color: $black100;
+    }
+  }
+}
