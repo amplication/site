@@ -42,7 +42,7 @@ section {
   min-height: 100vh;
   padding-top: 10vh;
   padding-bottom: 15vh;
-  background-color: $black5;
+  background-color: $black100;
   overflow: hidden;
 
   .sub-title {
@@ -74,7 +74,7 @@ section {
     // height: $page-welcome-height;
     min-height: $page-welcome-height;
 
-    background-image: url(../assets/images/bg/home-bg.svg);
+    //background-image: url(../assets/images/bg/home-bg.svg);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,7 +153,7 @@ section {
       top: 0;
       bottom: 0;
       width: 100%;
-      background-color: $black5;
+      background-color: $black100;
 
       @include media-breakpoint-down(lg) {
         top: $solution-card-height-mobile/2;
@@ -324,8 +324,8 @@ section {
   padding: 4rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  color: $white;
-  border: 1px solid $black10;
+  //color: $white;
+  //border: 1px solid $black10;
   letter-spacing: 0.5px;
 
   @include media-breakpoint-down(lg) {
@@ -347,7 +347,7 @@ section {
   flex: 1;
   text-align: center;
   background-color: $black100;
-  color: $white;
+  color: $black5;
   border-radius: $border-radius;
   display: flex;
   align-items: center;
@@ -421,7 +421,7 @@ section {
     padding-left: 0;
     li {
       list-style: none;
-      color: $white;
+      color: $black5;
       width: 100%;
       margin: 0;
       margin-bottom: 1rem;
@@ -454,6 +454,9 @@ section.auto-height {
 .text-black80 {
   color: $black80;
 }
+.text-secondary-turquoise {
+  color: $secondary-turquoise;
+}
 
 .feature {
   margin-top: 150px;
@@ -470,6 +473,7 @@ section.auto-height {
   }
   .feature-description {
     font-size: 1rem;
+    color: $black10;
 
     @include media-breakpoint-down(lg) {
       text-align: left;
@@ -584,7 +588,7 @@ section.auto-height {
   }
   &.black {
     span {
-      background-color: $black100;
+      background-color: $secondary-turquoise;
     }
   }
 }
@@ -602,7 +606,7 @@ section.auto-height {
     max-width: 475px;
     margin: 0 1rem;
     flex: 1;
-    background-color: $white;
+    background-color: $black90;
     border-radius: 0.5rem;
     // border: 1px solid $black10;
     border: none;
@@ -629,12 +633,12 @@ section.auto-height {
         position: relative;
         padding-left: 38px;
         margin-bottom: 1.5rem;
-        color: $black80;
+        color: $black5;
         &:before {
           content: "";
           width: 24px;
           height: 24px;
-          background-image: url("../assets/images/list-item-check-circle.svg");
+          background-image: url("../assets/images/list-item-check.svg");
           background-repeat: no-repeat;
           position: absolute;
           left: 0;
