@@ -42,7 +42,7 @@ section {
   min-height: 100vh;
   padding-top: 10vh;
   padding-bottom: 15vh;
-  background-color: $black100;
+  background-color: $black5;
   overflow: hidden;
 
   .sub-title {
@@ -153,7 +153,7 @@ section {
       top: 0;
       bottom: 0;
       width: 100%;
-      background-color: $black100;
+      background-color: $black5;
 
       @include media-breakpoint-down(lg) {
         top: $solution-card-height-mobile/2;
@@ -347,7 +347,7 @@ section {
   flex: 1;
   text-align: center;
   background-color: $black100;
-  color: $black5;
+  color: $white;
   border-radius: $border-radius;
   display: flex;
   align-items: center;
@@ -421,7 +421,7 @@ section {
     padding-left: 0;
     li {
       list-style: none;
-      color: $black5;
+      color: $white;
       width: 100%;
       margin: 0;
       margin-bottom: 1rem;
@@ -606,7 +606,7 @@ section.auto-height {
     max-width: 475px;
     margin: 0 1rem;
     flex: 1;
-    background-color: $black90;
+    background-color: $white;
     border-radius: 0.5rem;
     // border: 1px solid $black10;
     border: none;
@@ -633,7 +633,7 @@ section.auto-height {
         position: relative;
         padding-left: 38px;
         margin-bottom: 1.5rem;
-        color: $black5;
+        color: $black80;
         &:before {
           content: "";
           width: 24px;
