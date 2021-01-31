@@ -324,8 +324,7 @@ section {
   padding: 4rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  //color: $white;
-  //border: 1px solid $black10;
+  color: $white;
   letter-spacing: 0.5px;
 
   @include media-breakpoint-down(lg) {
@@ -473,7 +472,6 @@ section.auto-height {
   }
   .feature-description {
     font-size: 1rem;
-    color: $black10;
 
     @include media-breakpoint-down(lg) {
       text-align: left;
