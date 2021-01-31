@@ -4,7 +4,7 @@
   @include font-mono-plain;
   box-sizing: border-box;
   font-size: 0.9rem;
-  background: $black2;
+  background: $black90;
   width: 100vw;
   text-align: center;
   height: 0px;
@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $black80;
+    color: $black5;
   }
 
   .git-hub-star {
@@ -39,7 +39,7 @@
     height: 20px;
 
     &:hover {
-      background-color: $black100;
+      background-color: $primary;
     }
   }
 }

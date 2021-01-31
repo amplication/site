@@ -120,15 +120,15 @@ nav.navbar {
   .navbar-toggler-icon {
     height: 17px;
     width: 22px;
-    border-top: 3px solid $black80;
-    border-bottom: 3px solid $black80;
+    border-top: 3px solid $black5;
+    border-bottom: 3px solid $black5;
     position: relative;
     &:after {
       content: "";
       position: absolute;
       top: 4px;
       left: 0;
-      border-top: 3px solid $black80;
+      border-top: 3px solid $black5;
       width: 100%;
     }
   }
@@ -147,13 +147,13 @@ nav.navbar {
     }
 
     .nav-link {
-      color: $black60;
+      color: $black20;
       white-space: nowrap;
       padding-right: 1rem !important;
       padding-left: 1rem !important;
 
       &.hover:hover {
-        color: $primary;
+        color: $white;
       }
 
       .social-link {

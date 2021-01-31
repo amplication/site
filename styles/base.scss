@@ -28,9 +28,9 @@ $page-welcome-height: 50vh;
 }
 
 @mixin button-outline-secondary {
-  border-color: $black10;
-  background-color: $white;
-  color: $primary;
+  border: none;
+  background-color: $black80;
+  color: $white;
   white-space: nowrap;
   .social-link {
     width: 1.4rem;
@@ -48,9 +48,9 @@ $page-welcome-height: 50vh;
   }
 
   &:hover {
-    border-color: $black10;
-    background-color: $white;
-    color: $primary;
+    border: none;
+    background-color: $black90;
+    color: $white;
     box-shadow: none;
   }
 }
@@ -68,14 +68,10 @@ $page-welcome-height: 50vh;
   }
 }
 
-.btn-primary {
-  box-shadow: 0px 8px 20px rgba(121, 80, 237, 0.24);
-
-  &:hover {
-    box-shadow: none;
-  }
+.bg-gradient {
+  background: linear-gradient(180deg, $black100 0%, $black90 100%);
 }
 
-.btn-outline-secondary {
-  box-shadow: 0px 8px 20px rgba(167, 143, 235, 0.24);
+.bg-black90 {
+  background-color: $black90;
 }
