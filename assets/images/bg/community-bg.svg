@@ -1,11 +1,11 @@
 <svg width="1920" height="920" viewBox="0 0 1920 920" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="920">
-<rect width="1920" height="920" transform="matrix(1 0 0 -1 0 920)" fill="#5D30D9"/>
+<rect width="1920" height="920" transform="matrix(1 0 0 -1 0 920)" fill="#22273C"/>
 </mask>
 <g mask="url(#mask0)">
-<circle opacity="0.2" cx="1975" cy="739" r="318.5" stroke="white"/>
-<circle opacity="0.2" cx="1955" cy="726" r="518.5" stroke="white"/>
-<path opacity="0.2" d="M1703.5 -263C1703.5 147.071 1370.85 479.5 960.5 479.5C550.152 479.5 217.5 147.071 217.5 -263C217.5 -673.071 550.152 -1005.5 960.5 -1005.5C1370.85 -1005.5 1703.5 -673.071 1703.5 -263Z" stroke="white"/>
-<circle opacity="0.2" cx="-205.5" cy="876.5" r="414" stroke="white"/>
+<circle cx="1975" cy="739" r="318.5" stroke="#373D57"/>
+<circle cx="1955" cy="726" r="518.5" stroke="#373D57"/>
+<path d="M1703.5 -263C1703.5 147.071 1370.85 479.5 960.5 479.5C550.152 479.5 217.5 147.071 217.5 -263C217.5 -673.071 550.152 -1005.5 960.5 -1005.5C1370.85 -1005.5 1703.5 -673.071 1703.5 -263Z" stroke="#373D57"/>
+<circle cx="-205.5" cy="876.5" r="414" stroke="#373D57"/>
 </g>
 </svg>
