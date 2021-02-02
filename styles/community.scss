@@ -209,3 +209,9 @@
     }
   }
 }
+
+.text-turquoise-mono {
+  @include font-mono-plain;
+  color: $secondary-turquoise;
+  font-weight: normal;
+}

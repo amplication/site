@@ -8251,3 +8251,8 @@ footer {
       .action-panel-list .panel {
         border-right: none !important;
         margin: 2rem 0 !important; } }
+
+.text-turquoise-mono {
+  font-family: "DM Mono", monospace;
+  color: #32c9e5;
+  font-weight: normal; }
