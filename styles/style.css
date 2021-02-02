@@ -7354,7 +7354,7 @@ nav.navbar {
       border-top-left-radius: 4px;
       border-top-right-radius: 4px; }
     nav.navbar .nav-item.active .nav-link {
-      color: #7950ed; }
+      color: #ffffff; }
     nav.navbar .nav-item .nav-link {
       color: #80869d;
       white-space: nowrap;
@@ -7700,6 +7700,8 @@ section {
       padding: 2rem 1rem; } }
   .about-box .mono-box span {
     background-color: #15192c; }
+  .about-box .mono-box-turquoise span {
+    background-color: #32c9e5; }
   @media (min-width: 992px) {
     .about-box {
       height: 100%; } }
@@ -8192,3 +8194,9 @@ footer {
       .action-panel-list .panel {
         border-right: none !important;
         margin: 2rem 0 !important; } }
+
+.btn-primary {
+  color: #ffffff;
+  margin: 0 0.5rem;
+  padding: 0.5rem 2rem !important;
+  background-color: #7950ed; }

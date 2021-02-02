@@ -142,7 +142,7 @@ nav.navbar {
     &.active {
       @include selected-tab;
       .nav-link {
-        color: $primary;
+        color: $white
       }
     }
 

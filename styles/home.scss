@@ -325,6 +325,11 @@ section {
       background-color: $black100;
     }
   }
+  .mono-box-turquoise {
+    span {
+      background-color: $secondary-turquoise; // why it doesnt work as it works with the black
+    }
+  }
 
   @include media-breakpoint-up(lg) {
     height: 100%;
