@@ -7192,11 +7192,29 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-black90 {
   background-color: #22273c; }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .btn .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem; }
+
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
 
 .bg-black90 {
   background-color: #22273c; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .btn .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem; }
 
 .tabs {
   position: relative; }
@@ -7376,6 +7394,15 @@ nav.navbar {
 .bg-black90 {
   background-color: #22273c; }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .btn .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem; }
+
 .animated-header {
   display: flex;
   align-items: flex-start;
@@ -7429,6 +7456,15 @@ nav.navbar {
 .bg-black90 {
   background-color: #22273c; }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .btn .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem; }
+
 .notice-stripe {
   font-family: "DM Mono", monospace;
   box-sizing: border-box;
@@ -7474,6 +7510,15 @@ nav.navbar {
 
 .bg-black90 {
   background-color: #22273c; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .btn .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem; }
 
 html {
   scroll-behavior: smooth; }
@@ -7663,11 +7708,14 @@ section {
     box-shadow: 0px 8px 20px rgba(96, 59, 201, 0.2); }
 
 .feature-card {
+  box-sizing: border-box;
   font-size: 0.8rem;
   padding: 0.5rem;
   margin: 0;
   margin-bottom: 1rem;
-  text-align: center; }
+  margin: 1rem;
+  text-align: center;
+  flex: 1 0 17%; }
   .feature-card .feature-card-text {
     margin-top: 1rem;
     font-weight: 500;
@@ -7678,7 +7726,7 @@ section {
   @media (min-width: 768px) {
     .feature-card {
       padding: 1rem;
-      margin: 1rem;
+      margin: 0;
       margin-bottom: 2rem;
       font-size: 0.9rem; }
       .feature-card img {
@@ -7740,7 +7788,7 @@ section {
         padding: 0;
         padding-top: 3rem; } }
     .about-wrapper-2 .about-box .mono-box span {
-      background-color: #7950ed; }
+      background-color: #32c9e5; }
 
 .roadmap-wrapper {
   margin-top: 8rem;
@@ -7919,7 +7967,7 @@ section.auto-height {
     color: #ffffff;
     margin-right: 1rem;
     background-color: #7950ed; }
-  .mono-box.black span {
+  .mono-box.secondary span {
     background-color: #32c9e5; }
 
 .type-cards {
@@ -8052,6 +8100,15 @@ footer {
 
 .bg-black90 {
   background-color: #22273c; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .btn .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem; }
 
 .page-community {
   display: flex;
@@ -8194,9 +8251,3 @@ footer {
       .action-panel-list .panel {
         border-right: none !important;
         margin: 2rem 0 !important; } }
-
-.btn-primary {
-  color: #ffffff;
-  margin: 0 0.5rem;
-  padding: 0.5rem 2rem !important;
-  background-color: #7950ed; }

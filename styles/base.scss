@@ -75,3 +75,15 @@ $page-welcome-height: 50vh;
 .bg-black90 {
   background-color: $black90;
 }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem;
+  }
+}

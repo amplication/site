@@ -267,15 +267,14 @@ section {
 }
 
 .feature-card {
-  // background-color: $white;
-  // border-radius: $border-radius;
-  // border: 1px solid $black70;
+  box-sizing: border-box;
   font-size: 0.8rem;
   padding: 0.5rem;
   margin: 0;
   margin-bottom: 1rem;
+  margin: 1rem;
   text-align: center;
-  // height: 80%;
+  flex: 1 0 17%;
 
   .feature-card-text {
     margin-top: 1rem;
@@ -289,7 +288,7 @@ section {
 
   @include media-breakpoint-up(md) {
     padding: 1rem;
-    margin: 1rem;
+    margin: 0;
     margin-bottom: 2rem;
     font-size: 0.9rem;
 
@@ -377,7 +376,7 @@ section {
     }
     .mono-box {
       span {
-        background-color: $primary;
+        background-color: $secondary-turquoise;
       }
     }
   }
@@ -579,7 +578,7 @@ section.auto-height {
     @include mono-box;
     background-color: $primary;
   }
-  &.black {
+  &.secondary {
     span {
       background-color: $secondary-turquoise;
     }
