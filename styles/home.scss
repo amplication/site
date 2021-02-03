@@ -222,7 +222,7 @@ section {
   margin: 0 2rem;
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.9;
   max-width: 320px;
 
   .solution-icon {
@@ -233,7 +233,7 @@ section {
     width: 80px;
     height: 80px;
     border-radius: 16px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 12px;
 
@@ -718,7 +718,7 @@ footer {
 
   .contact-title {
     @include semi-bold();
-    color: $black100;
+    color: $white;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
   }

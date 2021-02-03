@@ -224,6 +224,7 @@
   background-color: #5e2de9;
 }
 
-.link-discord {color: $black10}
-.link-discord:visited {color: $black10}
-.link-discord:hover {color: $white}
+.description-box-black10 {
+  color: $black10;
+  line-height: 1.9rem;
+}

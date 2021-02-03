@@ -7269,7 +7269,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 nav.navbar {
   border-bottom: none;
-  box-shadow: 0px 0px 10px rgba(109, 95, 149, 0.04), 0px 8px 10px rgba(109, 95, 149, 0.04);
+  box-shadow: 0px 4px 20px rgba(9, 12, 25, 0.4);
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
   nav.navbar .navbar-collapse.collapse.show, nav.navbar .navbar-collapse.collapsing {
@@ -7696,7 +7696,7 @@ section {
   margin: 0 2rem;
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.9;
   max-width: 320px; }
   .solution-card .solution-icon {
     display: block;
@@ -7705,7 +7705,7 @@ section {
     width: 80px;
     height: 80px;
     border-radius: 16px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 12px;
     background: radial-gradient(50% 50% at 50% 50%, #dfa522 0%, #d9a42c 100%);
@@ -8090,7 +8090,7 @@ footer {
     padding-right: 24px; }
   footer .contact-title {
     font-weight: 500;
-    color: #15192c;
+    color: #ffffff;
     margin-bottom: 1.5rem;
     font-size: 0.9rem; }
   footer .contact-details {
@@ -8301,11 +8301,6 @@ footer {
 .btn-outline-primary:hover {
   background-color: #5e2de9; }
 
-.link-discord {
-  color: #a3a8b8; }
-
-.link-discord:visited {
-  color: #a3a8b8; }
-
-.link-discord:hover {
-  color: #ffffff; }
+.description-box-black10 {
+  color: #a3a8b8;
+  line-height: 1.9rem; }
