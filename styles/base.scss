@@ -72,6 +72,10 @@ $page-welcome-height: 50vh;
   background: linear-gradient(180deg, $black100 0%, $black90 100%);
 }
 
+.bg-gradient-community {
+  background: linear-gradient(180deg, $black90 0%, $black100 100%);
+}
+
 .bg-black90 {
   background-color: $black90;
 }

@@ -196,7 +196,7 @@
 
       .mono-box {
         span {
-          background-color: $black100;
+          background-color: $secondary-turquoise;
         }
       }
     }
@@ -215,3 +215,15 @@
   color: $secondary-turquoise;
   font-weight: normal;
 }
+
+.btn-outline-primary {
+  @include button-outline-secondary;
+  background-color: $primary
+}
+.btn-outline-primary:hover {
+  background-color: #5e2de9;
+}
+
+.link-discord {color: $black10}
+.link-discord:visited {color: $black10}
+.link-discord:hover {color: $white}
