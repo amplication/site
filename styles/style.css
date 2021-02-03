@@ -7198,7 +7198,8 @@ a.text-dark:hover, a.text-dark:focus {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 2.3rem; }
   .btn .social-link {
     height: 1.3rem;
     width: 1.3rem;
@@ -7216,7 +7217,8 @@ a.text-dark:hover, a.text-dark:focus {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 2.3rem; }
   .btn .social-link {
     height: 1.3rem;
     width: 1.3rem;
@@ -7406,7 +7408,8 @@ nav.navbar {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 2.3rem; }
   .btn .social-link {
     height: 1.3rem;
     width: 1.3rem;
@@ -7471,7 +7474,8 @@ nav.navbar {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 2.3rem; }
   .btn .social-link {
     height: 1.3rem;
     width: 1.3rem;
@@ -7528,7 +7532,8 @@ nav.navbar {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 2.3rem; }
   .btn .social-link {
     height: 1.3rem;
     width: 1.3rem;
@@ -8124,7 +8129,8 @@ footer {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 2.3rem; }
   .btn .social-link {
     height: 1.3rem;
     width: 1.3rem;
