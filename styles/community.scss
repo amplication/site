@@ -165,7 +165,7 @@
         top: 4rem;
         bottom: 4rem;
         right: 0;
-        border-right: 1px solid $black20;
+        border-right: 1px solid $black60;
       }
 
       &:last-child {
@@ -179,8 +179,8 @@
 
   &.support {
     .panel {
-      background-color: $white;
-      border: 1px solid $black10;
+      background-color: $black90;
+      border: none;
       border-radius: $border-radius;
       margin: 1rem;
       align-items: flex-start;
@@ -196,7 +196,7 @@
 
       .mono-box {
         span {
-          background-color: $black100;
+          background-color: $secondary-turquoise;
         }
       }
     }
@@ -208,4 +208,23 @@
       margin: 2rem 0 !important;
     }
   }
+}
+
+.text-turquoise-mono {
+  @include font-mono-plain;
+  color: $secondary-turquoise;
+  font-weight: normal;
+}
+
+.btn-outline-primary {
+  @include button-outline-secondary;
+  background-color: $primary
+}
+.btn-outline-primary:hover {
+  background-color: #5e2de9;
+}
+
+.description-box-black10 {
+  color: $black10;
+  line-height: 1.9rem;
 }

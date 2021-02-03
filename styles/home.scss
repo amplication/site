@@ -8,6 +8,8 @@ body {
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   line-height: 1.7;
+  color: $white;
+  background-color: $black100;
 }
 
 @media (min-width: 1500px) {
@@ -30,7 +32,7 @@ h2.h2 {
 h3.h3 {
   font-size: 1.3rem;
   line-height: 2.1rem;
-  color: $black80;
+  color: $black5;
   font-weight: normal;
   @include media-breakpoint-down(lg) {
     font-size: 1rem;
@@ -42,7 +44,7 @@ section {
   min-height: 100vh;
   padding-top: 10vh;
   padding-bottom: 15vh;
-  background-color: $black5;
+  background-color: $black100;
   overflow: hidden;
 
   .sub-title {
@@ -74,7 +76,7 @@ section {
     // height: $page-welcome-height;
     min-height: $page-welcome-height;
 
-    background-image: url(../assets/images/bg/home-bg.svg);
+    //background-image: url(../assets/images/bg/home-bg.svg);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,22 +145,8 @@ section {
   &.page-welcome-solution {
     padding-top: 0;
     position: relative;
-    background-color: transparent;
 
     padding-top: $solution-card-height;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: $black5;
-
-      @include media-breakpoint-down(lg) {
-        top: $solution-card-height-mobile/2;
-      }
-    }
     min-height: 0;
   }
 
@@ -167,6 +155,7 @@ section {
   }
   &.page-roadmap {
     padding-top: 15vh;
+    background: linear-gradient(180deg, $black90 0%, $black100 100%);
   }
   &.page-about {
     padding-bottom: 5vh;
@@ -205,7 +194,7 @@ section {
     border-radius: 1rem;
     border: none;
     background: none;
-    color: $black80;
+    color: $black5;
     font-size: 1rem;
     line-height: 1;
     padding: 0.5rem 1rem;
@@ -213,11 +202,11 @@ section {
     margin-right: 0.75rem;
   }
   .nav-link.active {
-    background-color: $black10;
+    background-color: $black70;
     @include semi-bold;
   }
   .nav-link:hover {
-    background-color: $black10;
+    background-color: $black70;
   }
 }
 
@@ -225,7 +214,7 @@ section {
   flex: 1;
   text-align: left;
   background-color: none;
-  color: $black80;
+  color: $black5;
   border-radius: $border-radius;
   //height: $solution-card-height;
   display: block;
@@ -233,7 +222,7 @@ section {
   margin: 0 2rem;
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.9;
   max-width: 320px;
 
   .solution-icon {
@@ -244,11 +233,11 @@ section {
     width: 80px;
     height: 80px;
     border-radius: 16px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 12px;
 
-    background: radial-gradient(50% 50% at 50% 50%, #1e1e5f 0%, #121242 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #dfa522 0%, #d9a42c 100%);
     box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16);
 
     img {
@@ -264,29 +253,28 @@ section {
 
   &:first-child {
     .solution-icon {
-      background: radial-gradient(50% 50% at 50% 50%, #41cadd 0%, #3dc8db 100%);
+      background: radial-gradient(50% 50% at 50% 50%, #7950ed 0%, #754ceb 100%);
       box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16);
     }
   }
 
   &:last-child {
     .solution-icon {
-      background: radial-gradient(50% 50% at 50% 50%, #7950ed 0%, #754ceb 100%);
+      background: radial-gradient(50% 50% at 50% 50%, #41cadd 0%, #3dc8db 100%);
       box-shadow: 0px 8px 20px rgba(96, 59, 201, 0.2);
     }
   }
 }
 
 .feature-card {
-  // background-color: $white;
-  // border-radius: $border-radius;
-  // border: 1px solid $black10;
+  box-sizing: border-box;
   font-size: 0.8rem;
   padding: 0.5rem;
   margin: 0;
   margin-bottom: 1rem;
+  margin: 1rem;
   text-align: center;
-  // height: 80%;
+  flex: 1 0 17%;
 
   .feature-card-text {
     margin-top: 1rem;
@@ -300,7 +288,7 @@ section {
 
   @include media-breakpoint-up(md) {
     padding: 1rem;
-    margin: 1rem;
+    margin: 0;
     margin-bottom: 2rem;
     font-size: 0.9rem;
 
@@ -325,7 +313,6 @@ section {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   color: $white;
-  border: 1px solid $black10;
   letter-spacing: 0.5px;
 
   @include media-breakpoint-down(lg) {
@@ -384,7 +371,7 @@ section {
     }
     .mono-box {
       span {
-        background-color: $primary;
+        background-color: $secondary-turquoise;
       }
     }
   }
@@ -400,7 +387,7 @@ section {
     align-items: flex-start;
     justify-content: stretch;
     @include font-mono;
-    color: $black80;
+    color: $black5;
     margin-bottom: 1rem;
     padding: 0.25rem 0.5rem;
     background-color: $primary;
@@ -439,7 +426,7 @@ section.auto-height {
 }
 
 .bg-page-hero {
-  background-color: #451abd;
+  background-color: $black90;
 }
 
 .bg-black100 {
@@ -452,7 +439,10 @@ section.auto-height {
   color: $black40;
 }
 .text-black80 {
-  color: $black80;
+  color: $black5;
+}
+.text-secondary-turquoise {
+  color: $secondary-turquoise;
 }
 
 .feature {
@@ -470,6 +460,7 @@ section.auto-height {
   }
   .feature-description {
     font-size: 1rem;
+    color: $black10;
 
     @include media-breakpoint-down(lg) {
       text-align: left;
@@ -510,9 +501,12 @@ section.auto-height {
 .btn-outline-secondary {
   @include button-outline-secondary;
 }
+.btn-outline-secondary:hover {
+  background-color: $black60;
+}
 
 .social-link {
-  background-color: $black100;
+  background-color: $black20;
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -553,7 +547,11 @@ section.auto-height {
   }
 
   &:hover {
-    background-color: $primary;
+    background-color: $white
+  }
+
+  &.social-white {
+    background-color: $white;
   }
 }
 
@@ -582,9 +580,9 @@ section.auto-height {
     @include mono-box;
     background-color: $primary;
   }
-  &.black {
+  &.secondary {
     span {
-      background-color: $black100;
+      background-color: $secondary-turquoise;
     }
   }
 }
@@ -602,9 +600,9 @@ section.auto-height {
     max-width: 475px;
     margin: 0 1rem;
     flex: 1;
-    background-color: $white;
+    background-color: $black90;
     border-radius: 0.5rem;
-    // border: 1px solid $black10;
+    // border: 1px solid $black70;
     border: none;
     display: flex;
     align-items: flex-start;
@@ -629,12 +627,12 @@ section.auto-height {
         position: relative;
         padding-left: 38px;
         margin-bottom: 1.5rem;
-        color: $black80;
+        color: $black5;
         &:before {
           content: "";
           width: 24px;
           height: 24px;
-          background-image: url("../assets/images/list-item-check-circle.svg");
+          background-image: url("../assets/images/list-item-check.svg");
           background-repeat: no-repeat;
           position: absolute;
           left: 0;
@@ -720,12 +718,12 @@ footer {
 
   .contact-title {
     @include semi-bold();
-    color: $black100;
+    color: $white;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
   }
   .contact-details {
-    color: $black60;
+    color: $black20;
     @include media-breakpoint-down(md) {
       margin-bottom: 4rem;
     }
@@ -737,7 +735,7 @@ footer {
   }
 }
 .footer-line {
-  border-top: 1px solid $black10;
+  border-top: 1px solid $black70;
   height: 80px;
   color: $black40;
   font-size: 0.75rem;
