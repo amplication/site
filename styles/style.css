@@ -7189,6 +7189,9 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
 
+.bg-gradient-community {
+  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
+
 .bg-black90 {
   background-color: #22273c; }
 
@@ -7203,6 +7206,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
+
+.bg-gradient-community {
+  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
 
 .bg-black90 {
   background-color: #22273c; }
@@ -7374,7 +7380,7 @@ nav.navbar {
     nav.navbar .nav-item.active .nav-link {
       color: #ffffff; }
     nav.navbar .nav-item .nav-link {
-      color: #80869d;
+      color: #A3A8B8;
       white-space: nowrap;
       padding-right: 1rem !important;
       padding-left: 1rem !important; }
@@ -7390,6 +7396,9 @@ nav.navbar {
 
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
+
+.bg-gradient-community {
+  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
 
 .bg-black90 {
   background-color: #22273c; }
@@ -7453,6 +7462,9 @@ nav.navbar {
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
 
+.bg-gradient-community {
+  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
+
 .bg-black90 {
   background-color: #22273c; }
 
@@ -7495,9 +7507,8 @@ nav.navbar {
   .notice-stripe .social-link {
     margin-left: 0.5rem;
     width: 20px;
-    height: 20px; }
-    .notice-stripe .social-link:hover {
-      background-color: #7950ed; }
+    height: 20px;
+    background-color: #ffffff; }
 
 @keyframes enter-from-top {
   from {
@@ -7507,6 +7518,9 @@ nav.navbar {
 
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
+
+.bg-gradient-community {
+  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
 
 .bg-black90 {
   background-color: #22273c; }
@@ -7748,8 +7762,6 @@ section {
       padding: 2rem 1rem; } }
   .about-box .mono-box span {
     background-color: #15192c; }
-  .about-box .mono-box-turquoise span {
-    background-color: #32c9e5; }
   @media (min-width: 992px) {
     .about-box {
       height: 100%; } }
@@ -7905,8 +7917,11 @@ section.auto-height {
     color: #ffffff;
     box-shadow: none; }
 
+.btn-outline-secondary:hover {
+  background-color: #444b66; }
+
 .social-link {
-  background-color: #ffffff;
+  background-color: #A3A8B8;
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -7936,7 +7951,9 @@ section.auto-height {
     -webkit-mask-image: url(../assets/icons/github.svg);
     mask-image: url(../assets/icons/github.svg); }
   .social-link:hover {
-    background-color: #7950ed; }
+    background-color: #ffffff; }
+  .social-link.social-white {
+    background-color: #ffffff; }
 
 .bg-image-policy-header {
   height: 200px; }
@@ -8077,7 +8094,7 @@ footer {
     margin-bottom: 1.5rem;
     font-size: 0.9rem; }
   footer .contact-details {
-    color: #80869d; }
+    color: #A3A8B8; }
     @media (max-width: 991.98px) {
       footer .contact-details {
         margin-bottom: 4rem; } }
@@ -8097,6 +8114,9 @@ footer {
 
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
+
+.bg-gradient-community {
+  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
 
 .bg-black90 {
   background-color: #22273c; }
@@ -8244,7 +8264,7 @@ footer {
     .action-panel-list.support .panel .description {
       text-align: left; }
     .action-panel-list.support .panel .mono-box span {
-      background-color: #15192c; }
+      background-color: #32c9e5; }
   @media (max-width: 991.98px) {
     .action-panel-list {
       display: block; }
@@ -8256,3 +8276,36 @@ footer {
   font-family: "DM Mono", monospace;
   color: #32c9e5;
   font-weight: normal; }
+
+.btn-outline-primary {
+  border: none;
+  background-color: #2c3249;
+  color: #ffffff;
+  white-space: nowrap;
+  background-color: #7950ed; }
+  .btn-outline-primary .social-link {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.5rem; }
+  .btn-outline-primary:focus {
+    box-shadow: none;
+    border-color: #15192c; }
+    .btn-outline-primary:focus .social-link {
+      background-color: #7950ed; }
+  .btn-outline-primary:hover {
+    border: none;
+    background-color: #22273c;
+    color: #ffffff;
+    box-shadow: none; }
+
+.btn-outline-primary:hover {
+  background-color: #5e2de9; }
+
+.link-discord {
+  color: #a3a8b8; }
+
+.link-discord:visited {
+  color: #a3a8b8; }
+
+.link-discord:hover {
+  color: #ffffff; }

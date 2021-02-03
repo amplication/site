@@ -324,11 +324,6 @@ section {
       background-color: $black100;
     }
   }
-  .mono-box-turquoise {
-    span {
-      background-color: $secondary-turquoise; // why it doesnt work as it works with the black
-    }
-  }
 
   @include media-breakpoint-up(lg) {
     height: 100%;
@@ -506,9 +501,12 @@ section.auto-height {
 .btn-outline-secondary {
   @include button-outline-secondary;
 }
+.btn-outline-secondary:hover {
+  background-color: $black60;
+}
 
 .social-link {
-  background-color: $white;
+  background-color: $black20;
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -549,7 +547,11 @@ section.auto-height {
   }
 
   &:hover {
-    background-color: $primary;
+    background-color: $white
+  }
+
+  &.social-white {
+    background-color: $white;
   }
 }
 
