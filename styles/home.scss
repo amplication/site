@@ -306,7 +306,7 @@ section {
 }
 
 .about-box {
-  background-color: $primary;
+  background-color: $black90;
   border-radius: 0.5rem;
   box-shadow: $default-box-shadow;
   padding: 4rem;
@@ -387,11 +387,11 @@ section {
     align-items: flex-start;
     justify-content: stretch;
     @include font-mono;
-    color: $black5;
+    color: $secondary-turquoise;
     margin-bottom: 1rem;
     padding: 0.25rem 0.5rem;
-    background-color: $primary;
-    color: $white;
+    //background-color: $primary;
+    //color: $white;
     display: inline-block;
     transform: rotate(-90deg) translate(calc(-100% + -45px), 0px);
     transform-origin: top left;
@@ -586,6 +586,18 @@ section.auto-height {
     }
   }
 }
+.bracket-box {
+  @include semi-bold();
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  span{
+    color: $secondary-turquoise;
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
+  }
+}  
 
 .type-cards {
   display: flex;
