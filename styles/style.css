@@ -7999,7 +7999,10 @@ section.auto-height {
   .bracket-box span {
     color: #32c9e5;
     font-size: 1.2rem;
-    margin-right: 0.6rem; }
+    margin-right: 0.6rem;
+    margin-top: 0.2rem; }
+  .bracket-box .primary {
+    color: #7950ed; }
 
 .type-cards {
   display: flex;
