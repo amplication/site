@@ -54,6 +54,8 @@
 
     .highlight {
       color: $secondary-turquoise;
+      &:before { content: "<";}
+      &:after { content: ">";}
     }
 
     &:before {

@@ -396,6 +396,8 @@ section {
     transform: rotate(-90deg) translate(calc(-100% + -45px), 0px);
     transform-origin: top left;
     border-radius: $border-radius;
+    &:before { content: "<";}
+    &:after { content: ">";}
   }
   .roadmap-list {
     display: flex;
@@ -597,6 +599,8 @@ section.auto-height {
     font-size: 1.2rem;
     margin-right: 0.6rem;
     margin-top: 0.2rem;
+    &:before { content: "<";}
+    &:after { content: ">";}
   }
   .primary{
     color: $primary;

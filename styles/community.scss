@@ -214,6 +214,8 @@
   @include font-mono-plain;
   color: $secondary-turquoise;
   font-weight: normal;
+  &:before { content: "<";}
+  &:after { content: ">";}
 }
 
 .btn-outline-primary {
