@@ -7453,7 +7453,11 @@ nav.navbar {
     margin-bottom: 1rem;
     line-height: 1.7; }
     .animated-header .explainer .highlight {
-      color: #7950ed; }
+      color: #32c9e5; }
+      .animated-header .explainer .highlight:before {
+        content: "<"; }
+      .animated-header .explainer .highlight:after {
+        content: ">"; }
     .animated-header .explainer:before {
       position: absolute;
       top: 0;
@@ -7754,7 +7758,7 @@ section {
         padding-bottom: 0rem; } }
 
 .about-box {
-  background-color: #7950ed;
+  background-color: #22273c;
   border-radius: 0.5rem;
   box-shadow: 0px 7px 10px rgba(56, 28, 138, 0.06);
   padding: 4rem;
@@ -7818,15 +7822,17 @@ section {
   font-family: "DM Mono", monospace;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #b7bac7;
+  color: #32c9e5;
   margin-bottom: 1rem;
   padding: 0.25rem 0.5rem;
-  background-color: #7950ed;
-  color: #ffffff;
   display: inline-block;
   transform: rotate(-90deg) translate(calc(-100% + -45px), 0px);
   transform-origin: top left;
   border-radius: 4px; }
+  .roadmap-box .roadmap-title:before {
+    content: "<"; }
+  .roadmap-box .roadmap-title:after {
+    content: ">"; }
 
 .roadmap-box .roadmap-list {
   display: flex;
@@ -7991,6 +7997,24 @@ section.auto-height {
     background-color: #7950ed; }
   .mono-box.secondary span {
     background-color: #32c9e5; }
+
+.bracket-box {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+  .bracket-box span {
+    color: #32c9e5;
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
+    margin-top: 0.2rem; }
+    .bracket-box span:before {
+      content: "<"; }
+    .bracket-box span:after {
+      content: ">"; }
+  .bracket-box .primary {
+    color: #7950ed; }
 
 .type-cards {
   display: flex;
@@ -8282,6 +8306,10 @@ footer {
   font-family: "DM Mono", monospace;
   color: #32c9e5;
   font-weight: normal; }
+  .text-turquoise-mono:before {
+    content: "<"; }
+  .text-turquoise-mono:after {
+    content: ">"; }
 
 .btn-outline-primary {
   border: none;
