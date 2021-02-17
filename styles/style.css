@@ -8013,8 +8013,6 @@ section.auto-height {
       content: "<"; }
     .bracket-box span:after {
       content: ">"; }
-  .bracket-box .primary {
-    color: #7950ed; }
 
 .type-cards {
   display: flex;
