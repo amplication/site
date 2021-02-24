@@ -1,0 +1,20 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M162.476 229.594C165.544 232.377 165.739 237.086 162.911 240.113C160.083 243.139 155.303 243.337 152.235 240.554C149.167 237.771 148.972 233.062 151.8 230.036C154.628 227.009 159.408 226.811 162.476 229.594Z" stroke="white" stroke-width="1.5"/>
+<path d="M158.077 153.516C143.094 100.383 174.206 45.6758 227.53 31.3876C280.854 17.0994 336.28 48.6192 351.262 101.753C366.244 154.886 335.133 209.593 281.808 223.881C255.146 231.026 227.942 226.747 205.581 213.953" stroke="url(#paint0_linear)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M145.012 150.941L160.072 161.313L169.835 144.29" stroke="#8F5BFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse rx="29.9017" ry="29.58" transform="matrix(0.999995 0.00329169 0.00333587 0.999994 73.0862 329.053)" stroke="white" stroke-width="2"/>
+<ellipse rx="60" ry="60" transform="matrix(1 0 0.00662738 0.999978 253.175 127.057)" stroke="#7950ED" stroke-width="2"/>
+<path d="M162.387 229.183L213.179 171.601" stroke="white" stroke-width="2"/>
+<path d="M94.218 307.093L152.58 240.967" stroke="white" stroke-width="2"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="261.586" y1="179.024" x2="232.022" y2="228.098" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8F5BFF"/>
+<stop offset="1" stop-color="#8F5BFF" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="400" height="400" fill="white"/>
+</clipPath>
+</defs>
+</svg>
