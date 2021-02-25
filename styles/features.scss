@@ -1,0 +1,106 @@
+@import "./base.scss";
+
+.features-page-feature {
+  &:nth-child(odd) {
+    background-color: $black90;
+  }
+  .feature-page-card {
+    display: flex;
+    margin-top: 100px;
+
+    .feature-card-header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-bottom: 1rem;
+      > * {
+        margin-right: 1rem;
+      }
+    }
+
+    .feature-page-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 80px;
+      height: 80px;
+      border-radius: 1rem;
+      text-align: center;
+
+      background: radial-gradient(50% 50% at 50% 50%, #dfa522 0%, #d9a42c 100%);
+      box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16);
+
+      img {
+        width: 58px;
+      }
+
+      &.rotate {
+        img {
+          transform: rotate(30deg);
+        }
+      }
+      &.first-color {
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          #7950ed 0%,
+          #754ceb 100%
+        );
+      }
+      &.third-color {
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          #41cadd 0%,
+          #3dc8db 100%
+        );
+      }
+    }
+
+    .feature-title {
+      @include semi-bold();
+      display: flex;
+      align-items: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .coming-soon {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+
+      position: static;
+      width: 106px;
+      height: 24px;
+      left: 104px;
+      top: 56px;
+
+      background: rgba(65, 202, 221, 0.1);
+
+      border: 1px solid #41cadd;
+      box-sizing: border-box;
+      border-radius: 4px;
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      font-size: 10;
+      color: #41cadd;
+    }
+    .feature-page-description {
+      font-size: 1.2rem;
+      color: $black10;
+      max-width: none;
+    }
+
+    .feature-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}
