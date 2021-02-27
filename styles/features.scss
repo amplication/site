@@ -92,6 +92,18 @@
       font-size: 1.2rem;
       color: $black10;
       max-width: none;
+      ul{
+        padding: 0%;
+        line-height: 1.2rem;
+        &:before {
+          content: "- ";
+        }
+      }
+      span{
+        color: $black2;
+        line-height: 4rem;
+      }
+      
     }
 
     .feature-image {

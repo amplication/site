@@ -232,51 +232,6 @@
               </a>
             </li>
           </ul>
-
-          <div class="row text-center d-lg-none menu-contact">
-            <div class="col-12">
-              <div>
-                <div class="contact-title">Contact us</div>
-
-                <div class="contact-details">
-                  &#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#97;&#109;&#112;&#108;&#105;&#99;&#97;&#116;&#105;&#111;&#110;&#46;&#99;&#111;&#109;
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="contact-details">
-                <a
-                  class="social-link github"
-                  href="https://github.com/amplication/amplication"
-                  target="_blank"
-                  alt="Amplication on GitHub"
-                >
-                </a>
-                <a
-                  class="social-link twitter"
-                  href="https://twitter.com/amplication"
-                  target="_blank"
-                  alt="Amplication on Twitter"
-                >
-                </a>
-                <a
-                  class="social-link linkedin"
-                  href="https://www.linkedin.com/company/amplication"
-                  target="_blank"
-                  alt="Amplication on LinkedIn"
-                >
-                </a>
-                <a
-                  class="social-link facebook"
-                  href="https://www.facebook.com/amplicationcom/"
-                  target="_blank"
-                  alt="Amplication on Facebook"
-                >
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </nav>
@@ -299,7 +254,7 @@
             </div>
             <div class="feature-title">GraphQL</div>
             <div class="feature-page-description">
-              Amplication generates a production-ready, self-documenting GraphQL
+              Amplication generates production-ready, self-documenting GraphQL
               API for all your data models. The API is generated with
               authentication and authorization of your choice already
               baked-in.<br /><br />
@@ -331,8 +286,8 @@
             </div>
             <div class="feature-title">REST API</div>
             <div class="feature-page-description">
-              Easily connect to your data with any HTTP client using REST AP.
-              Amplication generates a production-ready REST API, with Swagger UI
+              Easily connect to your data with any HTTP client using REST API.
+              Amplication generates production-ready REST API, with Swagger UI
               documentation, for all your data models.
               <br /><br />
               The API is generated with authentication and authorization of your
@@ -365,9 +320,9 @@
             </div>
             <div class="feature-title">Identity & Permissions</div>
             <div class="feature-page-description">
-              Save tons of time on plugging in authentication and authorization
+              Save time on plugging in authentication and authorization
               to your apps. Amplication provides a role-based permission model
-              the is generated automatically to your app.
+              that is generated automatically with your app.
               <br /><br />
               Create as many roles as needed and granularly set permissions per
               data model or specific fields for different roles. All the
@@ -518,14 +473,16 @@
               class="buttons-wrapper d-flex mb-4 align-items-center justify-content-start mt-4"
             >
               <a
-                href="https://app.amplication.com"
+                href="https://github.com/amplication/amplication"
                 class="btn btn-outline-secondary"
+                onclick="handleOutboundLinkClicks('GitHub repo')"
               >
                 <span class="social-link github social-white"> </span>
                 GitHub
               </a>
               <div class="spacer"></div>
-              <a href="https://discord.gg/b8MrjU6" class="btn btn-primary ml-4">
+              <a href="https://discord.gg/b8MrjU6" class="btn btn-primary ml-4"
+                onclick="handleOutboundLinkClicks('Discord')">
                 <span class="social-link discord social-white"> </span>
                 Join our community
               </a>
@@ -628,15 +585,15 @@
               Every app developed on Amplication platform is translated to a
               human-readable TypeScript Node.js app which can be synced with
               your private Github repository.
-              <br /><br />
-              This feature allows you to:<br />
-              - Continuously push your app changes to your private
-              repository.<br />
-              - Keep using your favorite IDE<br />
-              - No need to learn new skills, keep developing with the technology
-              you master.<br />
-              - Control and validate changes before merge<br />
-              - Use GitHub as version control to track changes and roll back
+              <br />
+              <span>This feature allows you to:</span><br />
+              <ui>
+                <ul>Continuously push your app changes to your private repository</ul>
+                <ul>Keep using your favorite IDE</ul>
+                <ul>No need to learn new skills, keep developing with the technology you master</ul>
+                <ul>Control and validate changes before merge</ul>
+                <ul>Use GitHub as version control to track changes and roll back</ul>
+              </ui>
             </div>
           </div>
           <div class="col-sm-12 col-md-5 feature-image" data-aos="fade-up-left">
