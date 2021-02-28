@@ -8423,7 +8423,7 @@ footer {
     .features-page-feature .feature-page-card .feature-page-description ul {
       list-style-type: '- ';
       line-height: 2rem;
-      padding: 0%; }
+      margin-left: -1.6rem; }
     .features-page-feature .feature-page-card .feature-page-description span {
       color: #d3d4dc;
       line-height: 4rem; }

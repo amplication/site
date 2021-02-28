@@ -95,7 +95,8 @@
       ul{
         list-style-type: '- ';
         line-height: 2rem;
-        padding: 0%;
+        margin-left: -1.6rem;
+        //padding-left: 1rem;
       }
       span{
         color: $black2;
