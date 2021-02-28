@@ -93,11 +93,9 @@
       color: $black10;
       max-width: none;
       ul{
+        list-style-type: '- ';
+        line-height: 2rem;
         padding: 0%;
-        line-height: 1.2rem;
-        &:before {
-          content: "- ";
-        }
       }
       span{
         color: $black2;

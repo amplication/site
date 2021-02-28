@@ -8421,10 +8421,9 @@ footer {
     color: #a3a8b8;
     max-width: none; }
     .features-page-feature .feature-page-card .feature-page-description ul {
-      padding: 0%;
-      line-height: 1.2rem; }
-      .features-page-feature .feature-page-card .feature-page-description ul:before {
-        content: "- "; }
+      list-style-type: '- ';
+      line-height: 2rem;
+      padding: 0%; }
     .features-page-feature .feature-page-card .feature-page-description span {
       color: #d3d4dc;
       line-height: 4rem; }
