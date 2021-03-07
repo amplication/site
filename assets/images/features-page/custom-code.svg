@@ -1,0 +1,51 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="195.755" cy="198.204" r="7.5" transform="rotate(150 195.755 198.204)" stroke="white" stroke-width="1.5"/>
+<path d="M196 205.398L196 270.219" stroke="url(#paint0_linear)" stroke-width="2"/>
+<path d="M196 191L196 127" stroke="url(#paint1_linear)" stroke-width="2"/>
+<circle cx="228.755" cy="162.684" r="7.5" transform="rotate(150 228.755 162.684)" stroke="white" stroke-width="1.5"/>
+<path d="M229 169.879L229 270.219" stroke="url(#paint2_linear)" stroke-width="2"/>
+<path d="M229 155L229 127" stroke="url(#paint3_linear)" stroke-width="2"/>
+<circle r="7.5" transform="matrix(-0.866025 -0.5 -0.5 0.866025 163.755 234.792)" stroke="white" stroke-width="1.5"/>
+<path d="M164 227.597L164 127.258" stroke="url(#paint4_linear)" stroke-width="2"/>
+<path d="M164 242L164 270" stroke="url(#paint5_linear)" stroke-width="2"/>
+<path d="M266 243L311 198.5L266 154" stroke="#7950ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M134 154L89 198.5L134 243" stroke="#7950ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="337.566" cy="199.602" r="7.5" stroke="#7950ED" stroke-width="1.5"/>
+<circle cx="56.5" cy="199.602" r="7.5" stroke="#7950ED" stroke-width="1.5"/>
+<circle cx="195.977" cy="325.93" r="7.5" transform="rotate(90 195.977 325.93)" stroke="#7950ED" stroke-width="1.5"/>
+<circle cx="195.977" cy="74.5" r="7.5" transform="rotate(90 195.977 74.5)" stroke="#7950ED" stroke-width="1.5"/>
+<path d="M337.566 73.5V191.488" stroke="white" stroke-width="2"/>
+<path d="M56.5 73.5V191.488" stroke="white" stroke-width="2"/>
+<path d="M338.5 325.93L204.148 325.93" stroke="white" stroke-width="2"/>
+<path d="M337 74.5L204.148 74.5" stroke="white" stroke-width="2"/>
+<path d="M337.566 207.672V326.5" stroke="white" stroke-width="2"/>
+<path d="M56.5 207.672V326.93" stroke="white" stroke-width="2"/>
+<path d="M187.758 325.93L56.5 325.93" stroke="white" stroke-width="2"/>
+<path d="M187.758 74.5L55.5 74.5" stroke="white" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear" x1="195.22" y1="245.863" x2="194.865" y2="278.98" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="196.385" y1="151.047" x2="197.086" y2="118.361" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="227.792" y1="232.518" x2="227.243" y2="283.781" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="-137465" y1="137.515" x2="-137465" y2="123.208" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint4_linear" x1="162.792" y1="164.959" x2="162.243" y2="113.696" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint5_linear" x1="137858" y1="259.473" x2="137858" y2="273.78" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
