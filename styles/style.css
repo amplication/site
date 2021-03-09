@@ -7547,7 +7547,9 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+ "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+ "Helvetica Neue", sans-serif;
   line-height: 1.7;
   color: #ffffff;
   background-color: #15192c; }
@@ -8451,3 +8453,31 @@ footer {
     justify-content: center; }
     .features-page-feature .feature-page-card .feature-image img {
       max-width: 300px; }
+
+.bg-gradient {
+  background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
+
+.bg-gradient-community {
+  background: linear-gradient(180deg, #22273c 0%, #15192c 100%); }
+
+.bg-black90 {
+  background-color: #22273c; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.3rem; }
+  .btn .social-link {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem; }
+
+.pricing {
+  text-align: left; }
+  .pricing h1 {
+    padding-top: 4rem;
+    font-size: 2rem;
+    text-align: left; }
+  .pricing span {
+    font-size: 1.4rem; }
