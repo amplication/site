@@ -7426,7 +7426,7 @@ nav.navbar {
     margin-top: 0;
     margin-left: 0;
     text-align: left;
-    font-size: 4rem; }
+    font-size: 3rem; }
     @media (max-width: 991.98px) {
       .animated-header .main-title {
         font-size: 3rem !important; } }
@@ -7517,6 +7517,17 @@ nav.navbar {
     width: 20px;
     height: 20px;
     background-color: #ffffff; }
+  .notice-stripe.bg-primary {
+    background-color: #7950ed; }
+    .notice-stripe.bg-primary .git-hub-star {
+      width: 25px;
+      margin: 0 0.5rem; }
+    .notice-stripe.bg-primary .ph {
+      margin: 0 0.5rem;
+      font-weight: 500;
+      display: inline-block; }
+    .notice-stripe.bg-primary a {
+      color: #ffffff; }
 
 @keyframes enter-from-top {
   from {
@@ -7603,6 +7614,27 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 90px; }
+    section.page-welcome .container-fluid, section.page-welcome .container-sm, section.page-welcome .container-md, section.page-welcome .container-lg, section.page-welcome .container-xl {
+      margin-left: 40px;
+      margin-right: 40px; }
+      @media (min-width: 992px) {
+        section.page-welcome .container-fluid, section.page-welcome .container-sm, section.page-welcome .container-md, section.page-welcome .container-lg, section.page-welcome .container-xl {
+          margin-left: 100px;
+          margin-right: 100px; } }
+    section.page-welcome .header-and-video {
+      display: flex;
+      flex-direction: row; }
+      @media (max-width: 1199.98px) {
+        section.page-welcome .header-and-video {
+          display: block; } }
+      section.page-welcome .header-and-video .video {
+        padding-top: 40px;
+        width: 100px;
+        overflow: visible; }
+        section.page-welcome .header-and-video .video img {
+          max-width: 80vw; }
+        section.page-welcome .header-and-video .video .play-video {
+          position: absolute; }
     section.page-welcome .buttons-wrapper {
       flex-direction: column; }
     section.page-welcome .main-title {
@@ -7874,6 +7906,9 @@ section.auto-height {
 
 .bg-black100 {
   background-color: #15192c; }
+
+.bg-primary {
+  background-color: #7950ed; }
 
 .text-secondary-purple {
   color: #a787ff; }

@@ -82,6 +82,37 @@ section {
     background-size: cover;
     padding-bottom: $solution-card-height/2;
 
+    .container-fluid {
+      margin-left: 40px;
+      margin-right: 40px;
+
+      @include media-breakpoint-up(lg) {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+    }
+
+    .header-and-video {
+      display: flex;
+      flex-direction: row;
+      @include media-breakpoint-down(lg) {
+        display: block;
+      }
+
+      .video {
+        padding-top: 40px;
+        width: 100px;
+        overflow: visible;
+        img {
+          max-width: 80vw;
+        }
+
+        .play-video {
+          position: absolute;
+        }
+      }
+    }
+
     .buttons-wrapper {
       flex-direction: column;
     }
@@ -455,6 +486,10 @@ section.auto-height {
 
 .bg-black100 {
   background-color: $black100;
+}
+
+.bg-primary {
+  background-color: $primary;
 }
 .text-secondary-purple {
   color: $secondary-purple;
