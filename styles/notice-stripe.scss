@@ -39,6 +39,24 @@
     height: 20px;
     background-color: $white;
   }
+
+  &.bg-primary {
+    background-color: $primary;
+
+    .git-hub-star {
+      width: 25px;
+      margin: 0 0.5rem;
+    }
+
+    .ph {
+      margin: 0 0.5rem;
+      font-weight: 500;
+      display: inline-block;
+    }
+    a {
+      color: $white;
+    }
+  }
 }
 
 @keyframes enter-from-top {

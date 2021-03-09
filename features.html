@@ -1,4 +1,4 @@
-<html>
+<html style="scroll-behavior: unset">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="assets/images/favicon.ico" />
@@ -275,14 +275,14 @@
                 </a>
               </div>
             </div>
-          </div>          
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- FEATURES
     ================================================== -->
-    <section class="features-page-feature">
+    <section id="graphql" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -314,7 +314,7 @@
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="restapi" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -348,7 +348,7 @@
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="identity-permissions" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -364,9 +364,9 @@
             </div>
             <div class="feature-title">Identity & Permissions</div>
             <div class="feature-page-description">
-              Save time on plugging in authentication and authorization
-              to your apps. Amplication provides a role-based permission model
-              that is generated automatically with your app.
+              Save time on plugging in authentication and authorization to your
+              apps. Amplication provides a role-based permission model that is
+              generated automatically with your app.
               <br /><br />
               Create as many roles as needed and granularly set permissions per
               data model or specific fields for different roles. All the
@@ -387,7 +387,7 @@
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="admin-ui" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -416,13 +416,13 @@
           <div class="col-sm-12 col-md-5 feature-image" data-aos="fade-up-left">
             <img
               src="assets/images/features-page/admin-ui.svg"
-              alt="rest api"
+              alt="admin ui"
             />
           </div>
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="code-generation" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -456,7 +456,7 @@
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="custom-code" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -472,10 +472,11 @@
             </div>
             <div class="feature-title">Custom Code</div>
             <div class="feature-page-description">
-              Generated apps can be manually customized to support any complex logic, specs, or 
-              integration using custom code. Code components can be modified using any IDE, synced 
-              through GitHub, and still be maintained through Amplication engine without being 
-              overridden by any data model change or app re-generation source code.
+              Generated apps can be manually customized to support any complex
+              logic, specs, or integration using custom code. Code components
+              can be modified using any IDE, synced through GitHub, and still be
+              maintained through Amplication engine without being overridden by
+              any data model change or app re-generation source code.
             </div>
           </div>
           <div class="col-sm-12 col-md-5 feature-image" data-aos="fade-up-left">
@@ -486,8 +487,8 @@
           </div>
         </div>
       </div>
-    </section>    
-    <section class="features-page-feature">
+    </section>
+    <section id="cli" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -503,10 +504,11 @@
             </div>
             <div class="feature-title">Command Line Interface (CLI)</div>
             <div class="feature-page-description">
-              Define your data model and generate apps faster using Amplication Command Line 
-              Interface (CLI). Actions available in our data model app designer GUI version 
-              are also available through our CLI. Using Amplication CLI you can execute pre-defined 
-              long scripts which can be used as templates and as an import-export mechanism
+              Define your data model and generate apps faster using Amplication
+              Command Line Interface (CLI). Actions available in our data model
+              app designer GUI version are also available through our CLI. Using
+              Amplication CLI you can execute pre-defined long scripts which can
+              be used as templates and as an import-export mechanism
             </div>
           </div>
           <div class="col-sm-12 col-md-5 feature-image" data-aos="fade-up-left">
@@ -517,8 +519,8 @@
           </div>
         </div>
       </div>
-    </section>        
-    <section class="features-page-feature">
+    </section>
+    <section id="deployment" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -553,7 +555,7 @@
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="open-source" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -587,8 +589,11 @@
                 GitHub
               </a>
               <div class="spacer"></div>
-              <a href="https://discord.gg/b8MrjU6" class="btn btn-primary ml-4"
-                onclick="handleOutboundLinkClicks('Discord')">
+              <a
+                href="https://discord.gg/b8MrjU6"
+                class="btn btn-primary ml-4"
+                onclick="handleOutboundLinkClicks('Discord')"
+              >
                 <span class="social-link discord social-white"> </span>
                 Join our community
               </a>
@@ -603,7 +608,7 @@
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="integration-webhooks" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -620,10 +625,11 @@
             </div>
             <div class="feature-title">Integration & Webhooks</div>
             <div class="feature-page-description">
-              Integration with any external service is available through custom code or webhooks. 
-              Once you generate your app based on your data model, you can custom code and integrate 
-              it with any external app. You can also use webhooks to trigger external apps based 
-              on events or database change update.
+              Integration with any external service is available through custom
+              code or webhooks. Once you generate your app based on your data
+              model, you can custom code and integrate it with any external app.
+              You can also use webhooks to trigger external apps based on events
+              or database change update.
             </div>
           </div>
           <div class="col-sm-12 col-md-5 feature-image" data-aos="fade-up-left">
@@ -635,7 +641,7 @@
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="version-control" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -651,9 +657,10 @@
             </div>
             <div class="feature-title">Version Control</div>
             <div class="feature-page-description">
-              Amplication has version control built-in which enables you to visually see any app 
-              change and how it's being reflected in the generated app code. The app developer has 
-              the option to cancel commits or roll back to previous versions of the app at any time.
+              Amplication has version control built-in which enables you to
+              visually see any app change and how it's being reflected in the
+              generated app code. The app developer has the option to cancel
+              commits or roll back to previous versions of the app at any time.
             </div>
           </div>
           <div class="col-sm-12 col-md-5 feature-image" data-aos="fade-up-left">
@@ -665,7 +672,7 @@
         </div>
       </div>
     </section>
-    <section class="features-page-feature">
+    <section id="sync-with-github" class="features-page-feature">
       <div class="container">
         <div
           class="row d-flex justify-content-between align-items-center feature-page-card"
@@ -688,11 +695,18 @@
               <br />
               <span>This feature allows you to:</span><br />
               <ul>
-                <li>Continuously push your app changes to your private repository</li>
+                <li>
+                  Continuously push your app changes to your private repository
+                </li>
                 <li>Keep using your favorite IDE</li>
-                <li>No need to learn new skills, keep developing with the technology you master</li>
+                <li>
+                  No need to learn new skills, keep developing with the
+                  technology you master
+                </li>
                 <li>Control and validate changes before merge</li>
-                <li>Use GitHub as version control to track changes and roll back</li>
+                <li>
+                  Use GitHub as version control to track changes and roll back
+                </li>
               </ul>
             </div>
           </div>

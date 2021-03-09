@@ -82,6 +82,37 @@ section {
     background-size: cover;
     padding-bottom: $solution-card-height/2;
 
+    .container-fluid {
+      margin-left: 40px;
+      margin-right: 40px;
+
+      @include media-breakpoint-up(lg) {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+    }
+
+    .header-and-video {
+      display: flex;
+      flex-direction: row;
+      @include media-breakpoint-down(lg) {
+        display: block;
+      }
+
+      .video {
+        padding-top: 40px;
+        width: 100px;
+        overflow: visible;
+        img {
+          max-width: 80vw;
+        }
+
+        .play-video {
+          position: absolute;
+        }
+      }
+    }
+
     .buttons-wrapper {
       flex-direction: column;
     }
@@ -274,13 +305,31 @@ section {
   margin-bottom: 1rem;
   margin: 1rem;
   text-align: center;
-  flex: 1 0 17%;
+  flex: 1 0 25%;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-25px) !important;
+    transition-delay: 0 !important;
+    .feature-card-text {
+      text-decoration: none;
+    }
+  }
 
   .feature-card-text {
     margin-top: 1rem;
     @include semi-bold();
     padding-bottom: 1rem;
     height: 3rem;
+    max-width: 10rem;
+    margin: auto;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
   img {
     width: 100px;
@@ -437,6 +486,10 @@ section.auto-height {
 
 .bg-black100 {
   background-color: $black100;
+}
+
+.bg-primary {
+  background-color: $primary;
 }
 .text-secondary-purple {
   color: $secondary-purple;
@@ -615,6 +668,9 @@ section.auto-height {
       content: ">";
     }
   }
+}
+.no-bottom-margin {
+  margin-bottom: 0rem;
 }
 
 .type-cards {
