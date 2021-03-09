@@ -275,6 +275,16 @@ section {
   margin: 1rem;
   text-align: center;
   flex: 1 0 25%;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-25px) !important;
+    transition-delay: 0 !important;
+    .feature-card-text {
+      text-decoration: none;
+    }
+  }
 
   .feature-card-text {
     margin-top: 1rem;
@@ -282,8 +292,13 @@ section {
     padding-bottom: 1rem;
     height: 3rem;
     max-width: 10rem;
-    //margin: 1rem 0rem 0rem 2rem;
-    
+    margin: auto;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
   img {
     width: 100px;
@@ -619,7 +634,7 @@ section.auto-height {
     }
   }
 }
-.no-bottom-margin{
+.no-bottom-margin {
   margin-bottom: 0rem;
 }
 
@@ -781,19 +796,4 @@ footer {
     color: $black40;
     text-decoration: underline;
   }
-}
-.features{
-  a{
-    box-sizing: border-box;
-    font-size: 0.8rem;
-    padding: 0.5rem;
-    margin: 0;
-    margin-bottom: 1rem;
-    margin: 1rem;
-    text-align: center;
-    flex: 1 0 20%;
-    color: white;
-  
-  }
-  a:hover {text-decoration: none;}
 }
