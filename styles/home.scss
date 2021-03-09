@@ -396,8 +396,12 @@ section {
     transform: rotate(-90deg) translate(calc(-100% + -45px), 0px);
     transform-origin: top left;
     border-radius: $border-radius;
-    &:before { content: "<";}
-    &:after { content: ">";}
+    &:before {
+      content: "<";
+    }
+    &:after {
+      content: ">";
+    }
   }
   .roadmap-list {
     display: flex;
@@ -548,8 +552,13 @@ section.auto-height {
     mask-image: url(../assets/icons/github.svg);
   }
 
+  &.discord {
+    -webkit-mask-image: url(../assets/icons/Discord.svg);
+    mask-image: url(../assets/icons/Discord.svg);
+  }
+
   &:hover {
-    background-color: $white
+    background-color: $white;
   }
 
   &.social-white {
@@ -594,18 +603,19 @@ section.auto-height {
   align-items: center;
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  span{
+  span {
     color: $secondary-turquoise;
     font-size: 1.2rem;
     margin-right: 0.6rem;
     margin-top: 0.2rem;
-    &:before { content: "<";}
-    &:after { content: ">";}
+    &:before {
+      content: "<";
+    }
+    &:after {
+      content: ">";
+    }
   }
-  .primary{
-    color: $primary;
-  }
-}  
+}
 
 .type-cards {
   display: flex;

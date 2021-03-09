@@ -197,14 +197,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link hover"
-                target="_blank"
-                href="https://github.com/amplication/amplication/releases"
-                onclick="handleOutboundLinkClicks('Releases')"
-              >
-                Releases
-              </a>
+              <a class="nav-link hover" href="/features.html"> Features </a>
             </li>
             <li class="nav-item">
               <a
@@ -239,7 +232,6 @@
               </a>
             </li>
           </ul>
-
           <div class="row text-center d-lg-none menu-contact">
             <div class="col-12">
               <div>
@@ -283,7 +275,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div>          
         </div>
       </div>
     </nav>
@@ -329,6 +321,7 @@
               <a
                 href="https://app.amplication.com"
                 class="btn btn-primary btn-lg col-sm-12 col-md-6 mb-4"
+                onclick="handleOutboundLinkClicks('Login')"
               >
                 Get Started
               </a>
@@ -362,7 +355,7 @@
                 <img src="assets/images/database.svg" alt="Database" />
               </span>
               Easily create data models and&nbsp;configure role&#8209;based
-              access&nbsp;control with a simple and intuitive UI
+              access&nbsp;control with a simple and intuitive UI or CLI
             </div>
             <div class="solution-card">
               <span class="solution-icon">
@@ -702,7 +695,7 @@
             </div>
             <div class="feature-description">
               Define data entities and role&#8209;based access through
-              Amplication's UI, and Amplication will auto&#8209;generate your
+              Amplication's UI or CLI, and Amplication will auto&#8209;generate your
               database, an Admin UI, and API.
             </div>
           </div>
@@ -721,6 +714,7 @@
                   role="tab"
                   aria-controls="data-models"
                   aria-selected="true"
+                  onclick="handleOutboundLinkClicks('Tab Data Model')"
                   >Data models</a
                 >
               </li>
@@ -733,6 +727,7 @@
                   role="tab"
                   aria-controls="roles"
                   aria-selected="false"
+                  onclick="handleOutboundLinkClicks('Tab Roles')"
                   >Roles</a
                 >
               </li>
@@ -746,7 +741,7 @@
               >
                 <img
                   src="assets/images/steps/data-models.svg"
-                  alt="design your database"
+                  alt="data model design"
                 />
               </div>
               <div
@@ -755,7 +750,7 @@
                 role="tabpanel"
                 aria-labelledby="roles-tab"
               >
-                <img src="assets/images/steps/roles.svg" alt="Roles" />
+                <img src="assets/images/steps/roles.svg" alt="assign roles" />
               </div>
             </div>
           </div>
@@ -773,7 +768,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-right">
-            <img src="assets/images/steps/deploy.svg" alt="deploy your app" />
+            <img src="assets/images/steps/deploy.svg" alt="one click app deployment" />
           </div>
         </div>
         <div
@@ -787,7 +782,7 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
-            <img src="assets/images/steps/sync_with_github.svg" alt="admin UI" />
+            <img src="assets/images/steps/sync_with_github.svg" alt="github sync"/>
           </div>
         </div>
         <div
