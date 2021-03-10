@@ -7558,9 +7558,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
- "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
- "Helvetica Neue", sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.7;
   color: #ffffff;
   background-color: #15192c; }
@@ -8502,6 +8500,9 @@ footer {
     height: 1.3rem;
     width: 1.3rem;
     margin-right: 0.5rem; }
+
+.pricing-hero {
+  padding-top: 250px; }
 
 .pricing {
   text-align: left; }
