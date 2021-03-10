@@ -3,18 +3,63 @@
 .pricing-hero {
   padding-top: 250px;
 }
+.pricing-content{
+  padding-top: 150px;
+}
+
 
 .pricing {
   //align-content: center;
   text-align: left;
   //align-items: center;
   //width: 50rem;
+  color: $white;
+  
   h1 {
     padding-top: 4rem;
     font-size: 2rem;
     text-align: left;
   }
+  h2 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 130%;
+    padding-bottom: 1.5rem;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    padding-bottom: 0.5rem;
+  }  
+  p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    color: $black10;
+  }
   span {
     font-size: 1.4rem;
   }
+  .spacer5 {
+    padding: 5rem;
+  }
+  .spacer2 {
+    padding: 2rem;
+  }  
+  .list{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    color: $black10;    
+    &:before {
+      content: "* ";
+    }
+  }
+
+
 }

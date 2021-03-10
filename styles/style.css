@@ -8504,11 +8504,45 @@ footer {
 .pricing-hero {
   padding-top: 250px; }
 
+.pricing-content {
+  padding-top: 150px; }
+
 .pricing {
-  text-align: left; }
+  text-align: left;
+  color: #ffffff; }
   .pricing h1 {
     padding-top: 4rem;
     font-size: 2rem;
     text-align: left; }
+  .pricing h2 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 130%;
+    padding-bottom: 1.5rem; }
+  .pricing h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    padding-bottom: 0.5rem; }
+  .pricing p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    color: #a3a8b8; }
   .pricing span {
     font-size: 1.4rem; }
+  .pricing .spacer5 {
+    padding: 5rem; }
+  .pricing .spacer2 {
+    padding: 2rem; }
+  .pricing .list {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    color: #a3a8b8; }
+    .pricing .list:before {
+      content: "* "; }
