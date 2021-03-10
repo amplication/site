@@ -7625,13 +7625,13 @@ section {
         section.page-welcome .header-and-video {
           display: block; } }
       section.page-welcome .header-and-video .video {
-        padding-top: 40px;
-        width: 100px;
+        margin-top: 70px;
+        width: 500px;
         overflow: visible; }
         section.page-welcome .header-and-video .video img {
-          max-width: 80vw; }
-        section.page-welcome .header-and-video .video .play-video {
-          position: absolute; }
+          max-width: 80vw;
+          height: 400px;
+          position: relative; }
     section.page-welcome .buttons-wrapper {
       flex-direction: column; }
     section.page-welcome .main-title {

@@ -100,15 +100,14 @@ section {
       }
 
       .video {
-        padding-top: 40px;
-        width: 100px;
+        margin-top: 70px;
+        width: 500px;
         overflow: visible;
         img {
           max-width: 80vw;
-        }
+          height: 400px;
 
-        .play-video {
-          position: absolute;
+          position: relative;
         }
       }
     }
