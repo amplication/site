@@ -7614,13 +7614,10 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 90px; }
-    section.page-welcome .container-fluid, section.page-welcome .container-sm, section.page-welcome .container-md, section.page-welcome .container-lg, section.page-welcome .container-xl {
-      margin-left: 40px;
-      margin-right: 40px; }
-      @media (min-width: 992px) {
-        section.page-welcome .container-fluid, section.page-welcome .container-sm, section.page-welcome .container-md, section.page-welcome .container-lg, section.page-welcome .container-xl {
-          margin-left: 100px;
-          margin-right: 100px; } }
+    @media (min-width: 992px) {
+      section.page-welcome .container-fluid, section.page-welcome .container-sm, section.page-welcome .container-md, section.page-welcome .container-lg, section.page-welcome .container-xl {
+        margin-left: 100px;
+        margin-right: 100px; } }
     section.page-welcome .header-and-video {
       display: flex;
       flex-direction: row; }

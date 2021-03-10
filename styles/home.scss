@@ -83,8 +83,8 @@ section {
     padding-bottom: $solution-card-height/2;
 
     .container-fluid {
-      margin-left: 40px;
-      margin-right: 40px;
+      // margin-left: 40px;
+      // margin-right: 40px;
 
       @include media-breakpoint-up(lg) {
         margin-left: 100px;
