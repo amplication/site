@@ -37,6 +37,8 @@
     />
 
     <link rel="stylesheet" href="./styles/style.css" />
+    <link href="plugins/lity.min.css" rel="stylesheet" />
+
     <!-- Google Analytics -->
     <script>
       (function (i, s, o, g, r, a, m) {
@@ -117,7 +119,7 @@
     <!-- NAVBAR
     ================================================== -->
     <nav class="navbar navbar-expand-lg bg-dark fixed-top flex-column">
-      <div class="notice-stripe">
+      <!-- <div class="notice-stripe">
         <a
           href="https://github.com/amplication/amplication"
           target="_blank"
@@ -131,6 +133,18 @@
           />
           If you like Amplication, give us a star on
           <span class="social-link github"> </span>
+        </a>
+      </div> -->
+      <div class="notice-stripe bg-primary">
+        <a
+          href="https://www.producthunt.com/posts/amplication"
+          target="_blank"
+          alt="Amplication on Product Hunt"
+          onclick="handleOutboundLinkClicks('product hunt banner')"
+        >
+          <img class="git-hub-star" src="assets/images/ph1.svg" alt="" />
+          We’re live on <span class="ph">Product Hunt</span> right now!
+          <img class="git-hub-star" src="assets/images/ph2.svg" alt="" />
         </a>
       </div>
       <div class="container-fluid">
@@ -150,11 +164,19 @@
             alt="Amplication"
           />
         </a>
-        <a href="https://www.producthunt.com/posts/amplication?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-amplication" 
-          target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=287390&theme=light" 
-          alt="Amplication - Instantly Generate Node.js Apps with GraphQL and REST API | Product Hunt" 
-          style="width: 250px; height: 54px;" width="250" height="54" />
+        <a
+          class="d-none d-lg-block"
+          href="https://www.producthunt.com/posts/amplication?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-amplication"
+          target="_blank"
+          ><img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=287390&theme=light"
+            alt="Amplication - Instantly Generate Node.js Apps with GraphQL and REST API | Product Hunt"
+            style="width: 250px; height: 46px"
+            width="250"
+            height="46"
+          />
         </a>
+
         <!-- Toggler -->
         <button
           class="navbar-toggler"
@@ -279,7 +301,7 @@
                 </a>
               </div>
             </div>
-          </div>           
+          </div>
         </div>
       </div>
     </nav>
@@ -287,66 +309,86 @@
     <!-- WELCOME
     ================================================== -->
     <section class="page-welcome">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <div class="animated-header">
-              <h1 class="main-title">
-                <span class="animated-header__fixed-text"
-                  >Instantly generate</span
-                >
-                <span
-                  id="animated-header-typed"
-                  class="animated-header__animated-text"
-                ></span>
+            <div class="header-and-video">
+              <div>
+                <a
+                  style="margin-top: 2rem; display: inline-block"
+                  class="d-lg-none"
+                  href="https://www.producthunt.com/posts/amplication?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-amplication"
+                  target="_blank"
+                  ><img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=287390&theme=light"
+                    alt="Amplication - Instantly Generate Node.js Apps with GraphQL and REST API | Product Hunt"
+                    style="width: auto; height: 56px"
+                    width="250"
+                    height="40"
+                  />
+                </a>
 
-                <span class="animated-header__fixed-text"
-                  >Just code what matters.</span
+                <div class="animated-header">
+                  <h1 class="main-title">
+                    <span class="animated-header__fixed-text"
+                      >Instantly generate</span
+                    >
+                    <span
+                      id="animated-header-typed"
+                      class="animated-header__animated-text"
+                    ></span>
+
+                    <span class="animated-header__fixed-text"
+                      >Just code what matters.</span
+                    >
+                  </h1>
+                  <div id="animated-header-content" style="display: none">
+                    <span>GraphQL API.</span>
+                    <span>REST API.</span>
+                    <span>Authentication.</span>
+                    <span>Authorization.</span>
+                    <span>Admin UI.</span>
+                    <span>Logging.</span>
+                  </div>
+                  <div class="explainer">
+                    Amplication is an
+                    <span class="highlight">open&#8209;source</span> development
+                    tool. It helps you develop quality Node.js applications
+                    without spending time on repetitive coding&nbsp;tasks.
+                  </div>
+                </div>
+                <div
+                  class="buttons-wrapper d-flex mb-4 align-items-center justify-content-start mt-4"
                 >
-              </h1>
-              <div id="animated-header-content" style="display: none">
-                <span>GraphQL API.</span>
-                <span>REST API.</span>
-                <span>Authentication.</span>
-                <span>Authorization.</span>
-                <span>Admin UI.</span>
-                <span>Logging.</span>
+                  <a
+                    href="https://app.amplication.com"
+                    class="btn btn-primary btn-lg col-sm-12 col-md-6 mb-4"
+                    onclick="handleOutboundLinkClicks('Login')"
+                  >
+                    Get Started
+                  </a>
+                  <div class="spacer"></div>
+                  <a
+                    href="/community.html"
+                    class="btn btn-outline-secondary btn-lg col-sm-12 col-md-6 mb-4 text-black80"
+                  >
+                    Get Involved
+                  </a>
+                  <div class="spacer"></div>
+                  <a
+                    href="https://docs.amplication.com/docs/getting-started"
+                    class="d-lg-none btn btn-outline-secondary btn-lg col-sm-12 col-md-6 mb-4 text-black80"
+                    onclick="handleOutboundLinkClicks('Docs')"
+                  >
+                    Documentation
+                  </a>
+                </div>
               </div>
-              <div class="explainer">
-                Amplication is an
-                <span class="highlight">open&#8209;source</span> development
-                tool. It helps you develop quality Node.js applications without
-                spending time on repetitive coding&nbsp;tasks.
+              <div class="video">
+                <a href="https://www.youtube.com/watch?v=wCJ2jF1IU7U" data-lity>
+                  <img src="assets/images/video.svg" />
+                </a>
               </div>
-            </div>
-            <div class="video" style="width: 100px;">
-              <img src="assets/images/video.svg" />
-            </div>
-            <div
-              class="buttons-wrapper d-flex mb-4 align-items-center justify-content-start mt-4"
-            >
-              <a
-                href="https://app.amplication.com"
-                class="btn btn-primary btn-lg col-sm-12 col-md-6 mb-4"
-                onclick="handleOutboundLinkClicks('Login')"
-              >
-                Get Started
-              </a>
-              <div class="spacer"></div>
-              <a
-                href="/community.html"
-                class="btn btn-outline-secondary btn-lg col-sm-12 col-md-6 mb-4 text-black80"
-              >
-                Get Involved
-              </a>
-              <div class="spacer"></div>
-              <a
-                href="https://docs.amplication.com/docs/getting-started"
-                class="d-lg-none btn btn-outline-secondary btn-lg col-sm-12 col-md-6 mb-4 text-black80"
-                onclick="handleOutboundLinkClicks('Docs')"
-              >
-                Documentation
-              </a>
             </div>
           </div>
         </div>
@@ -362,7 +404,7 @@
                 <img src="assets/images/database.svg" alt="Database" />
               </span>
               Easily create data models and&nbsp;configure role&#8209;based
-              access&nbsp;control with a simple and intuitive UI
+              access&nbsp;control with a simple and intuitive UI or CLI
             </div>
             <div class="solution-card">
               <span class="solution-icon">
@@ -394,11 +436,12 @@
           <div class="type-cards">
             <div class="type-card">
               <div class="bracket-box">
-                <span>Front-end</span> 
+                <span>Front-end</span>
                 developer
               </div>
 
               <ul class="type-list">
+                <li>Use Amplication UI or CLI to create your app</li>
                 <li>
                   Design data models and create REST & GraphQL APIs
                   without&nbsp;coding.
@@ -410,9 +453,6 @@
                 <li>
                   You can focus entirely on developing your next
                   great&nbsp;app&nbsp;😎
-                </li>
-                <li>
-                  Command Line Interface (CLI) to execute pre-defined long scripts
                 </li>
               </ul>
               <div class="spacer"></div>
@@ -441,7 +481,8 @@
                   and&nbsp;authorization.
                 </li>
                 <li>
-                  Safely custom your generated app Node.js code using your favorite IDE.
+                  Safely customize your generated app Node.js code using your
+                  favorite IDE.
                 </li>
                 <li>
                   Decide whether to download the app within a Docker container
@@ -544,188 +585,188 @@
             <h2 class="h2 text-center">What do you get?</h2>
           </div>
           <div class="features">
-          <div
-            class="col-12 pt-4 row d-flex justify-content-between align-items-start"
-            id="features"
-          >
-          
-          <a href="features.html#open-source">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-anchor="#features"
+            <div
+              class="col-12 pt-4 row d-flex justify-content-between align-items-start"
+              id="features"
             >
-            <img
-              src="assets/images/features/open_source_icon.svg"
-              alt="open source"
-            />
-            <div class="feature-card-text">Open&#8209;source project</div>
-          </div></a>
+              <!-- <a href="features.html#open-source"> -->
+              <a
+                href="features.html#open-source"
+                class="feature-card"
+                data-aos-delay="50"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/open_source_icon.svg"
+                  alt="open source"
+                />
+                <div class="feature-card-text">Open&#8209;source project</div>
+              </a>
+              <!-- </a> -->
 
-          <a href="features.html#custom-code">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/Code_Generator_icon.svg"
-              alt="code generator"
-            />
-            <div class="feature-card-text">
-              TypeScript & Node.js source&nbsp;code
+              <!-- <a href="features.html#custom-code"> -->
+              <a
+                href="features.html#custom-code"
+                class="feature-card"
+                data-aos-delay="100"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/Code_Generator_icon.svg"
+                  alt="code generator"
+                />
+                <div class="feature-card-text">
+                  TypeScript & Node.js source&nbsp;code
+                </div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#sync-with-github"> -->
+              <a
+                href="features.html#sync-with-github"
+                class="feature-card"
+                data-aos-delay="150"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/sync_with_github.svg"
+                  alt="Sync with GitHub"
+                />
+                <div class="feature-card-text">Sync with GitHub</div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#version-control"> -->
+              <a
+                href="features.html#version-control"
+                class="feature-card"
+                data-aos-delay="200"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/Version_control_icon.svg"
+                  alt="version control"
+                />
+                <div class="feature-card-text">Version control</div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#custom-code"> -->
+              <a
+                href="features.html#custom-code"
+                class="feature-card"
+                data-aos-delay="250"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/custom_code_icon.svg"
+                  alt="custom code"
+                />
+                <div class="feature-card-text">Custom Code</div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#code-generation"> -->
+              <a
+                href="features.html#code-generation"
+                class="feature-card"
+                data-aos-delay="300"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/vendor_lock_icon.svg"
+                  alt="vendor lock"
+                />
+                <div class="feature-card-text">
+                  Freedom to continue on your&nbsp;own
+                </div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#deployment"> -->
+              <a
+                href="features.html#deployment"
+                class="feature-card"
+                data-aos-delay="350"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/Docker_containers_icon.svg"
+                  alt="docker container"
+                />
+                <div class="feature-card-text">
+                  Docker ready to be&nbsp;deployed
+                </div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#identity-permissions"> -->
+              <a
+                href="features.html#identity-permissions"
+                class="feature-card"
+                data-aos-delay="400"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/Roles_icon.svg"
+                  alt="role based access control"
+                />
+                <div class="feature-card-text">
+                  Role&#8209;based access&nbsp;control
+                </div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#admin-ui"> -->
+              <a
+                href="features.html#admin-ui"
+                class="feature-card"
+                data-aos-delay="450"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/admin_ui_icon.svg"
+                  alt="admin ui cms"
+                />
+                <div class="feature-card-text">React Admin UI</div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#identity-permissions"> -->
+              <a
+                href="features.html#identity-permissions"
+                class="feature-card"
+                data-aos-delay="500"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/Security_and_performance_icon.svg"
+                  alt="security and performance"
+                />
+                <div class="feature-card-text">Security & performance</div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#deployment"> -->
+              <a
+                href="features.html#deployment"
+                class="feature-card"
+                data-aos-delay="550"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/Cloud_agnostic_icon.svg"
+                  alt="cloud agnostic"
+                />
+                <div class="feature-card-text">Cloud agnostic</div>
+              </a>
+              <!-- </a> -->
+              <!-- <a href="features.html#cli"> -->
+              <a
+                href="features.html#cli"
+                class="feature-card"
+                data-aos-delay="600"
+                data-aos-anchor="#features"
+              >
+                <img
+                  src="assets/images/features/command_line_interface_icon.svg"
+                  alt="cloud agnostic"
+                />
+                <div class="feature-card-text">Command Line Interface</div>
+              </a>
+              <!-- </a> -->
             </div>
-          </div>        
-          </a>
-          <a href="features.html#sync-with-github">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/sync_with_github.svg"
-              alt="Sync with GitHub"
-            />
-            <div class="feature-card-text">Sync with GitHub</div>
-          </div>
-          </a>
-          <a href="features.html#version-control">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/Version_control_icon.svg"
-              alt="version control"
-            />
-            <div class="feature-card-text">Version control</div>
-          </div>
-          </a>
-          <a href="features.html#custom-code">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="250"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/custom_code_icon.svg"
-              alt="custom code"
-            />
-            <div class="feature-card-text">Custom Code</div>
-          </div>
-          </a>
-          <a href="features.html#code-generation">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/vendor_lock_icon.svg"
-              alt="vendor lock"
-            />
-            <div class="feature-card-text">
-              Freedom to continue on your&nbsp;own
-            </div>
-          </div>
-          </a>
-          <a href="features.html#deployment">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/Docker_containers_icon.svg"
-              alt="docker container"
-            />
-            <div class="feature-card-text">
-              Docker ready to be&nbsp;deployed
-            </div>
-          </div>      
-          </a>
-          <a href="features.html#identity-permissions">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/Roles_icon.svg"
-              alt="role based access control"
-            />
-            <div class="feature-card-text">
-              Role&#8209;based access&nbsp;control
-            </div>
-          </div>
-          </a>
-          <a href="features.html#admin-ui">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="450"
-            data-aos-anchor="#features"
-            >
-            <img
-            src="assets/images/features/admin_ui_icon.svg"
-            alt="admin ui cms"
-            />
-            <div class="feature-card-text">React Admin UI</div>
-          </div>
-          </a>
-          <a href="features.html#identity-permissions">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="500"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/Security_and_performance_icon.svg"
-              alt="security and performance"
-            />
-            <div class="feature-card-text">Security & performance</div>
-          </div>
-          </a>
-          <a href="features.html#deployment">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="550"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/Cloud_agnostic_icon.svg"
-              alt="cloud agnostic"
-            />
-            <div class="feature-card-text">Cloud agnostic</div>
-          </div>
-          </a>
-          <a href="features.html#cli">
-          <div
-            class="feature-card"
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-anchor="#features"
-            >
-            <img
-              src="assets/images/features/command_line_interface_icon.svg"
-              alt="cloud agnostic"
-            />
-            <div class="feature-card-text">Command Line Interface</div>
-            </div>                        
-          </a>
-        </div>
           </div>
         </div>
       </section>
@@ -748,8 +789,8 @@
             </div>
             <div class="feature-description">
               Define data entities and role&#8209;based access through
-              Amplication's UI or through Command Line Interface (CLI), and Amplication will auto&#8209;generate your
-              database, an Admin UI, and API.
+              Amplication's UI or CLI, and Amplication will auto&#8209;generate
+              your database, an Admin UI, and API.
             </div>
           </div>
           <div
@@ -821,33 +862,40 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-right">
-            <img src="assets/images/steps/deploy.svg" alt="one click app deployment" />
+            <img
+              src="assets/images/steps/deploy.svg"
+              alt="one click app deployment"
+            />
           </div>
         </div>
         <div
           class="row feature d-flex justify-content-between align-items-center"
         >
           <div class="col-sm-12 col-md-6 pr-3">
-            <div class="bracket-box"><span>Sync</span> your app with GitHub</div>
+            <div class="bracket-box">
+              <span>Sync</span> your app with GitHub
+            </div>
             <div class="feature-description">
-              Amplication syncs your app code into Node.js format to your GitHub repository so you 
-              can keep developing and custom code your app using your favorite IDE and the skills you have already mastered.
+              Amplication syncs your app code into Node.js format to your GitHub
+              repository so you can keep developing and custom code your app
+              using your favorite IDE and the skills you have already mastered.
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
-            <img src="assets/images/steps/sync_with_github.svg" alt="github sync"/>
+            <img
+              src="assets/images/steps/sync_with_github.svg"
+              alt="github sync"
+            />
           </div>
         </div>
         <div
           class="row feature d-flex justify-content-between align-items-center"
         >
           <div class="col-sm-12 col-md-6 pr-3 order-md-2 pr-md-3 pl-lg-5">
-            <div class="bracket-box">
-              <span>Access</span> your app
-            </div>
+            <div class="bracket-box"><span>Access</span> your app</div>
             <div class="feature-description">
               Our auto-generated admin UI based on your data model schema
-          enables you to access your data with ease.
+              enables you to access your data with ease.
             </div>
           </div>
           <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
@@ -858,7 +906,8 @@
           class="row feature d-flex justify-content-between align-items-center"
         >
           <div class="col-sm-12 col-md-6 pr-3">
-            <div class="bracket-box no-bottom-margin"><span>Connect</span></div><div class="bracket-box">your code using REST or GraphQL</div>
+            <div class="bracket-box no-bottom-margin"><span>Connect</span></div>
+            <div class="bracket-box">your code using REST or GraphQL</div>
             <div class="feature-description">
               Start working with your API from any REST or GraphQL client
               (React, Angular, Vue, Flutter, iOS, Android, Go, Node.js, Python
@@ -868,9 +917,8 @@
           <div class="col-sm-12 col-md-6" data-aos="fade-up-left">
             <img src="assets/images/steps/connect.svg" alt="rest api" />
           </div>
-        </div>        
+        </div>
       </div>
-  </div>      
     </section>
 
     <!-- ROADMAP
@@ -890,6 +938,7 @@
               <div class="roadmap-title">Integration</div>
               <ul class="roadmap-list">
                 <li class="done">GraphQL API</li>
+                <li class="done">REST API</li>
                 <li>Connectors library</li>
                 <li>Custom connectors</li>
                 <li>SMS</li>
@@ -903,6 +952,7 @@
             <div class="roadmap-box">
               <div class="roadmap-title">Database</div>
               <ul class="roadmap-list">
+                <li class="done">Design data model</li>
                 <li>Connect to your own database</li>
                 <li>Import schema from existing database</li>
                 <li>Use multiple data sources</li>
@@ -914,10 +964,11 @@
             <div class="roadmap-box">
               <div class="roadmap-title">Business Logic</div>
               <ul class="roadmap-list">
-                <li>Visual flow editors for custom logic</li>
+                <li class="done">Roles and Permissions</li>
                 <li>Decision tables</li>
                 <li>Expressions</li>
                 <li>Condition builders</li>
+                <li>Visual flow editors for custom logic</li>
               </ul>
             </div>
           </div>
@@ -949,7 +1000,7 @@
               <div class="roadmap-title">More</div>
               <ul class="roadmap-list">
                 <li>Collaboration</li>
-                <li>Custom code with TS</li>
+                <li class="done">Custom code with TS</li>
                 <li>Integration with DevOps tools and services</li>
               </ul>
             </div>
@@ -981,8 +1032,8 @@
         <div class="row text-center text-lg-left">
           <div class="col-12 col-lg-6">
             <h2 class="h2">
-              We would <span class="text-turquoise-mono">love</span> to
-              hear from&nbsp;you.
+              We would <span class="text-turquoise-mono">love</span> to hear
+              from&nbsp;you.
             </h2>
           </div>
           <div
@@ -1113,5 +1164,7 @@
         });
       }
     </script>
+
+    <script src="plugins/lity.min.js"></script>
   </body>
 </html>
