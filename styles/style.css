@@ -7599,12 +7599,13 @@ section {
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 1.3; }
-    @media (min-width: 992px) {
+    @media (max-width: 991.98px) {
       section .main-title {
-        font-size: 3.5rem; } }
-    @media (min-width: 1200px) {
+        font-size: 3rem !important; } }
+    @media (max-width: 767.98px) {
       section .main-title {
-        font-size: 4rem; } }
+        font-size: 2rem !important;
+        line-height: 1.5; } }
   section .container {
     padding-left: 24px;
     padding-right: 24px; }
@@ -8625,6 +8626,9 @@ footer {
   justify-content: space-between;
   margin-top: 100px;
   align-items: stretch; }
+  @media (max-width: 991.98px) {
+    .pricing-page .pricing-plans {
+      flex-direction: column; } }
 
 .pricing-page .pricing-plan {
   width: 100%;
@@ -8642,6 +8646,10 @@ footer {
   .pricing-page .pricing-plan:last-child {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px; }
+  @media (max-width: 991.98px) {
+    .pricing-page .pricing-plan {
+      border-radius: 8px;
+      margin-bottom: 2rem; } }
   .pricing-page .pricing-plan__title {
     font-size: 18px;
     height: 2rem;

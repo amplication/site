@@ -34,6 +34,10 @@
     justify-content: space-between;
     margin-top: 100px;
     align-items: stretch;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
   }
 
   .pricing-plan {
@@ -55,6 +59,11 @@
     &:last-child {
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px;
+    }
+
+    @include media-breakpoint-down(md) {
+      border-radius: 8px;
+      margin-bottom: 2rem;
     }
 
     &__title {
