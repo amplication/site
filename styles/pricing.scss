@@ -1,0 +1,120 @@
+@import "./base.scss";
+
+.pricing-page {
+  h3 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  section.page-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container-pricing {
+    max-width: 90vw;
+  }
+
+  section.page-2,
+  section.page-3,
+  section.page-4 {
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+
+  section.page-3,
+  section.page-4 {
+    min-height: 0;
+  }
+
+  .pricing-plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: stretch;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  .pricing-plan {
+    width: 100%;
+    background-color: $black90;
+    border-color: $black70;
+    text-align: left;
+    border: 1px solid $black70;
+    padding: 1rem;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0px 2px 20px rgba(11, 11, 22, 0.18);
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    @include media-breakpoint-down(md) {
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    &__title {
+      font-size: 18px;
+      height: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &__price {
+      font-weight: 600;
+      font-size: 24px;
+      white-space: nowrap;
+      height: 3rem;
+    }
+    &__instead {
+      margin-left: 0.5rem;
+      font-size: 18px;
+      color: $black40;
+    }
+    &__description {
+      font-size: 12px;
+      height: 5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &__features {
+      margin: 0;
+      padding: 0;
+    }
+    &__feature {
+      font-size: 14px;
+      color: $black10;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .check {
+      position: relative;
+      &:before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url(../assets/images/list-item-check.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
