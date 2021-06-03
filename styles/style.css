@@ -8264,6 +8264,9 @@ footer {
     color: #686f8c;
     text-decoration: underline; }
 
+.class-none-exist {
+  height: auto; }
+
 .bg-gradient {
   background: linear-gradient(180deg, #15192c 0%, #22273c 100%); }
 
