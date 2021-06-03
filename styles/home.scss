@@ -191,11 +191,12 @@ section {
       font-size: 2.9rem;
 
       @include media-breakpoint-down(sm) {
-        font-size: 2.5rem !important;
+        margin-top: 30px;
+        font-size: 2.7rem !important;
         margin-bottom: 2rem;
       }
       @include media-breakpoint-down(xs) {
-        font-size: 1.5rem !important;
+        font-size: 2rem !important;
       }
     }
 
@@ -369,10 +370,16 @@ section {
     }
   }
 
-  &:first-child,
-  &:last-child {
+  &:first-child {
     .solution-icon {
       background: radial-gradient(50% 50% at 50% 50%, #7950ed 0%, #754ceb 100%);
+      box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16);
+    }
+  }
+
+  &:last-child {
+    .solution-icon {
+      background: radial-gradient(50% 50% at 50% 50%, #20a4f3 0%, #1ba1ee 100%);
       box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16);
     }
   }

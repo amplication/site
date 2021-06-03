@@ -7695,11 +7695,12 @@ section {
       font-size: 2.9rem; }
       @media (max-width: 767.98px) {
         section.page-welcome .main-title {
-          font-size: 2.5rem !important;
+          margin-top: 30px;
+          font-size: 2.7rem !important;
           margin-bottom: 2rem; } }
       @media (max-width: 575.98px) {
         section.page-welcome .main-title {
-          font-size: 1.5rem !important; } }
+          font-size: 2rem !important; } }
     @media (max-width: 767.98px) {
       section.page-welcome .explainer {
         font-size: 1.4rem !important;
@@ -7822,8 +7823,11 @@ section {
       width: 56px; }
     .solution-card .solution-icon.rotate img {
       transform: rotate(30deg); }
-  .solution-card:first-child .solution-icon, .solution-card:last-child .solution-icon {
+  .solution-card:first-child .solution-icon {
     background: radial-gradient(50% 50% at 50% 50%, #7950ed 0%, #754ceb 100%);
+    box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16); }
+  .solution-card:last-child .solution-icon {
+    background: radial-gradient(50% 50% at 50% 50%, #20a4f3 0%, #1ba1ee 100%);
     box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16); }
   .solution-card:nth-child(2) .solution-icon {
     background: radial-gradient(50% 50% at 50% 50%, #41cadd 0%, #3dc8db 100%);
