@@ -14,8 +14,8 @@ body {
 
 @media (min-width: 1500px) {
   .container {
-    width: 70%;
-    max-width: 1700px;
+    // width: 90%;
+    max-width: 1500px;
   }
 }
 
@@ -72,42 +72,112 @@ section {
     padding-right: 24px;
   }
 
-  &.page-welcome {
-    // height: $page-welcome-height;
-    min-height: $page-welcome-height;
+  .explainer {
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.2rem;
+    position: relative;
+    max-width: 800px;
+    color: $black5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
 
-    //background-image: url(../assets/images/bg/home-bg.svg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: $solution-card-height/2;
-
-    .container-fluid {
-      // margin-left: 40px;
-      // margin-right: 40px;
-
-      @include media-breakpoint-up(lg) {
-        margin-left: 100px;
-        margin-right: 100px;
+    .highlight {
+      color: $secondary-turquoise;
+      &:before {
+        content: "<";
       }
+      &:after {
+        content: ">";
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 4px;
+      background-color: $black100;
+    }
+  }
+
+  &.page-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 0;
+    margin-top: $menu-height + 60px;
+    padding-bottom: 0;
+    padding-top: 0;
+
+    @media (min-width: 1500px) {
+      .container {
+        width: 90%;
+        max-width: 1700px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      height: auto;
+    }
+
+    .community-header {
+      max-width: 750px;
+      min-width: 750px;
+      @include media-breakpoint-down(md) {
+        min-width: 0;
+      }
+    }
+    h1 {
+      color: $white;
     }
 
     .header-and-video {
       display: flex;
       flex-direction: row;
-      @include media-breakpoint-down(lg) {
-        display: block;
-      }
+      max-width: 100%;
+      overflow: visible;
 
       .video {
         margin-top: 70px;
-        width: 500px;
         overflow: visible;
+        transform: translateX(50px);
         img {
           max-width: 80vw;
           height: 400px;
 
           position: relative;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 0;
+        img {
+          height: auto !important;
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+
+        .explainer {
+          text-align: center;
+        }
+
+        .buttons-wrapper {
+          justify-content: center !important;
+        }
+
+        .video {
+          max-width: none;
+          width: auto !important;
+          transform: translateX(0px);
         }
       }
     }
@@ -116,10 +186,28 @@ section {
       flex-direction: column;
     }
     .main-title {
+      margin-top: 100px;
       max-width: 1024px;
+      font-size: 2.9rem;
 
       @include media-breakpoint-down(sm) {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
+        margin-bottom: 2rem;
+      }
+      @include media-breakpoint-down(xs) {
+        font-size: 1.5rem !important;
+      }
+    }
+
+    .explainer {
+      @include media-breakpoint-down(sm) {
+        font-size: 1.4rem !important;
+        margin-bottom: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      @include media-breakpoint-down(xs) {
+        font-size: 1.1rem !important;
       }
     }
 
@@ -158,7 +246,7 @@ section {
     }
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     &.page-welcome {
       .buttons-wrapper {
         flex-direction: row;
@@ -281,14 +369,15 @@ section {
     }
   }
 
-  &:first-child {
+  &:first-child,
+  &:last-child {
     .solution-icon {
       background: radial-gradient(50% 50% at 50% 50%, #7950ed 0%, #754ceb 100%);
       box-shadow: 0px 8px 20px rgba(18, 18, 66, 0.16);
     }
   }
 
-  &:last-child {
+  &:nth-child(2) {
     .solution-icon {
       background: radial-gradient(50% 50% at 50% 50%, #41cadd 0%, #3dc8db 100%);
       box-shadow: 0px 8px 20px rgba(96, 59, 201, 0.2);

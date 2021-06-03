@@ -13,7 +13,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>Amplication - Generate Node.js apps, just code what matters</title>
+    <title>
+      Amplication - Build and deploy production-ready web applications in
+      minutes.
+    </title>
     <meta
       name="keywords"
       content="generate nodejs, open source dev tool, app generator, low code app generator"
@@ -150,8 +153,8 @@
           If you like Amplication, give us a star on
           <span class="social-link github"> </span>
         </a>
-      </div> 
-      
+      </div>
+
       <div class="container-fluid">
         <a
           class="latest-version"
@@ -170,7 +173,6 @@
           </a>
         </a>
 
-       
         <!-- Toggler -->
         <button
           class="navbar-toggler"
@@ -296,90 +298,77 @@
     <!-- WELCOME
     ================================================== -->
     <section class="page-welcome">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-12 text-center">
-            <div class="header-and-video">
-              <div>
-                <div class="animated-header">
-                  <h1 class="main-title">
-                    <span class="animated-header__fixed-text"
-                      >Instantly generate</span
-                    >
-                    <span
-                      id="animated-header-typed"
-                      class="animated-header__animated-text"
-                    ></span>
+      <div class="container">
+        <div
+          class="
+            row
+            d-flex
+            align-items-end align-items-md-center
+            justify-content-md-center
+          "
+        >
+          <div class="header-and-video">
+            <div class="community-header">
+              <h1 class="main-title">
+                Build production&#8209;ready applications in&nbsp;minutes
+              </h1>
 
-                    <span class="animated-header__fixed-text"
-                      >Just code what matters.</span
-                    >
-                  </h1>
-                  <div id="animated-header-content" style="display: none">
-                    <span>GraphQL API.</span>
-                    <span>REST API.</span>
-                    <span>Authentication.</span>
-                    <span>Authorization.</span>
-                    <span>Admin UI.</span>
-                    <span>Logging.</span>
-                  </div>
-                  <div class="explainer">
-                    Amplication is an
-                    <span class="highlight">open&#8209;source</span> development
-                    tool. It helps you develop quality Node.js applications
-                    without spending time on repetitive coding&nbsp;tasks.
-                  </div>
-                </div>
-                <div
+              <div class="explainer">
+                Amplication is an
+                <span class="highlight">open&#8209;source</span> development
+                platform that generates full&#8209;stack applications with
+                Node.js, NestJS, Prisma, PostgreSQL, and React&#8209;Admin and
+                push the generated code to your GitHub&nbsp;repo.
+              </div>
+              <div
+                class="
+                  buttons-wrapper
+                  d-flex
+                  mb-4
+                  align-items-center
+                  justify-content-start
+                  mt-4
+                "
+              >
+                <a
+                  href="https://app.amplication.com"
+                  class="btn btn-primary btn-lg col-sm-12 col-md-6 mb-4"
+                  onclick="handleOutboundLinkClicks('Login')"
+                >
+                  Try Amplication
+                </a>
+                <div class="spacer"></div>
+                <a
+                  href="/community.html"
                   class="
-                    buttons-wrapper
-                    d-flex
+                    btn btn-outline-secondary btn-lg
+                    col-sm-12 col-md-6
                     mb-4
-                    align-items-center
-                    justify-content-start
-                    mt-4
+                    text-black80
                   "
                 >
-                  <a
-                    href="https://app.amplication.com"
-                    class="btn btn-primary btn-lg col-sm-12 col-md-6 mb-4"
-                    onclick="handleOutboundLinkClicks('Login')"
-                  >
-                    Get Started
-                  </a>
-                  <div class="spacer"></div>
-                  <a
-                    href="/community.html"
-                    class="
-                      btn btn-outline-secondary btn-lg
-                      col-sm-12 col-md-6
-                      mb-4
-                      text-black80
-                    "
-                  >
-                    Get Involved
-                  </a>
-                  <div class="spacer"></div>
-                  <a
-                    href="https://docs.amplication.com/docs/getting-started"
-                    class="
-                      d-lg-none
-                      btn btn-outline-secondary btn-lg
-                      col-sm-12 col-md-6
-                      mb-4
-                      text-black80
-                    "
-                    onclick="handleOutboundLinkClicks('Docs')"
-                  >
-                    Documentation
-                  </a>
-                </div>
-              </div>
-              <div class="video">
-                <a href="https://www.youtube.com/watch?v=wCJ2jF1IU7U" data-lity>
-                  <img src="assets/images/video.svg" />
+                  Community
+                </a>
+                <div class="spacer"></div>
+                <a
+                  href="https://docs.amplication.com/docs/getting-started"
+                  class="
+                    d-lg-none
+                    btn btn-outline-secondary btn-lg
+                    col-sm-12 col-md-6
+                    mb-4
+                    text-black80
+                  "
+                  onclick="handleOutboundLinkClicks('Docs')"
+                >
+                  Documentation
                 </a>
               </div>
+            </div>
+            <div class="video">
+              <a href="https://www.youtube.com/watch?v=wCJ2jF1IU7U" data-lity>
+                <img src="assets/images/video.svg" />
+              </a>
             </div>
           </div>
         </div>
@@ -394,15 +383,25 @@
               <span class="solution-icon">
                 <img src="assets/images/database.svg" alt="Database" />
               </span>
-              Easily create data models and&nbsp;configure role&#8209;based
-              access&nbsp;control with a simple and intuitive UI or CLI
+              Easily configure data models and roles with a simple and intuitive
+              UI or CLI
+            </div>
+            <div class="solution-card">
+              <span class="solution-icon">
+                <img
+                  src="assets/images/features-page/icons/menu_code_generation_icon.svg"
+                  alt="GitHub"
+                />
+              </span>
+              Generated code includes GraphQL and REST API, identity management,
+              and Admin UI
             </div>
             <div class="solution-card">
               <span class="solution-icon">
                 <img src="assets/images/github.svg" alt="GitHub" />
               </span>
-              Continuously push the generated application to your GitHub
-              repository
+              Continuously push the generated code to your
+              GitHub&nbsp;repository
             </div>
             <div class="solution-card">
               <span class="solution-icon">
@@ -479,10 +478,6 @@
                   Decide whether to download the app within a Docker container
                   that’s ready for deployment or to deploy to the
                   Amplication&nbsp;cloud.
-                </li>
-                <li>
-                  At any point you’re free to download the source code and
-                  continue development elsewhere.
                 </li>
               </ul>
               <div class="spacer"></div>
