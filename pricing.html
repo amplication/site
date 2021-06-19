@@ -113,7 +113,6 @@
           href="https://github.com/amplication/amplication"
           target="_blank"
           alt="Amplication on GitHub"
-          onclick="handleOutboundLinkClicks('GitHub star')"
         >
           <img
             class="git-hub-star"
@@ -182,7 +181,6 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://docs.amplication.com/docs/getting-started"
-                onclick="handleOutboundLinkClicks('Docs')"
               >
                 Docs
               </a>
@@ -198,19 +196,12 @@
               <a class="nav-link hover" href="/community.html"> Community </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link hover"
-                href="./#roadmap"
-                onclick="handleOutboundLinkClicks('Roadmap')"
-              >
-                Roadmap
-              </a>
+              <a class="nav-link hover" href="./#roadmap"> Roadmap </a>
             </li>
             <li class="nav-item d-none d-lg-flex">
               <a
                 class="nav-link btn btn-primary"
                 href="https://app.amplication.com"
-                onclick="handleOutboundLinkClicks('Login')"
               >
                 Login
               </a>
@@ -507,7 +498,6 @@
                   href="https://github.com/amplication/amplication"
                   target="_blank"
                   alt="Amplication on GitHub"
-                  onclick="handleOutboundLinkClicks('GitHub repo')"
                 >
                 </a>
                 <a
@@ -515,7 +505,6 @@
                   href="https://twitter.com/amplication"
                   target="_blank"
                   alt="Amplication on Twitter"
-                  onclick="handleOutboundLinkClicks('Twitter')"
                 >
                 </a>
                 <a
@@ -523,7 +512,6 @@
                   href="https://www.linkedin.com/company/amplication"
                   target="_blank"
                   alt="Amplication on LinkedIn"
-                  onclick="handleOutboundLinkClicks('LinkedIn')"
                 >
                 </a>
 
@@ -532,7 +520,6 @@
                   href="https://www.facebook.com/amplicationcom/"
                   target="_blank"
                   alt="Amplication on Facebook"
-                  onclick="handleOutboundLinkClicks('Facebook')"
                 >
                 </a>
               </div>
@@ -611,15 +598,6 @@
           $("#navbarCollapse").removeClass("show");
         });
       });
-
-      function handleOutboundLinkClicks(label) {
-        ga("send", "event", {
-          eventCategory: "Outbound Link",
-          eventAction: "click",
-          eventLabel: label,
-          transport: "beacon",
-        });
-      }
     </script>
   </body>
 </html>

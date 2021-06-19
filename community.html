@@ -110,7 +110,6 @@
           href="https://github.com/amplication/amplication"
           target="_blank"
           alt="Amplication on GitHub"
-          onclick="handleOutboundLinkClicks('GitHub star')"
         >
           <img
             class="git-hub-star"
@@ -179,7 +178,6 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://docs.amplication.com/docs/getting-started"
-                onclick="handleOutboundLinkClicks('Docs')"
               >
                 Docs
               </a>
@@ -195,19 +193,12 @@
               <a class="nav-link hover" href="/community.html"> Community </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link hover"
-                href="./#roadmap"
-                onclick="handleOutboundLinkClicks('Roadmap')"
-              >
-                Roadmap
-              </a>
+              <a class="nav-link hover" href="./#roadmap"> Roadmap </a>
             </li>
             <li class="nav-item d-none d-lg-flex">
               <a
                 class="nav-link btn btn-primary"
                 href="https://app.amplication.com"
-                onclick="handleOutboundLinkClicks('Login')"
               >
                 Login
               </a>
@@ -276,7 +267,6 @@
             <a
               href="https://github.com/amplication/amplication"
               class="btn btn-primary"
-              onclick="handleOutboundLinkClicks('GitHub repo')"
             >
               <span class="social-link github social-white"> </span>
               Get Involved
@@ -371,7 +361,6 @@
                   target="_blank"
                   href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title="
                   class="btn btn-outline-secondary"
-                  onclick="handleOutboundLinkClicks('Add a feature request')"
                 >
                   Submit feature request
                 </a>
@@ -404,7 +393,6 @@
                   target="_blank"
                   href="https://github.com/amplication/amplication/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title="
                   class="btn btn-outline-secondary"
-                  onclick="handleOutboundLinkClicks('Add a bug report')"
                 >
                   Create bug report
                 </a>
@@ -438,7 +426,6 @@
                   target="_blank"
                   href="https://docs.amplication.com/"
                   class="btn btn-outline-secondary"
-                  onclick="handleOutboundLinkClicks('Docs')"
                 >
                   See the docs
                 </a>
@@ -471,7 +458,6 @@
                   target="_blank"
                   href="https://github.com/amplication/amplication/blob/master/CONTRIBUTING.md"
                   class="btn btn-outline-secondary"
-                  onclick="handleOutboundLinkClicks('Contribute')"
                 >
                   Learn how to contribute
                 </a>
@@ -515,7 +501,6 @@
                     target="_blank"
                     href="https://github.com/amplication/amplication"
                     class="btn btn-outline-secondary"
-                    onclick="handleOutboundLinkClicks('GitHub repo')"
                   >
                     Open the repo
                   </a>
@@ -538,7 +523,6 @@
                     href="https://twitter.com/amplication"
                     target="_blank"
                     alt="Amplication on Twitter"
-                    onclick="handleOutboundLinkClicks('Twitter')"
                   >
                   </a>
                   <a
@@ -546,7 +530,6 @@
                     href="https://www.facebook.com/amplicationcom/"
                     target="_blank"
                     alt="Amplication on Facebook"
-                    onclick="handleOutboundLinkClicks('Facebook')"
                   >
                   </a>
                   <a
@@ -554,7 +537,6 @@
                     href="https://www.linkedin.com/company/amplication"
                     target="_blank"
                     alt="Amplication on LinkedIn"
-                    onclick="handleOutboundLinkClicks('LinkedIn')"
                   >
                   </a>
                 </div>
@@ -595,7 +577,6 @@
                     target="_blank"
                     href="https://discord.gg/Z2CG3rUFnu"
                     class="btn btn-primary"
-                    onclick="handleOutboundLinkClicks('Discord')"
                   >
                     Join our Discord channel
                   </a>
@@ -616,7 +597,6 @@
                     target="_blank"
                     href="https://github.com/amplication/amplication/issues"
                     class="btn btn-primary"
-                    onclick="handleOutboundLinkClicks('Add a bug report')"
                   >
                     View all issues
                   </a>
@@ -637,7 +617,6 @@
                     target="_blank"
                     href="https://docs.amplication.com/docs/getting-started"
                     class="btn btn-primary"
-                    onclick="handleOutboundLinkClicks('Docs')"
                   >
                     Read the docs
                   </a>
@@ -702,7 +681,6 @@
                   href="https://github.com/amplication/amplication"
                   target="_blank"
                   alt="Amplication on GitHub"
-                  onclick="handleOutboundLinkClicks('GitHub repo')"
                 >
                 </a>
                 <a
@@ -710,7 +688,6 @@
                   href="https://twitter.com/amplication"
                   target="_blank"
                   alt="Amplication on Twitter"
-                  onclick="handleOutboundLinkClicks('Twitter')"
                 >
                 </a>
                 <a
@@ -718,7 +695,6 @@
                   href="https://www.linkedin.com/company/amplication"
                   target="_blank"
                   alt="Amplication on LinkedIn"
-                  onclick="handleOutboundLinkClicks('LinkedIn')"
                 >
                 </a>
 
@@ -727,7 +703,6 @@
                   href="https://www.facebook.com/amplicationcom/"
                   target="_blank"
                   alt="Amplication on Facebook"
-                  onclick="handleOutboundLinkClicks('Facebook')"
                 >
                 </a>
               </div>
@@ -786,15 +761,5 @@
       );
     </script>
     <script src="captureUtm.js"></script>
-    <script>
-      function handleOutboundLinkClicks(label) {
-        ga("send", "event", {
-          eventCategory: "Outbound Link",
-          eventAction: "click",
-          eventLabel: label,
-          transport: "beacon",
-        });
-      }
-    </script>
   </body>
 </html>
