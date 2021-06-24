@@ -8179,7 +8179,8 @@ footer {
         margin-bottom: 4rem; } }
   footer .social-link {
     width: 1.5rem;
-    height: 1.5rem; }
+    height: 1.5rem;
+    margin-right: 1rem; }
 
 .footer-line {
   border-top: 1px solid #373d57;
@@ -8662,7 +8663,8 @@ footer {
   .pricing-page .pricing-plan__instead {
     margin-left: 0.5rem;
     font-size: 18px;
-    color: #686f8c; }
+    color: #686f8c;
+    text-decoration: line-through; }
   .pricing-page .pricing-plan__description {
     font-size: 12px;
     height: 5rem;
