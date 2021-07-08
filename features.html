@@ -37,31 +37,7 @@
     />
 
     <link rel="stylesheet" href="./styles/style.css" />
-    <!-- Google Analytics -->
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
 
-      ga("create", "UA-177067786-1", "auto");
-    </script>
-    <!-- End Google Analytics -->
     <!-- Facebook Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -137,7 +113,6 @@
           href="https://github.com/amplication/amplication"
           target="_blank"
           alt="Amplication on GitHub"
-          onclick="handleOutboundLinkClicks('GitHub star')"
         >
           <img
             class="git-hub-star"
@@ -206,7 +181,6 @@
                 class="nav-link hover"
                 target="_blank"
                 href="https://docs.amplication.com/docs/getting-started"
-                onclick="handleOutboundLinkClicks('Docs')"
               >
                 Docs
               </a>
@@ -222,19 +196,12 @@
               <a class="nav-link hover" href="/community.html"> Community </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link hover"
-                href="./#roadmap"
-                onclick="handleOutboundLinkClicks('Roadmap')"
-              >
-                Roadmap
-              </a>
+              <a class="nav-link hover" href="./#roadmap"> Roadmap </a>
             </li>
             <li class="nav-item d-none d-lg-flex">
               <a
                 class="nav-link btn btn-primary"
                 href="https://app.amplication.com"
-                onclick="handleOutboundLinkClicks('Login')"
               >
                 Login
               </a>
@@ -652,16 +619,14 @@
               <a
                 href="https://github.com/amplication/amplication"
                 class="btn btn-outline-secondary"
-                onclick="handleOutboundLinkClicks('GitHub repo')"
               >
                 <span class="social-link github social-white"> </span>
                 GitHub
               </a>
               <div class="spacer"></div>
               <a
-                href="https://discord.gg/b8MrjU6"
+                href="https://discord.gg/Z2CG3rUFnu"
                 class="btn btn-primary ml-4"
-                onclick="handleOutboundLinkClicks('Discord')"
               >
                 <span class="social-link discord social-white"> </span>
                 Join our community
@@ -861,7 +826,13 @@
                   href="https://github.com/amplication/amplication"
                   target="_blank"
                   alt="Amplication on GitHub"
-                  onclick="handleOutboundLinkClicks('GitHub repo')"
+                >
+                </a>
+                <a
+                  class="social-link discord"
+                  href="https://discord.gg/Z2CG3rUFnu"
+                  target="_blank"
+                  alt="Discord"
                 >
                 </a>
                 <a
@@ -869,7 +840,6 @@
                   href="https://twitter.com/amplication"
                   target="_blank"
                   alt="Amplication on Twitter"
-                  onclick="handleOutboundLinkClicks('Twitter')"
                 >
                 </a>
                 <a
@@ -877,7 +847,6 @@
                   href="https://www.linkedin.com/company/amplication"
                   target="_blank"
                   alt="Amplication on LinkedIn"
-                  onclick="handleOutboundLinkClicks('LinkedIn')"
                 >
                 </a>
 
@@ -886,7 +855,6 @@
                   href="https://www.facebook.com/amplicationcom/"
                   target="_blank"
                   alt="Amplication on Facebook"
-                  onclick="handleOutboundLinkClicks('Facebook')"
                 >
                 </a>
               </div>
@@ -965,15 +933,6 @@
           $("#navbarCollapse").removeClass("show");
         });
       });
-
-      function handleOutboundLinkClicks(label) {
-        ga("send", "event", {
-          eventCategory: "Outbound Link",
-          eventAction: "click",
-          eventLabel: label,
-          transport: "beacon",
-        });
-      }
     </script>
   </body>
 </html>
